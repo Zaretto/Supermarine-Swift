@@ -36,49 +36,6 @@
     <max>0.9</max>
    </volume>
   </engine>
-  
-    <engine>
-   <name>Engine 1 External Intake</name>
-   <path>Aircraft/victor/Sounds/jet-in.wav</path>
-   <mode>looped</mode>
-   <condition>
-	<not>
-	<property>/sim/current-view/internal</property>
-	</not>
-   </condition>
-   
-   <position>
-    <x>9.4</x>
-	<y>-3.63</y>
-	<z>3.14</z>
-   </position>
-   <orientation>
-	<x>-1.0</x>
-    <y>-0.25</y>
-    <z>0</z>
-    <inner-angle>120.0</inner-angle>
-    <outer-angle>270.0</outer-angle>
-    <outer-gain>0.35</outer-gain>
-   </orientation>
-   
-   <pitch>
-    <property>engines/engine[0]/n1</property>
-	<factor>0.01</factor>
-	<offset>0.2</offset>
-	<min>-0.25</min>
-	<max>2.5</max>
-   </pitch>
-   
-   <volume>
-    <property>engines/engine[0]/n1</property>
-    <factor>0.001</factor>
-    <offset>-0.035</offset>
-   </volume>
-   
-   <reference-dist>15</reference-dist>
-   <max-dist>2500</max-dist>
-   
-  </engine>
 
   <rumble>
    <name>rumble</name>
@@ -252,7 +209,7 @@
  
 <click> 
         <name>nav lights click down</name>
-        <path>Sounds/click.wav</path>
+        <path>Aircraft/Hunter/Sounds/click.wav</path>
         <condition> 
           <property>controls/lighting/nav-lights</property>
         </condition>
@@ -264,7 +221,7 @@
       </click>
       <click> 
         <name>nav lights click up</name>
-        <path>Sounds/click.wav</path>
+        <path>Aircraft/Hunter/Sounds/click.wav</path>
         <condition> 
           <not> 
             <property>controls/lighting/nav-lights</property>
@@ -280,7 +237,7 @@
 	  <guns>
       <name>gunfire</name>
       <mode>looped</mode>
-      <path>Sounds/gunfire.wav</path>
+      <path>Aircraft/Hunter/Sounds/gunfire.wav</path>
       <condition> 
         <property>controls/armament/trigger</property>
         <property>ai/submodels/submodel/count</property>

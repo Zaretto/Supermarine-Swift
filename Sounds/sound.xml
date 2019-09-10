@@ -41,7 +41,7 @@
   </greater-than>
   <less-than>
                 <property>velocities/groundspeed-kt</property>
-                <value>5</value>
+                <value>1</value>
             </less-than>
   <not>
    <property>/sim/current-view/internal</property>
@@ -75,10 +75,6 @@
       <property>engines/engine[0]/running</property>
       <value>false</value>
      </equals>
-<greater-than>  
-   <property>/engines/engine[0]/rpm</property>
-   <value>0.5</value>
-   </greater-than>
    </condition>
   </shutdown>
   
