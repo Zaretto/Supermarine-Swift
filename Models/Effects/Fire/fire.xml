@@ -1,0 +1,48 @@
+
+<PropertyList>
+
+ <model>
+  <name>Engine 1 Fire</name>
+  <path>Aircraft/victor/Models/Effects/Fire/fire-eng1.xml</path>
+  <offsets>
+   <x-m> 18.85</x-m>
+   <y-m> -3.45 </y-m>
+   <z-m> 2.35 </z-m>
+   <pitch-deg>8.2</pitch-deg>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>Engine 2 Fire</name>
+  <path>Aircraft/victor/Models/Effects/Fire/fire-eng2.xml</path>
+  <offsets>
+   <x-m> 18.85</x-m>
+   <y-m> -2.5 </y-m>
+   <z-m> 2.35 </z-m>
+   <pitch-deg>8.2</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <name>Engine 3 Fire</name>
+  <path>Aircraft/victor/Models/Effects/Fire/fire-eng3.xml</path>
+  <offsets>
+   <x-m> 18.85</x-m>
+   <y-m> 2.5 </y-m>
+   <z-m> 2.35 </z-m>
+   <pitch-deg>8.2</pitch-deg>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>Engine 4 Fire</name>
+  <path>Aircraft/victor/Models/Effects/Fire/fire-eng4.xml</path>
+  <offsets>
+   <x-m> 18.85</x-m>
+   <y-m> 3.45 </y-m>
+   <z-m> 2.35 </z-m>
+   <pitch-deg>8.2</pitch-deg>
+  </offsets>
+ </model>
+ 
+</PropertyList>

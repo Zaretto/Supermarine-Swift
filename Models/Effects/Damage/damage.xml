@@ -1,0 +1,24 @@
+
+<PropertyList>
+
+ <model>
+  <name>Engine 1 Damage</name>
+  <path>Aircraft/EE-Lightning/Models/Effects/damage/damage-eng1.xml</path>
+  <offsets>
+   <x-m> 8.05</x-m>
+   <y-m> 0 </y-m>
+   <z-m> -0.175 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>Engine 2 Smoke</name>
+  <path>Aircraft/EE-Lightning/Models/Effects/damage/damage-eng2.xml</path>
+  <offsets>
+   <x-m> 8.05</x-m>
+   <y-m> 0 </y-m>
+   <z-m> 0.7248 </z-m>
+  </offsets>
+ </model>
+
+</PropertyList>

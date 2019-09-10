@@ -1,0 +1,45 @@
+
+Cockpit Animations:
+	- rudder pedals
+	- throttle
+	- flaps lever
+	- gear lever
+	- stick
+	- (some) switches?
+	- panel texture needs editing to remove GPS 
+	- instruments are uneven in lighting - look at applying glass effect to all glass surfaces
+	- instruments from hunter could do with texture
+
+Pilot:
+	- grab Alphasim one from Valiant, with textures from swift (they're the same model)
+
+Gear:
+	- main gear is uneven, needs either repositioning or reconverting from MDL (have converted model in full extension position)
+	- add compression animation
+	- add wheel rotation animation
+
+Lights:
+	- lightpack
+	- cockpit lighting
+
+Effects:
+	- afterburner from trunk F-8E (single effect works on all pipelines)
+	- wing condensation
+	- wing tip condensation
+	- engine smoke
+	- contrail
+	- guns
+
+Sounds:
+	- make sure startup sound only runs when engine is starting (check yasim engine management script)
+	- wheel contact sound
+	- afterburner
+	- intake/exhaust roar (see firebee)
+	
+Bombable:
+	- guns
+	- nasal model data
+
+FDM:
+	- look at enabling afterburner via nasal so that full military thrust is available 
+

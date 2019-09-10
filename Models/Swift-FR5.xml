@@ -1,0 +1,541 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<path>swift-fr5.ac</path>
+	
+	<!-- MP sound call -->
+  <sound><path>Aircraft/Supermarine-Swift/Sounds/mp-sound.xml</path></sound>
+
+	
+	
+		<!-- Transparent Surfaces for Rembrandt rendering -->
+   
+    <!--effect>
+     <inherits-from>Effects/model-transparent</inherits-from>
+	<condition>
+		<property>sim/rendering/rembrandt/enabled</property>
+	</condition>
+	<object-name>canopy-glass</object-name>
+	<object-name>front-glass</object-name>
+	<object-name>gunsight-glass</object-name>
+	<object-name>gunsight-lens</object-name>
+    </effect-->
+	
+	
+	 <!-- Turns off non rembrant lighting and effects 	-->
+	
+    <!--animation>
+        <type>select</type>
+	<object-name>gunsight-glass</object-name>
+	<condition>
+            <not>
+            <property>/sim/rendering/rembrandt/enabled</property>
+            </not>
+        </condition>
+    </animation-->
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/Supermarine-Swift/Models/Liveries", 10);
+    </load>
+
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
+
+
+ <!-- Livery -->
+
+  <animation>
+        <type>material</type>
+        <object-name>canopy-frame_0</object-name>
+        <object-name>rudder_1</object-name>
+        <object-name>POLY.016</object-name>
+        <object-name>POLY.074</object-name>
+        <property-base>sim/model/livery</property-base>
+        <texture-prop>left-fuselage</texture-prop>
+        <texture>Swift_1.jpg</texture>
+  </animation>
+
+  <animation>
+        <type>material</type>
+        <object-name>rudder_0</object-name>
+        <object-name>POLY.017</object-name>
+        <object-name>POLY.051</object-name>
+        <property-base>sim/model/livery</property-base>
+        <texture-prop>right-fuselage</texture-prop>
+        <texture>Swift_2.jpg</texture>
+  </animation>
+
+  <animation>
+        <type>material</type>
+        <object-name>POLY.031_1</object-name>
+        <object-name>POLY.018</object-name>
+        <property-base>sim/model/livery</property-base>
+        <texture-prop>bottom-fuselage</texture-prop>
+        <texture>Swift_3.jpg</texture>
+  </animation>
+
+  <animation>
+        <type>material</type>
+        <object-name>r-elevator_1</object-name>
+        <object-name>l-elevator_1</object-name>
+        <object-name>r-aleron_1</object-name>
+        <object-name>l-aleron_1</object-name>
+        <object-name>POLY.013</object-name>
+        <property-base>sim/model/livery</property-base>
+        <texture-prop>top-wing</texture-prop>
+        <texture>Swift_4.jpg</texture>
+  </animation>
+
+  <animation>
+        <type>material</type>
+        <object-name>left-flap_0</object-name>
+        <object-name>right-flap_0</object-name>
+        <object-name>l-aleron_0</object-name>
+        <object-name>r-aleron_0</object-name>
+        <object-name>POLY.062_0</object-name>
+        <object-name>POLY.066_0</object-name>
+        <object-name>l-elevator_0</object-name>
+        <object-name>r-elevator_0</object-name>
+        <object-name>l-mains-door2_0</object-name>
+        <object-name>r-mais-door2_0</object-name>
+        <object-name>POLY.014</object-name>
+        <property-base>sim/model/livery</property-base>
+        <texture-prop>bottom-wing</texture-prop>
+        <texture>Swift_5.jpg</texture>
+  </animation>
+
+
+        <animation>
+                <type>shader</type>
+                <shader>chrome</shader>
+                <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+                <object-name>canopy-glass</object-name>
+                <object-name>front-glass</object-name>
+        </animation>
+
+        <animation>
+                <type>noshadow</type>
+                <object-name>canopy-glass</object-name>
+                <object-name>front-glass</object-name>
+        </animation>
+
+<!-- Suppress Sparts in Cockpit View -->
+ <animation>
+  <type>select</type>
+  <object-name>canopy-glass</object-name>
+  <object-name>front-glass</object-name>
+  <condition>
+   <not>
+   <equals>
+    <property>sim/current-view/view-number</property>
+    <value>0</value>
+   </equals>
+   </not>
+  </condition>
+ </animation>
+   
+   
+   <!-- Interior -->
+
+ <model>
+  <path>Aircraft/Supermarine-Swift/Models/Interior/panel.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </offsets>
+ </model>  
+ 
+ <model>
+  <path>Aircraft/Supermarine-Swift/Models/Interior/panel2.xml</path>
+  <offsets>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </offsets>
+ </model>  
+ 
+ <!-- reheat -->
+ 
+  <model>
+  <name>Engine1</name>
+  <path>Aircraft/Supermarine-Swift/Models/Effects/reheat/engine-1.xml</path>
+  <offsets>
+   <x-m>8.1</x-m>
+   <y-m>0</y-m>
+   <z-m>-0.1</z-m>
+  </offsets>
+  </model>
+ 
+ 
+ <!-- Animations -->
+ 
+   <!-- Aileron animation -->
+   
+   <animation> 
+	<name>AileronLeft</name>
+		<object-name>l-aleron_0</object-name>
+		<object-name>l-aleron_1</object-name>
+   </animation>
+   
+  <animation>
+    <type>rotate</type>
+    <object-name>AileronLeft</object-name>
+    <property>surface-positions/aileron-pos-norm</property>
+    <factor> -16 </factor>
+    <axis>
+      <x1-m>  1.710 </x1-m>
+      <y1-m> -2.8 </y1-m>
+      <z1-m>  -0.45 </z1-m>
+      <x2-m>  2.65 </x2-m>
+      <y2-m> -4.62 </y2-m>
+      <z2-m>  -0.42</z2-m>
+    </axis>
+  </animation>
+  
+    <animation>
+    <type>rotate</type>
+    <object-name>r-aleron_1</object-name>
+    <property>surface-positions/aileron-pos-norm</property>
+    <factor> -16 </factor>
+    <axis>
+      <x1-m>  1.710 </x1-m>
+      <y1-m> 2.8 </y1-m>
+      <z1-m>  -0.45 </z1-m>
+      <x2-m>  2.65 </x2-m>
+      <y2-m> 4.62 </y2-m>
+      <z2-m>  -0.42</z2-m>
+    </axis>
+  </animation>
+   
+   
+    <animation>
+  <type>rotate</type>
+  <object-name>rudder_0</object-name>
+  <object-name>rudder_1</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+  <factor>-15</factor>
+  <axis>
+     <x1-m>4.9</x1-m>
+     <y1-m>0</y1-m>
+     <z1-m>0.9</z1-m>
+     <x2-m>5.7</x2-m>
+     <y2-m>0</y2-m>
+     <z2-m>2.2</z2-m>
+  </axis>
+ </animation>
+ 
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>l-elevator_1</object-name>
+  <object-name>l-elevator_0</object-name>
+  <property>surface-positions/elevator-pos-norm</property>
+  <factor>-25</factor>
+    
+ <axis>
+    <x1-m>5.3</x1-m>
+      <y1-m>-0.4</y1-m>
+      <z1-m>0.22</z1-m>
+      <x2-m>6.2</x2-m>
+      <y2-m>-1.9</y2-m>
+      <z2-m>0.5</z2-m>
+	  </axis>
+ </animation>
+ 
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>r-elevator_1</object-name>
+  <object-name>r-elevator_0</object-name>
+  <property>surface-positions/elevator-pos-norm</property>
+  <factor>25</factor>
+    
+ <axis>
+    <x1-m>5.3</x1-m>
+      <y1-m>0.4</y1-m>
+      <z1-m>0.22</z1-m>
+      <x2-m>6.2</x2-m>
+      <y2-m>1.9</y2-m>
+      <z2-m>0.5</z2-m>
+	  </axis>
+ </animation>
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>left-flap_0</object-name>
+  <object-name>left-flap_1</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+  <factor>-45</factor>
+  <axis>
+     <x1-m>0.76</x1-m>
+     <y1-m>-0.8</y1-m>
+     <z1-m>-0.56</z1-m>
+     <x2-m>1.25</x2-m>
+     <y2-m>-2.4</y2-m>
+     <z2-m>-0.54</z2-m>
+  </axis>
+ </animation>
+ 
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>right-flap_0</object-name>
+  <object-name>right-flap_1</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+  <factor>45</factor>
+  <axis>
+     <x1-m>0.76</x1-m>
+     <y1-m>0.8</y1-m>
+     <z1-m>-0.56</z1-m>
+     <x2-m>1.25</x2-m>
+     <y2-m>2.4</y2-m>
+     <z2-m>-0.54</z2-m>
+  </axis>
+ </animation>
+ 
+   <animation>
+    <type>rotate</type>
+    <object-name>POLY.031_1</object-name>
+    <object-name>POLY.031_0</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>    0 </dep></entry>
+      <entry><ind> 0.1 </ind><dep> -100 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -100 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -3.89579 </x1-m>
+      <y1-m>  0.15720 </y1-m>
+      <z1-m> -0.64961 </z1-m>
+      <x2-m> -5.46270 </x2-m>
+      <y2-m>  0.15720</y2-m>
+      <z2-m> -0.33568</z2-m>
+    </axis>
+  </animation>
+  
+    <animation>
+    <name>NoseGear</name>
+    <object-name>POLY.032</object-name>
+    <object-name>POLY.039</object-name>
+	<object-name>POLY.040</object-name>
+	<object-name>POLY.041</object-name>
+	<object-name>POLY.042</object-name>
+	<object-name>POLY.043</object-name>
+	<object-name>POLY.044</object-name>
+	<object-name>POLY.045</object-name>
+	<object-name>POLY.046</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>NoseGear</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 103 </dep></entry>
+      <entry><ind> 1 </ind><dep>    0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -4.08898 </x-m>
+      <y-m>  0.48960 </y-m>
+      <z-m>  0.00532 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <name>RightGear</name>
+    <object-name>POLY.084</object-name>
+    <object-name>POLY.086</object-name>
+	<object-name>POLY.087</object-name>
+	<object-name>POLY.088</object-name>
+	<object-name>POLY.089</object-name>
+	<object-name>POLY.091</object-name>
+	<object-name>POLY.092</object-name>
+  </animation>
+  
+    <animation>
+    <type>rotate</type>
+    <object-name>RightGear</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 1 </ind><dep> 0 </dep></entry>
+      <entry><ind> 0 </ind><dep> 88 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.74362 </x-m>
+      <y-m> 2.36497</y-m>
+      <z-m> -0.52056</z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+    <animation>
+    <name>LeftGear</name>
+    <object-name>POLY.075</object-name>
+    <object-name>POLY.077</object-name>
+	<object-name>POLY.078</object-name>
+	<object-name>POLY.079</object-name>
+	<object-name>POLY.080</object-name>
+	<object-name>POLY.082</object-name>
+	<object-name>POLY.083</object-name>
+  </animation>
+  
+      <animation>
+    <type>rotate</type>
+    <object-name>LeftGear</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 1 </ind><dep> 0 </dep></entry>
+      <entry><ind> 0 </ind><dep> 88 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.74362 </x-m>
+      <y-m> -2.29687</y-m>
+      <z-m> -0.47219</z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+    <animation>
+    <name>LeftGearDoor</name>
+    <object-name>l-mains-door2_0</object-name>
+    <object-name>l-mains-door2_1</object-name>
+  </animation>
+  
+    <animation>
+    <type>rotate</type>
+    <object-name>LeftGearDoor</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 95 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.70298 </x-m>
+      <y-m> -2.44224</y-m>
+      <z-m> -0.57605</z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+    <animation>
+    <type>rotate</type>
+    <object-name>POLY.066</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0 </dep></entry>
+	  <entry><ind> 0.1 </ind><dep> 95 </dep></entry>
+      <entry><ind> 1 </ind><dep> 95 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.23126</x-m>
+      <y-m> -0.97904</y-m>
+      <z-m> -0.62114</z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+      <animation>
+    <type>rotate</type>
+    <object-name>POLY.062</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0 </dep></entry>
+      <entry><ind> 0.1 </ind><dep> 95 </dep></entry>
+	  <entry><ind> 1 </ind><dep> 95 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.23459</x-m>
+      <y-m>  1.00676</y-m>
+      <z-m> -0.62114</z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  
+    <animation>
+    <name>RightGearDoor</name>
+    <object-name>r-mais-door2_0</object-name>
+    <object-name>r-mais-door2_1</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RightGearDoor</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 95 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.70462 </x-m>
+      <y-m> 2.45134</y-m>
+      <z-m> -0.54478</z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  
+ 
+
+ <!-- Gear disapears when raised -
+
+<animation>
+        <type>select</type>
+		<object-name>POLY.080</object-name>
+		<object-name>POLY.079</object-name>
+		<object-name>POLY.078</object-name>
+		<object-name>POLY.077</object-name>
+		<object-name>POLY.083</object-name>
+       <object-name>POLY.082</object-name>
+		<object-name>POLY.075</object-name>
+		<object-name>POLY.089</object-name>
+		<object-name>POLY.088</object-name>
+		<object-name>POLY.087</object-name>
+		<object-name>POLY.086</object-name>
+		<object-name>POLY.092</object-name>
+		<object-name>POLY.091</object-name>
+		<object-name>POLY.084</object-name>
+		
+       
+        <condition>
+        <property>gear/gear[0]/position-norm</property>
+        </condition>
+    
+    </animation>	
+-->
+
+</PropertyList>

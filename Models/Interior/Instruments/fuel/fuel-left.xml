@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<!-- fuel port wing tank-->
+
+<PropertyList>
+
+ <path>fuel.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>fuel-Needle1</object-name>
+  <property>consumables/fuel/tank/level-lbs</property>
+  <interpolation>
+    <entry><ind>0</ind><dep>-125</dep></entry>
+   <entry><ind>200</ind><dep>-85</dep></entry>
+   <entry><ind>400</ind><dep>-45</dep></entry>
+   <entry><ind>600</ind><dep>-15</dep></entry>
+   <entry><ind>700</ind><dep>0</dep></entry>
+   <entry><ind>800</ind><dep>15</dep></entry>
+   <entry><ind>1000</ind><dep>50</dep></entry>
+   <entry><ind>1200</ind><dep>80</dep></entry>
+   <entry><ind>1400</ind><dep>110</dep></entry>
+   <entry><ind>1500</ind><dep>125</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+  <animation> 
+   <type>material</type>
+    <emission> 
+      <factor-prop>/controls/lighting/panel-norm</factor-prop>
+        <red>0.75</red>
+        <green>0.25</green>
+        <blue>0.25</blue>
+      </emission>
+  </animation>
+ 
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>5</max-m>
+ </animation>
+ </PropertyList>

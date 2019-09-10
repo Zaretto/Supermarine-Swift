@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+
+<PropertyList>
+        <sim>
+                <model>
+                        <livery>
+                                <name type="string">RAF 2 Squadron</name>
+                                <index type="int">1</index>
+                                <left-fuselage>Liveries/RAF2S/Swift_1.jpg</left-fuselage>
+                                <right-fuselage>Liveries/RAF2S/Swift_2.jpg</right-fuselage>
+                                <bottom-fuselage>Liveries/RAF2S/Swift_3.jpg</bottom-fuselage>
+                                <top-wing>Liveries/common/Swift_4.jpg</top-wing>
+                                <bottom-wing>Liveries/RAF2S/Swift_5.jpg</bottom-wing>
+                        </livery>
+                </model>
+        </sim>
+</PropertyList>
+

@@ -1,0 +1,17 @@
+
+<PropertyList>
+
+ <model>
+  <name>Fire</name>
+  <path>Aircraft/EE-Lightning/Models/Effects/Fire/fire-eng2.xml</path>
+ </model>
+ 
+ <model>
+  <name>Fire</name>
+  <path>Aircraft/EE-lightning/Models/Effects/Smoke/smoke-eng2.xml</path>
+  <offsets>
+   <x-m>1.0</x-m>
+  </offsets>
+ </model>
+
+</PropertyList>

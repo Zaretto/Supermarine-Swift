@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+
+<PropertyList>
+        <sim>
+                <model>
+                        <livery>
+                                <name type="string">FGUK</name>
+                                <index type="int">1</index>
+                                <left-fuselage>Liveries/FGUK/Swift_1.jpg</left-fuselage>
+                                <right-fuselage>Liveries/FGUK/Swift_2.jpg</right-fuselage>
+                                <bottom-fuselage>Liveries/FGUK/Swift_3.jpg</bottom-fuselage>
+                                <top-wing>Liveries/FGUK/Swift_4.jpg</top-wing>
+                                <bottom-wing>Liveries/FGUK/Swift_5.jpg</bottom-wing>
+                        </livery>
+                </model>
+        </sim>
+</PropertyList>
+

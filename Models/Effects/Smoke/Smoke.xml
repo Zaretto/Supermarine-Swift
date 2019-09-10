@@ -1,0 +1,44 @@
+
+<PropertyList>
+
+ <model>
+  <name>Engine 1 Smoke</name>
+  <path>Aircraft/victor/Models/Effects/Smoke/smoke-eng1.xml</path>
+  <offsets>
+   <x-m> 18.85</x-m>
+   <y-m> -3.45 </y-m>
+   <z-m> 2.35 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>Engine 2 Smoke</name>
+  <path>Aircraft/victor/Models/Effects/Smoke/smoke-eng2.xml</path>
+  <offsets>
+   <x-m> 18.85</x-m>
+   <y-m> -2.57 </y-m>
+   <z-m> 2.35 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>Engine 3 Smoke</name>
+  <path>Aircraft/victor/Models/Effects/Smoke/smoke-eng3.xml</path>
+  <offsets>
+   <x-m> 18.85</x-m>
+   <y-m> 2.57 </y-m>
+   <z-m> 2.35 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>Engine 4 Smoke</name>
+  <path>Aircraft/victor/Models/Effects/Smoke/smoke-eng4.xml</path>
+  <offsets>
+   <x-m> 18.85</x-m>
+   <y-m> 3.45 </y-m>
+   <z-m> 2.35 </z-m>
+  </offsets>
+ </model>
+
+</PropertyList>

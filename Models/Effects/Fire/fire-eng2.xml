@@ -1,0 +1,145 @@
+
+<PropertyList>
+ 
+ <path>fire.ac</path>
+ 
+ <effect>
+  <inherits-from>Effects/model-transparent</inherits-from>
+  <object-name>fire.inner</object-name>
+  <object-name>fire.outer</object-name>
+ </effect>
+ 
+ <animation>
+  <type>blend</type>
+  <expression>
+   <sum>
+    <value>1.25</value>
+    <product>
+	 <property>sim/multiplay/generic/float[7]</property>
+	 <value>-1.0</value>
+	</product>
+   </sum>	
+  </expression>
+  <min>0.6</min>
+  <max>1.0</max>
+ </animation>
+ 
+ <animation>
+  <type>scale</type>
+  <object-name>fire.inner</object-name>
+  <object-name>fire.outer</object-name>
+  <property>sim/multiplay/generic/float[7]</property>
+  <x-min>0.4</x-min>
+  <y-min>0.9</y-min>
+  <z-min>0.9</z-min>
+  <x-factor>1</x-factor>
+  <y-factor>0.05</y-factor>
+  <z-factor>0.05</z-factor>
+ </animation>
+ 
+ <animation>
+  <type>textranslate</type>
+  <object-name>fire.inner</object-name>
+  <property>/sim/damage/internal/fire-flicker-1</property>
+  <bias>0</bias>
+  <factor>3.9</factor>
+  <axis>
+   <x>1</x>
+   <y>0.015</y>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>textranslate</type>
+  <object-name>fire.outer</object-name>
+  <property>/sim/damage/internal/fire-flicker-2</property>
+  <bias>0</bias>
+  <factor>-4.6</factor>
+  <axis>
+   <x>1</x>
+   <y>0.025</y>
+  </axis>
+ </animation>
+ 
+ 
+  <animation>
+    <type>light</type>
+    <light-type>point</light-type>
+    <name>FireLight</name>
+    <object-name>lightvol.1</object-name>
+    <nopreview/>
+    <position>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </position>
+    <ambient>
+      <r>0.03</r>
+      <g>0.02</g>
+      <b>0.01</b>
+      <a>1.0</a>
+    </ambient>
+    <diffuse>
+      <r>0.70</r>
+      <g>0.54</g>
+      <b>0.19</b>
+      <a>1.0</a>
+    </diffuse>
+    <specular>
+      <r>0.70</r>
+      <g>0.54</g>
+      <b>0.19</b>
+      <a>1.0</a>
+    </specular>
+    <dim-factor>
+      <expression>
+        <sum>
+		<div>
+		 <sum>
+		  <product>
+           <property>sim/multiplay/generic/float[7]</property>
+		   <property>sim/damage/internal/fire-flicker-1</property>
+		  </product>
+		  <product>
+		  <property>sim/multiplay/generic/float[7]</property>
+		   <property>sim/damage/internal/fire-flicker-2</property>
+		  </product>
+		 </sum>
+		 <value>2.0</value>
+		</div>
+		  <property>sim/damage/damage-zones/engine[1]/explosion</property>
+        </sum>
+      </expression>
+    </dim-factor>
+    <attenuation>
+      <c>1.0</c>
+      <l>0.05</l>
+      <q>0.01</q>
+    </attenuation>
+    <near-m>0.1</near-m>
+    <far-m>30</far-m>
+  </animation>
+  
+ <animation>
+  <type>material</type>
+  <object-name>fire.inner</object-name>
+  <emission>
+   <factor-prop>sim/damage/internal/fire-flicker-1</factor-prop>
+    <red>1</red>
+    <green>1</green>
+    <blue>1</blue>
+  </emission>
+ </animation>
+ 
+  <animation>
+  <type>material</type>
+  <object-name>fire.outer</object-name>
+  <emission>
+   <factor-prop>sim/damage/internal/fire-flicker-2</factor-prop>
+    <red>1</red>
+    <green>1</green>
+    <blue>1</blue>
+  </emission>
+ </animation>
+
+</PropertyList>

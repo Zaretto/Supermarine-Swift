@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	
+
+  
+  
+  <!-- warning panel ligts -->
+  
+  <!-- yellow 
+  
+    <animation>
+  <type>material</type>
+  <object-name>rotor1</object-name>
+   <object-name>rotor2</object-name>
+   <object-name>fuel1</object-name>
+   <object-name>fuel2</object-name>
+    <object-name>press1</object-name>
+   <object-name>press2</object-name>
+  <ambient>
+    <red>0.0</red>
+    <green>0.0</green>
+    <blue>0.0</blue>
+  </ambient>
+  <diffuse>
+    <red>0.1</red>
+    <green>0.1</green>
+    <blue>0.0</blue>
+  </diffuse>
+  <emission>
+    <red>0.8</red>
+    <green>0.8</green>
+    <blue>0.0</blue>
+  </emission> 
+ </animation>
+  
+   <text>
+  <name>rotor1</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.003</character-size>
+  <offsets>
+ 
+			<x-m>-1.84</x-m>
+			<y-m>0.132</y-m>
+			<z-m>0.389</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">ROTOR</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>rotor2</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.003</character-size>
+  <offsets>
+  <x-m>-1.84</x-m>
+			<y-m>0.1295</y-m>
+			<z-m>0.386</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">LOW RPM</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+  
+   <animation>
+        <type>select</type>
+        <object-name>rotor1</object-name>
+        <object-name>rotor2</object-name>
+        <condition>
+			<less-than>
+				<property>rotors/main/rpm</property>
+						<value>392</value>
+					</less-than>
+					
+			</condition>
+    </animation>
+	
+	
+	 <text>
+  <name>fuel1</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.003</character-size>
+  <offsets>
+  <x-m>-1.84</x-m>
+  <y-m>0.0973</y-m>
+  <z-m>0.402</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">FUEL</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>fuel2</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.003</character-size>
+  <offsets>
+ <x-m>-1.84</x-m>
+  <y-m>0.0973</y-m>
+  <z-m>0.399</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">LOW</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <animation>
+        <type>select</type>
+        <object-name>fuel1</object-name>
+        <object-name>fuel2</object-name>
+        <condition>
+			<less-than>
+				<property>consumables/fuel/total-fuel-lbs</property>
+						<value>150</value>
+					</less-than>
+					
+			</condition>
+    </animation>
+	-->
+	
+<!-- Red Lights -->
+  
+    <animation>
+  <type>material</type>
+  
+    <object-name>ab</object-name>
+   <object-name>eng2</object-name>
+  <ambient>
+    <red>0.0</red>
+    <green>0.0</green>
+    <blue>0.0</blue>
+  </ambient>
+  <diffuse>
+    <red>0.1</red>
+    <green>0.0</green>
+    <blue>0.0</blue>
+  </diffuse>
+  <emission>
+    <red>0.8</red>
+    <green>0.0</green>
+    <blue>0.0</blue>
+  </emission> 
+ </animation>	
+	
+	 <text>
+  <name>ab</name>
+  <font>charter.txf</font>
+  <character-size type="double">1.3</character-size>
+  <offsets>
+ 
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0.5</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">1</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ 
+ <!--
+ <animation>
+        <type>select</type>
+        <object-name>eng1</object-name>
+        <object-name>eng2</object-name>
+        <condition>
+			<not>
+				<property>sim/failure-manager/engines/engine/serviceable</property>
+						<value>1</value>
+					</not>	
+				
+					
+			</condition>
+    </animation>
+	-->
+	
+</PropertyList>
+
+
+

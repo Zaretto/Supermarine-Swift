@@ -1,0 +1,14 @@
+
+<PropertyList>
+
+ <model>
+  <name>Fire</name>
+  <path>Aircraft/EE-Lightning/Models/Effects/Fire/fire-eng1.xml</path>
+ </model>
+ 
+ <model>
+  <name>Smoke</name>
+  <path>Aircraft/EE-Lightning/Models/Effects/Smoke/smoke-eng1.xml</path>
+ </model>
+
+</PropertyList>

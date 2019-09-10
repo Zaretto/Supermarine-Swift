@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <key n="125">
+     <name>}</name>
+     <desc>Engine Autostart</desc>
+	<binding>
+		<command>nasal</command>
+		<script>engines.engine1.autostart();</script>
+	</binding>
+  </key>
+
+
+
+  
+
+
+</PropertyList>
+
