@@ -32,6 +32,25 @@
             <gain>-1</gain>
             <output>/accelerations/pilot-gdamped</output>
         </pure_gain>
+        
+        <pure_gain name="aero/alphadot-rad_sec-limited">
+            <input>aero/alphadot-rad_sec</input>
+            <output>aero/alphadot-rad_sec-limited</output>
+            <gain>1</gain>
+            <clipto>
+                <min> -0.2</min>
+                <max> 0.2</max>
+            </clipto>
+        </pure_gain>
+        <pure_gain name="aero/betadot-rad_sec-limited">
+            <input>aero/betadot-rad_sec</input>
+            <output>aero/betadot-rad_sec-limited</output>
+            <gain>1</gain>
+            <clipto>
+                <min> -0.1</min>
+                <max> 0.1</max>
+            </clipto>
+        </pure_gain>
 
         <switch name="position/aircraft-on-ground">
             <description>Aircraft on ground</description>
@@ -106,9 +125,9 @@
 
         <switch name="fcs/pitch-trim-actuator-norm">
             <default value="fcs/pitch-trim-sum-norm"/>
-            <test value="fcs/pitch-trim-actuator-norm">
+            <!--<test value="fcs/pitch-trim-actuator-norm">
                 systems/hydraulics/system-pressure eq 0
-            </test>
+            </test>-->
         </switch>
 
         <fcs_function name="fcs/elevator-pos-demand-rad">
