@@ -349,5 +349,13 @@
             </function>
         </fcs_function>
 
+        <fcs_function name="/engines/engine[0]/reheat">
+            <function>
+                <product>
+                    <property>propulsion/engine[0]/augmentation-alight</property>
+                    <v>1</v>
+                </product>
+            </function>
+        </fcs_function>
     </channel>
 </system>
