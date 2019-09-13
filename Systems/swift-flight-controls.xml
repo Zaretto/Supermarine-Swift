@@ -303,6 +303,7 @@
         <fcs_function>
             <function>
                 <product>
+                    <v>-1</v>
                     <min>
                         <max>
                             <product>
@@ -345,12 +346,12 @@
             <input>fcs/rudder-actuator-pos</input>
             <traverse>
                 <setting>
-                    <position>-0.35</position>
+                    <position>-0.1364</position>
                     <time>0.90</time>
                     <!-- based on 30 deg/sec -->
                 </setting>
                 <setting>
-                    <position>0.35</position>
+                    <position>0.1364</position>
                     <time>0.90</time>
                     <!-- based on 30 deg/sec -->
                 </setting>
@@ -361,8 +362,8 @@
         <aerosurface_scale name="rudder normalization">
             <input>fcs/rudder-pos-rad</input>
             <domain>
-                <min> -0.35 </min>
-                <max>  0.35 </max>
+                <min> -0.1364 </min>
+                <max>  0.1364 </max>
             </domain>
             <range>
                 <min> -1 </min>
