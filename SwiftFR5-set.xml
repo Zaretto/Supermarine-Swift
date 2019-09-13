@@ -57,7 +57,7 @@
 
 
         <sound>
-            <path>Aircraft/Supermarine-Swift/Sounds/sound.xml</path>
+            <path>Aircraft/Supermarine-Swift/Sounds/swift-sound.xml</path>
         </sound>
 
 
