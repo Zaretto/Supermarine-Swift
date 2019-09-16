@@ -43,8 +43,11 @@
 
         <model>
             <path>Aircraft/Supermarine-Swift/Models/Swift-FR5.xml</path>
-
         </model>
+
+        <instrumentation>
+            <path>Aircraft/Supermarine-Swift/Systems/instrumentation.xml</path>
+        </instrumentation>
 
         <systems>
             <autopilot>
@@ -66,10 +69,10 @@
             <internal archive="y">true</internal>
             <config>
                 <x-offset-m archive="y">0</x-offset-m>
-                <y-offset-m archive="y">0.68</y-offset-m>
+                <y-offset-m archive="y">0.71</y-offset-m>
                 <z-offset-m archive="y">-2.8</z-offset-m>
                 <pitch-offset-deg>-15</pitch-offset-deg>
-                <default-field-of-view-deg>80</default-field-of-view-deg>
+                <default-field-of-view-deg>85.6</default-field-of-view-deg>
             </config>
         </view>
         <menubar>
