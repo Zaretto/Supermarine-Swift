@@ -2,12 +2,6 @@
 
 <PropertyList>
 <path>cockpit.ac</path>
-<animation>
-        <type>range</type>
-        <min-m>0</min-m>
-        <max-m>70</max-m>
-    </animation>
-
 <!-- Front main panel --> 
 <model>
   <path>Aircraft/Supermarine-Swift/Models/Interior/Instruments/ai/ai.xml</path>
