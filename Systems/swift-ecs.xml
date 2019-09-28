@@ -402,12 +402,10 @@
             <function>
                 <product>
                     <property>systems/ecs/windscreen-frost-dmd</property>
-                    <sum>
                         <sum>
                             <property>systems/ecs/windscreen-temperature-k</property>
                             <value>-273</value>
                         </sum>
-                    </sum>
                     <value>-0.1</value>
                 </product>
             </function>

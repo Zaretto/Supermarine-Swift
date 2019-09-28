@@ -17,7 +17,6 @@
         <fcs_function name="propulsion/engine[0]/c-egt-lead">
             <description>EGT LEAD N1 %</description>
             <function>
-                <sum>
                     <table>
                         <independentVar lookup="row">propulsion/engine[0]/n1</independentVar>
                         <tableData>
@@ -29,13 +28,11 @@
                             100	4.4
                         </tableData>
                     </table>
-                </sum>
             </function>
         </fcs_function >
         <fcs_function name="propulsion/engine[0]/c-egt-lag">
             <description>EGT LAG N1 %</description>
             <function>
-                <sum>
                     <table>
                         <independentVar lookup="row">propulsion/engine[0]/n1</independentVar>
                         <tableData>
@@ -47,7 +44,6 @@
                             100	0.21
                         </tableData>
                     </table>
-                </sum>
             </function>
         </fcs_function >
 
@@ -60,6 +56,7 @@
                 </quotient>
             </function>
             <clipto>
+                <min>0</min>
                 <max>1.43</max>
             </clipto>
         </fcs_function>
@@ -67,7 +64,6 @@
         <fcs_function name="propulsion/engine[0]/EGT-C-dmd">
             <description>Engine 0 EGT Degrees C</description>
             <function>
-                <sum>
                     <table>
                         <independentVar lookup="row">velocities/mach</independentVar>
                         <independentVar lookup="column">propulsion/engine[0]/fuel-flow-rate-norm</independentVar>
@@ -82,7 +78,6 @@
                             0.9	0	208	215	223	231	238	245	251	258	264	275	286	297	307	325	343	377	412	491	619	667
                         </tableData>
                     </table>
-                </sum>
             </function>
         </fcs_function>
 
@@ -212,13 +207,6 @@
                 <max>  5</max>
             </clipto>
         </actuator>
-        <fcs_function name="propulsion/engine[0]/augmentation-alight-v">
-            <function>
-                <sum>
-                    <property>propulsion/engine[0]/augmentation-alight</property>
-                </sum>
-            </function>
-        </fcs_function>
         <!-- EGT equations -->
         <fcs_function name="propulsion/engine[0]/EGTaug-C-dmd">
             <description>Engine 0 EGT increment due to augmentation</description>
