@@ -1,30 +1,18 @@
-<system  name="FCS F15">
-<!-- F-104G Flight controls 
+<system  name="FCS Supermarine Swift">
+    <!-- Supermarine Swift Flight controls 
     Author: Richard Harrison (rjh@zaretto.com)
-    References: 
+    References: None
 -->
-    <property value="1">fcs/ari-lateral-enabled</property>
     <property value="1">gear/serviceable</property>
-    <property value="0">gear/emergency-handle</property>
+    <property value="0">gear/gear-asym</property>
     <property value="0">malfunctions/fcs/pitch-trim-inop</property>
     <property value="0">malfunctions/fcs/roll-trim-actuator-norm-inop</property>
     <property value="0">malfunctions/fcs/aileron-actuator-inop</property>
     <property value="0">malfunctions/fcs/rudder-actuator-inop</property>
-    <property value="1">fcs/pitch-ratio</property>
-    <property value="1">systems/cadc/rudder-effectivity</property>
-    <property value="1">systems/cadc/aileron-effectivity</property>
-    <property value="0">gear/gear-asym</property>
+    <property value="1">fcs/pitch-effectivity</property>
+    <property value="1">fcs/rudder-effectivity</property>
+    <property value="1">fcs/aileron-effectivity</property>
     <property value="0">fcs/yaw-damper-enable</property>
-    <property value="0">fcs/pitch-damper-enable</property>
-    <property value="0">fcs/aim-fitted</property>
-    <property value="0">fcs/steer-maneuver</property>
-    <property>systems/NWS/engaged</property>
-    <property v="1">a/debug</property>
-    <property v="0">a/metric_forces</property>
-    <property v="0">a/metric_moments</property>
-
-    <property>fcs/hook-engage</property>
-    <property>fcs/roll-trim-sas-cmd-norm</property>
 
     <channel name="Auxiliary">
         <pure_gain name="Pilot G">
@@ -32,7 +20,7 @@
             <gain>-1</gain>
             <output>/accelerations/pilot-gdamped</output>
         </pure_gain>
-        
+
         <pure_gain name="aero/alphadot-rad_sec-limited">
             <input>aero/alphadot-rad_sec</input>
             <output>aero/alphadot-rad_sec-limited</output>
@@ -73,22 +61,6 @@
                 </product>
             </function>
         </fcs_function>
-        <!--<fcs_function name="aero/aero-rp-x-in">
-            <function>
-                <description>Centre of pressure due to mach</description>
-                <sum>
-                    <table>
-                        <independentVar lookup="row">velocities/mach</independentVar>
-                        <tableData>
-                            0.00    419
-                            2.4     445
-                        </tableData>
-                    </table>
-                </sum>
-            </function>
-            <output>metrics/aero-rp-x-in</output>
-        </fcs_function>-->
-
     </channel>
 
     <channel name="SoundFX">
@@ -135,9 +107,10 @@
             <function>
                 <product>
                     <property>fcs/pitch-trim-actuator-norm</property>
-                    <property>fcs/pitch-ratio</property>
+                    <property>fcs/pitch-effectivity</property>
                     <v>0.723599</v>
-                    <v>-1</v> <!-- need to negate to match aero data-->
+                    <v>-1</v>
+                    <!-- need to negate to match aero data-->
                 </product>
             </function>
         </fcs_function>
@@ -193,7 +166,7 @@
                                     <p>fcs/aileron-cmd-norm</p>
                                     <p>fcs/roll-trim-cmd-norm</p>
                                 </sum>
-                                <p>systems/cadc/aileron-effectivity</p>
+                                <p>fcs/aileron-effectivity</p>
                             </product>
                             <v>-1</v>
                         </max>
@@ -275,7 +248,7 @@
                     1000 1
                 </tableData>
             </table>
-       </scheduled_gain>
+        </scheduled_gain>
 
         <scheduled_gain name="fcs/yaw-damper-dmd">
             <input>fcs/yaw-damper-sum</input>
@@ -301,7 +274,7 @@
                                     <p>fcs/yaw-damper-dmd</p>
                                     <p>fcs/yaw-trim-cmd-norm</p>
                                 </sum>
-                                <p>systems/cadc/rudder-effectivity</p>
+                                <p>fcs/rudder-effectivity</p>
                             </product>
                             <v>-1</v>
                         </max>
@@ -314,7 +287,7 @@
                         </product>
                         <v>0.3</v>
                     </sum>
-                    <!--<property>fcs/pitch-ratio</property>-->
+                    <!--<property>fcs/pitch-effectivity</property>-->
                     <!--<v>-1</v>-->
                 </product>
             </function>
@@ -363,183 +336,56 @@
     </channel>
 
     <channel name="Landing Gear">
-<!-- landing gear;
-1. Switch up down
-2. emergency handle
-
-- normal operation (emergency handle retracted).
-  : requires hyds
-  : cannot retract on ground
-  
-  parts:
-    uplock
-    downlock
-    door
-    bogeys
-    
-    uplock downlock modelled as single lock -ve for downlock 0 for unlocked, 1 for uplocked
-    
-emerg operation.
-: handle pulled. hyds & electrics cut
--->
-        <!--<pure_gain name="gear/unit[0]/pos-norm">
-            <description>Landing gear unit 0 position</description>
-            <input>gear/gear-pos-norm</input>
-            <gain> 1</gain>
-        </pure_gain>
-        <pure_gain name="gear/unit[1]/pos-norm">
-            <description>Landing gear unit 0 position</description>
-            <input>gear/gear-pos-norm</input>
-            <gain> 1</gain>
-        </pure_gain>
-        <pure_gain name="gear/unit[2]/pos-norm">
-            <description>Landing gear unit 0 position</description>
-            <input>gear/gear-pos-norm</input>
-            <gain> 1</gain>
-        </pure_gain>-->
-
-        <!-- Deplete the JFS store-->
-        <switch name="systems/hydraulics/emerg-gear-unlocked">
-            <default value="0"/>
-            <test value="1">
-                systems/hydraulics/landing-gear-standby-accumulator-psi gt 200
-                gear/emergency-handle gt 0.7
-                gear/unit[0]/locked ne 0
-            </test>
-            <test value="systems/hydraulics/emerg-gear-unlocked">
-                gear/emergency-handle gt 0.7
-            </test>            
-        </switch>
-        <switch name="systems/hydraulics/emerg-gear-bleed">
-            <default value="0"/>
-            <test value="10000">
-                systems/hydraulics/emerg-gear-unlocked ne 0
-                gear/unit[0]/locked ne 0
-            </test>
-        </switch>
-        <switch name="gear/emerg-pos">
-            <default value="gear/emerg-pos-dmd"/>
-        </switch>
-
         <switch name="gear/unit[0]/locked">
             <default value="-1"/>
             <test value="0">
-                systems/hydraulics/emerg-gear-unlocked ne 0
-                <!-- unlocked when handle pulled -->
-                gear/emergency-handle gt 0.7
-                gear/emerg-pos lt 1
-            </test>
-            <test value="0">
                 <!-- unlocked. -->
-               gear/gear-pos-norm gt 0
-               gear/gear-pos-norm lt 1
+                gear/gear-pos-norm gt 0
+                gear/gear-pos-norm lt 1
             </test>
             <test value="1">
-               gear/gear-pos-norm le 0
+                gear/gear-pos-norm le 0
             </test>
             <test value="-1">
-               gear/gear-pos-norm ge 1
+                gear/gear-pos-norm ge 1
             </test>
         </switch>
         <switch name="gear/unit[1]/locked">
             <default value="-1"/>
             <test value="0">
-                <!-- unlocked when handle pulled -->
-                <!-- should deplete the JFS store-->
-                gear/emergency-handle gt 0.7
-                gear/emerg-pos lt 1
-            </test>
-            <test value="0">
                 <!-- unlocked. -->
-               gear/gear-pos-norm gt 0
-               gear/gear-pos-norm lt 1
+                gear/gear-pos-norm gt 0
+                gear/gear-pos-norm lt 1
             </test>
             <test value="1">
-               gear/gear-pos-norm le 0
+                gear/gear-pos-norm le 0
             </test>
             <test value="-1">
-               gear/gear-pos-norm ge 1
+                gear/gear-pos-norm ge 1
             </test>
         </switch>
         <switch name="gear/unit[2]/locked">
             <default value="-1"/>
             <test value="0">
-                <!-- unlocked when handle pulled -->
-                <!-- should deplete the JFS store-->
-                gear/emergency-handle gt 0.7
-                gear/emerg-pos lt 1
-            </test>
-            <test value="0">
                 <!-- unlocked. -->
-               gear/gear-pos-norm gt 0
-               gear/gear-pos-norm lt 1
+                gear/gear-pos-norm gt 0
+                gear/gear-pos-norm lt 1
             </test>
             <test value="1">
-               gear/gear-pos-norm le 0
+                gear/gear-pos-norm le 0
             </test>
             <test value="-1">
-               gear/gear-pos-norm ge 1
+                gear/gear-pos-norm ge 1
             </test>
         </switch>
-        <fcs_function name="gear/emerg-pos-dmd">
-            <function>
-                <ifthen>
-                    <and>
-                        <ge>
-                            <property>gear/emergency-handle</property>
-                            <value>0.9</value>
-                        </ge>
-                        <or>
-                            <eq>
-                                <property>gear/unit[0]/locked</property>
-                                <value>-1.0</value>
-                            </eq>
-                            <and>
-                                <eq>
-                                    <property>contact/unit[9]/WOW</property>
-                                    <value>0</value>
-                                </eq>
-                                <eq>
-                                    <property>contact/unit[10]/WOW</property>
-                                    <value>0</value>
-                                </eq>
-                            </and>
-                        </or>
-                    </and>
-                    <sum>
-                        <property>gear/emerg-pos</property>
-                        <ifthen><not><property>gear/unit[0]/locked</property></not>
-                            <table>
-                                <independentVar lookup="row">gear/emerg-pos</independentVar>
-                                <independentVar lookup="column">accelerations/Nz</independentVar>
-                                <tableData>
-                                               -3.0     0.0     0.5     1.0     1.2     2.0     5.0    10.0
-                                   -0.00001  0.00000 0.00100 0.00000 0.00090 0.00090 0.00090 0.00090 0.00400
-                                    0.0     -0.00400 0.00000 0.00000 0.00090 0.00090 0.00090 0.00090 0.00400
-                                    0.90     0.00000 0.00000 0.00000 0.00090 0.00090 0.00090 0.00090 0.00400
-                                    0.98     0.11000 0.00000 0.00000 0.00000 0.00000 0.09000 0.11090 0.00400
-                                    1.0      0.00000 0.00000 0.00000 0.00090 0.00090 0.00090 0.00090 0.00400
-                                </tableData>
-                            </table>
-                            <value>0</value>
-                    </ifthen>
-                    </sum>
-                    <value>0</value>
-                </ifthen>
-            </function>
-        </fcs_function>
         <switch name="gear/gear-dmd-norm">
             <default value="1"/>
             <test value="1">
                 <!-- always force gear down when on ground - to prevent inadvertant retraction -->
                 position/aircraft-on-ground ne 0
             </test>
-            <test value="gear/emerg-pos">
-                gear/emergency-handle ne 0
-            </test>
             <test value="gear/gear-pos-norm">
                 gear/serviceable ne 1
-                gear/emergency-handle lt 1
             </test>
             <test value="gear/gear-dmd-norm">
                 systems/hydraulics/system-pressure eq 0
@@ -568,20 +414,6 @@ emerg operation.
             <output>gear/gear-pos-norm</output>
         </kinematic>
 
-        <!--<kinematic name="fcs/steer-pos-deg">
-            <input>fcs/steer-cmd-norm</input>
-            <traverse>
-                <setting>
-                    <position>-35</position>
-                    <time>1.1</time>
-                </setting>
-                <setting>
-                    <position>35</position>
-                    <time>1.1</time>
-                </setting>
-            </traverse>
-            <output>fcs/steer-pos-deg</output>
-        </kinematic>-->
     </channel>
 
     <channel name="Speedbrake">
@@ -616,24 +448,6 @@ emerg operation.
         </kinematic>
     </channel>
 
-<!--
-    <channel name="Hook">
-        <kinematic name="fcs/hook-control">
-            <input>fcs/hook-engage</input>
-            <traverse>
-                <setting>
-                    <position>0</position>
-                    <time>0</time>
-                </setting>
-                <setting>
-                    <position>1</position>
-                    <time>2.5</time>
-                </setting>
-            </traverse>
-            <output>fcs/hook-pos-norm</output>
-        </kinematic>
-    </channel>
--->
     <channel name="Flaps">
         <switch name="fcs/flap-total-dmd">
             <default value="0"/>
