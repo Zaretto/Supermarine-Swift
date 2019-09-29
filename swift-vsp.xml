@@ -68,8 +68,8 @@
     <static_friction>1.0</static_friction>
     <dynamic_friction>0.5</dynamic_friction>
     <rolling_friction>0.02</rolling_friction>
-    <spring_coeff>8000</spring_coeff>
-    <damping_coeff unit="LBS/FT/SEC">400</damping_coeff>
+    <spring_coeff>12001</spring_coeff>
+    <damping_coeff unit="LBS/FT/SEC">601</damping_coeff>
     <max_steer>12.5</max_steer>
     <!--0: NoseGear-->
     <brake_group>NOSE</brake_group>
@@ -77,30 +77,30 @@
   </contact>
   <contact type="BOGEY" name="LeftMainGear">
     <location unit="M">
-      <x>6.79</x>
+      <x>6.23</x>
       <y>-2.47</y>
       <z>-1.662</z>
     </location>
     <static_friction>1.0</static_friction>
     <dynamic_friction>0.5</dynamic_friction>
     <rolling_friction>0.02</rolling_friction>
-    <spring_coeff>8000</spring_coeff>
-    <damping_coeff unit="LBS/FT/SEC">400</damping_coeff>
+    <spring_coeff>12001</spring_coeff>
+    <damping_coeff unit="LBS/FT/SEC">601</damping_coeff>
     <!--1: LeftMainGear-->
     <brake_group>LEFT</brake_group>
     <retractable>1</retractable>
   </contact>
   <contact type="BOGEY" name="RightMainGear">
     <location unit="M">
-      <x>6.79</x>
+      <x>6.23</x>
       <y>2.47</y>
       <z>-1.662</z>
     </location>
     <static_friction>1.0</static_friction>
     <dynamic_friction>0.5</dynamic_friction>
     <rolling_friction>0.02</rolling_friction>
-    <spring_coeff>8000</spring_coeff>
-    <damping_coeff unit="LBS/FT/SEC">400</damping_coeff>
+    <spring_coeff>12001</spring_coeff>
+    <damping_coeff unit="LBS/FT/SEC">601</damping_coeff>
     <!--2: RightMainGear-->
     <brake_group>RIGHT</brake_group>
     <retractable>1</retractable>
