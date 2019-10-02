@@ -86,37 +86,18 @@
 
 
     <channel name="Pitch">
-        <summer name="fcs/pitch-trim-sum-norm">
+        <summer name="fcs/elevator-pos-norm">
             <input>fcs/elevator-cmd-norm</input>
             <input>fcs/pitch-trim-cmd-norm</input>
             <clipto>
                 <min> -1 </min>
                 <max>  1 </max>
             </clipto>
+            <output>fcs/elevator-pos-norm</output>
         </summer>
 
-        <switch name="fcs/pitch-trim-actuator-norm">
-            <default value="fcs/pitch-trim-sum-norm"/>
-            <!--<test value="fcs/pitch-trim-actuator-norm">
-                systems/hydraulics/system-pressure eq 0
-            </test>-->
-        </switch>
-
-        <fcs_function name="fcs/elevator-pos-demand-rad">
-            <description>Calculate the elevator position in radians based on the inputs</description>
-            <function>
-                <product>
-                    <property>fcs/pitch-trim-actuator-norm</property>
-                    <property>fcs/pitch-effectivity</property>
-                    <v>0.723599</v>
-                    <v>-1</v>
-                    <!-- need to negate to match aero data-->
-                </product>
-            </function>
-        </fcs_function>
-
-        <kinematic name="fcs/elevator-pos-rad">
-            <input>fcs/elevator-pos-demand-rad</input>
+        <kinematic name="fcs/elevator-actuator-norm">
+            <input>fcs/elevator-pos-norm</input>
             <traverse>
                 <setting>
                     <position>-1</position>
@@ -129,18 +110,18 @@
                 </setting>
             </traverse>
         </kinematic>
-
-        <aerosurface_scale name="fcs/elevator-pos-norm">
-            <input>fcs/elevator-pos-rad</input>
-            <domain>
-                <min>  -0.34906 </min>
-                <max>   0.34906 </max>
-            </domain>
-            <range>
-                <min> -1 </min>
-                <max>  1 </max>
-            </range>
-        </aerosurface_scale>
+        
+        <fcs_function name="fcs/elevator-pos-rad">
+            <description>Calculate the elevator position in radians based on the inputs</description>
+            <function>
+                <product>
+                    <property>fcs/elevator-actuator-norm</property>
+                    <v>0.723599</v>
+                    <v>-1</v>
+                </product>
+            </function>
+            <output>fcs/elevator-pos-rad</output>
+        </fcs_function>
     </channel>
     <!-- aileron: +/- 12.5deg : +/- 33 deg/sec -->
     <channel name="Roll">
