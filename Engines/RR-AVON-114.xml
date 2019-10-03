@@ -10,8 +10,8 @@
 
 <turbine_engine name="RR-AVON-114">
 
-    <milthrust>8175</milthrust>
-    <maxthrust>11450</maxthrust>
+    <milthrust>7175</milthrust>
+    <maxthrust>9450</maxthrust>
     <bypassratio>     0 </bypassratio>
     <tsfc>            0.932 </tsfc>
     <atsfc>           1.853  </atsfc>
