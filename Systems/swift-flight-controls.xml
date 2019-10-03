@@ -205,6 +205,10 @@
             <input>fcs/aileron-pos-rad</input>
             <gain>57.324</gain>
         </pure_gain >
+        <pure_gain name="/surface-positions/aileron-pos-norm">
+            <input>fcs/aileron-pos-norm</input>
+            <gain>1</gain>
+        </pure_gain >
 
     </channel>
 
