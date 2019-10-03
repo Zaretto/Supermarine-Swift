@@ -5,14 +5,45 @@
 	
 
 	
-
+<fdm>
+        <jsbsim>
+            <fcs>
+                <yaw-damper-enable type="bool">0</yaw-damper-enable>
+            </fcs>
+            <systems>
+                <canopy>
+                    <command type="double">0</command>
+                    <position type="double">0</position>
+                </canopy>
+                <gear>
+                    <emergency-handle type="double">0</emergency-handle>
+                </gear>
+                <ecs>
+                    <inside-ownship alias="/sim/current-view/internal"/>
+                </ecs>
+                <NWS>
+                    <engaged type="double">0</engaged>
+                </NWS>
+                <radar>
+                    <range type="int">40</range>
+                </radar>
+                <tailhook>
+                    <tailhook-cmd-norm type="double">0</tailhook-cmd-norm>
+                </tailhook>
+            </systems>
+            <mass>
+                <tip-tanks-fitted type="double">0</tip-tanks-fitted>
+            </mass>
+        </jsbsim>
+    </fdm>
 	<sim>
 		<description type="string" >Supermarine Swift FR5 (YASim)</description>
-		<author type="string">Alphasim, StuartC</author>
-		<status type="string">V0.2a</status>
-		<virtual-cockpit archive="y">false</virtual-cockpit>
-		<flight-model>yasim</flight-model>
-		<aero>SwiftFR5-yasim</aero>
+		       <author type="string">Alphasim, StuartC, Richard Harrison</author>
+        <status type="string">V0.2a</status>
+        <virtual-cockpit archive="y">false</virtual-cockpit>
+        <flight-model>jsb</flight-model>
+        <aero>swift-vsp</aero>
+ 
 		<fuel-fraction>1.0</fuel-fraction>
         <license>See licence.txt</license>
 		<startup>
@@ -61,7 +92,89 @@
 				<default-field-of-view-deg>80</default-field-of-view-deg>
 			</config>
 		</view>
-		
+		        <menubar>
+            <default>
+                <menu n="50">
+                    <label>Supamarine Swift</label>
+                    <item n="6">
+                        <label>Quickstart</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>
+                            <![CDATA[ 
+                                setprop("controls/engines/engine[0]/cutoff",0);
+                                setprop("engines/engine[0]/out-of-fuel",0);
+                                setprop("engines/engine[0]/cutoff",0);
+
+                                setprop("fdm/jsbsim/propulsion/starter_cmd",1);
+                                setprop("fdm/jsbsim/propulsion/cutoff_cmd",1);
+                                setprop("fdm/jsbsim/propulsion/set-running",0);
+                            ]]>
+                            </script>
+                        </binding>
+                    </item>
+                    <!--<item n="0">
+                        <label>Repair Airframe</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>aircraft.fixAirframe();aircraft.ct("rp");</script>
+                        </binding>
+                    </item>
+                    <item n="1">
+                        <label>Fuel and Stores</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>aircraft.ext_loads_dlg.open()</script>
+                        </binding>
+                    </item>
+                    <item n="2">
+                        <label>Liveries</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>aircraft.livery.dialog.toggle()</script>
+                        </binding>
+                    </item>-->
+                    <!--
+					<item n="4">
+						<label>Select MP back seater</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+								dual_control_tools.copilot_dialog.show(aircraft_dual_control.copilot_type);
+							</script>
+						</binding>
+					</item>
+                    <item n="6">
+                        <label>Quickstart</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>aircraft.quickstart()</script>
+                        </binding>
+                    </item>
+                    <item n="7">
+                        <label>Cold and Dark</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>aircraft.cold_and_dark()</script>
+                        </binding>
+                    </item>
+                    <item n="8">
+                        <label>Ground Services</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>aircraft.dlg_ground_services.open()</script>
+                        </binding>
+                    </item>
+                    <item n="9">
+                        <label>Aircraft Lighting</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>aircraft.dlg_lighting.open()</script>
+                        </binding>
+                    </item>-->
+                </menu>
+            </default>
+        </menubar>
 		<multiplay>
 		 <generic>
 		 
@@ -142,26 +255,9 @@
 	
 
   <nasal>
-    <engines>
-      <file>Aircraft/Supermarine-Swift/Nasal/generic-yasim-engine.nas</file>
-        <script>
-          var engine1 = engines.Jet.new(0, 0, 0.01, 5.21, 3, 5, 1, 6);
-          setlistener("sim/signals/fdm-initialized", func
-            {
-              engine1.init();
-            }, 0, 0);
-        </script>
-    </engines>
     <Supermarine-Swift>
        <file>Aircraft/Supermarine-Swift/Nasal/liveries.nas</file>
     </Supermarine-Swift>
-
-
-	</nasal>
-	
-
-	
-
-
+</nasal>
 
 </PropertyList>

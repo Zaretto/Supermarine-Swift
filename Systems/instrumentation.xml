@@ -1,145 +1,78 @@
 <?xml version="1.0"?>
 
-<!--
-**********************************************************************
-generic-instrumentation.xml
-
-Generic instrumentation configuration. This file selects the
-instrumentation modules that should be available.
-
-You can have several instances of the same instrument type.
-The value inside the name tag becomes the node in the property tree.
-If two instruments have the same name you must use the number tag
-to separate them. They become name[number] in the property tree.
-Some instruments have additional configuration tags like static-port
-and pitot-port. The static- and pitot-ports (and any other system that
-an instrument depend on) have to be configured in the systems
-configuration file: generic-systems.xml
-
-The values in this file are the default values. If any configuration
-tags are omitted in an aircraft specific version of this configuration
-file, these values will be used (they are hardcoded).
-
-**********************************************************************
--->
+<!-- Supermarine Swift instrument definitions -->
 
 <PropertyList>
 
-  <!--<adf>
-    <name>adf</name>
-    <number>0</number>
-  </adf>-->
+     <airspeed-indicator>
+        <name>airspeed-indicator</name>
+        <number>0</number>
+        <pitot-port>/systems/pitot</pitot-port>
+        <static-port>/systems/static</static-port>
+    </airspeed-indicator>
 
-  <!--<adf>
-    <name>adf-radio</name>
-    <number>0</number>
-  </adf>-->
+    <altimeter>
+        <name>altimeter</name>
+        <number>0</number>
+        <static-port>/systems/static</static-port>
+    </altimeter>
 
-  <airspeed-indicator>
-    <name>airspeed-indicator</name>
-    <number>0</number>
-    <pitot-port>/systems/pitot</pitot-port>
-    <static-port>/systems/static</static-port>
-  </airspeed-indicator>
+    <attitude-indicator>
+        <name>attitude-indicator</name>
+        <number>0</number>
+        <vacuum-system>/systems/vacuum</vacuum-system>
+    </attitude-indicator>
 
-  <altimeter>
-    <name>altimeter</name>
-    <number>0</number>
-    <static-port>/systems/static</static-port>
-  </altimeter>
+    <dme>
+        <name>dme</name>
+        <number>0</number>
+    </dme>
 
-  <attitude-indicator>
-    <name>attitude-indicator</name>
-    <number>0</number>
-    <vacuum-system>/systems/vacuum</vacuum-system>
-  </attitude-indicator>
+     <heading-indicator-fg>
+        <name>heading-indicator-fg</name>
+        <number>0</number>
+    </heading-indicator-fg>
 
-  <!--<clock>
-    <name>clock</name>
-    <number>0</number>
-  </clock>-->
+    <magnetic-compass>
+        <name>magnetic-compass</name>
+        <number>0</number>
+    </magnetic-compass>
 
-  <!--<dme>
-    <name>dme</name>
-    <number>0</number>
-  </dme>-->
+    <nav-radio>
+        <name>nav</name>
+        <number>0</number>
+    </nav-radio>
 
-  <!--<encoder>
-    <name>encoder</name>
-    <number>0</number>
-    <static-port>/systems/static</static-port>
-  </encoder>-->
+    <nav-radio>
+        <name>nav</name>
+        <number>1</number>
+    </nav-radio>
 
-  <!--<marker-beacon>
-    <name>marker-beacon</name>
-    <number>0</number>
-  </marker-beacon>-->
+    <slip-skid-ball>
+        <name>slip-skid-ball</name>
+        <number>0</number>
+    </slip-skid-ball>
 
-  <heading-indicator-fg>
-    <name>heading-indicator-fg</name>
-    <number>0</number>
-  </heading-indicator-fg>
+    <transponder>
+        <name>transponder</name>
+        <number>0</number>
+        <encoder>/instrumentation/encoder</encoder>
+    </transponder>
 
-  <!--<KT-70>
-    <name>kt-70</name>
-    <number>0</number>
-  </KT-70>-->
+    <turn-indicator>
+        <name>turn-indicator</name>
+        <number>0</number>
+    </turn-indicator>
 
-  <magnetic-compass>
-    <name>magnetic-compass</name>
-    <number>0</number>
-  </magnetic-compass>
+    <vertical-speed-indicator>
+        <name>vertical-speed-indicator</name>
+        <number>0</number>
+        <static-port>/systems/static</static-port>
+    </vertical-speed-indicator>
 
-  <nav-radio>
-    <name>nav</name>
-    <number>0</number>
-  </nav-radio>
-
-  <nav-radio>
-    <name>nav</name>
-    <number>1</number>
-  </nav-radio>
-
-  <slip-skid-ball>
-    <name>slip-skid-ball</name>
-    <number>0</number>
-  </slip-skid-ball>
-
-  <transponder>
-    <name>transponder</name>
-    <number>0</number>
-    <encoder>/instrumentation/encoder</encoder>
-  </transponder>
-
-  <turn-indicator>
-    <name>turn-indicator</name>
-    <number>0</number>
-  </turn-indicator>
-
-  <vertical-speed-indicator>
-    <name>vertical-speed-indicator</name>
-    <number>0</number>
-    <static-port>/systems/static</static-port>
-  </vertical-speed-indicator>
-
-  <!--<gps>
-    <name>gps</name>
-    <number>0</number>
-  </gps>-->
-
-  <!--<radar>
-    <name>wxradar</name>
-    <number>0</number>
-  </radar>-->
-
-  <tacan>
-    <name>tacan</name>
-    <number>0</number>
-  </tacan>
-
-  <!--<mk-viii>
-   <name>mk-viii</name>
-   <number>0</number>
-  </mk-viii>-->
+    <tacan>
+        <name>tacan</name>
+        <number>0</number>
+    </tacan>
 
 </PropertyList>

@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	
+
+	
+
+	<sim>
+		<description type="string" >Supermarine Swift FR5 (YASim)</description>
+		<author type="string">Alphasim, StuartC</author>
+		<status type="string">V0.2a</status>
+		<virtual-cockpit archive="y">false</virtual-cockpit>
+		<flight-model>yasim</flight-model>
+		<aero>SwiftFR5-yasim</aero>
+		<fuel-fraction>1.0</fuel-fraction>
+		
+		<model>
+			<path>Aircraft/Supermarine-Swift/Models/Swift-FR5.xml</path>
+			
+		</model>
+
+		<systems>
+			<autopilot>
+				<path>Aircraft/Supermarine-Swift/Systems/autopilot.xml</path>
+			</autopilot>
+		<electrical>
+        <path>Aircraft/Generic/generic-electrical.xml</path>
+      </electrical>
+		</systems>
+
+			
+		<sound>
+			<path>Aircraft/Supermarine-Swift/Sounds/sound.xml</path>
+		</sound>
+		
+
+
+		<view n="0">
+			<internal archive="y">true</internal>
+			<config>
+				<x-offset-m archive="y">0</x-offset-m>
+				<y-offset-m archive="y">0.68</y-offset-m>
+				<z-offset-m archive="y">-2.8</z-offset-m>
+				<pitch-offset-deg>-15</pitch-offset-deg>
+				<default-field-of-view-deg>80</default-field-of-view-deg>
+			</config>
+		</view>
+		
+		<multiplay>
+		 <generic>
+		 
+		  <float n="2" alias="/engines/engine[0]/reheat" />
+		 
+		 </generic>
+		</multiplay>
+		
+		
+	</sim>
+
+	
+	<engines>
+		<engine n="0">
+			<running>false</running>
+		</engine>
+		
+	</engines>	
+	
+
+<controls>
+		<flight>
+			<flaps-lever type="double">0</flaps-lever>
+		</flight>
+		<gear>
+			<brake-parking>1</brake-parking>
+		</gear>
+	</controls>
+
+
+	
+	<consumables>
+  <fuel>
+   <tank n="0">
+    <level-gal_us archive="y">126.76</level-gal_us>
+   </tank>
+   <tank n="1">
+    <level-gal_us archive="y">111</level-gal_us>
+   </tank>
+   <tank n="2">
+    <level-gal_us archive="y">117.79</level-gal_us>
+</tank>  
+  <tank n="3">
+    <level-gal_us archive="y">168.67</level-gal_us>
+</tank>  
+  <tank n="4">
+    <level-gal_us archive="y">168.67</level-gal_us>
+</tank>  
+
+  </fuel>
+ </consumables>
+ 
+ <input>
+    <keyboard include="Nasal/keyboard.xml"/>
+</input>	
+ 
+ <environment>
+    <turbulence>
+      <use-cloud-turbulence>true</use-cloud-turbulence>
+    </turbulence>
+  </environment>
+	
+	
+
+	<nasal>
+	<engines>
+      <file>Aircraft/Supermarine-Swift/Nasal/generic-yasim-engine.nas</file>
+      <script>
+        var engine1 = engines.Jet.new(0, 0, 0.01, 5.21, 3, 5, 1, 6);
+        setlistener("sim/signals/fdm-initialized", func
+        {
+          engine1.init();
+        }, 0, 0);
+       </script>
+    </engines>
+
+	</nasal>
+	
+
+	
+
+
+
+</PropertyList>
