@@ -4,9 +4,9 @@
 <path>cockpit.ac</path>
 <animation>
         <type>range</type>
-        <min-m>0</min-m>
-        <max-m>70</max-m>
-    </animation>
+        <min-m>10</min-m>
+        <max-m>200</max-m>
+</animation>
 
 <!-- Front main panel --> 
 <model>
@@ -25,6 +25,15 @@
    <y-m>0.002</y-m>
    <z-m>0.19</z-m>
   </offsets>
+    	<overlay>
+		 <animation n="122">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1.9</x-offset>
+    <y-offset>1.9</y-offset>
+    <z-offset>1.9</z-offset>
+   </animation>
+   </overlay>
  </model>  
  
  <model>

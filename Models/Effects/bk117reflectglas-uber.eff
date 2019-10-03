@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PropertyList>
+	<name>bk117reflectglas-uber</name>
+	<inherits-from>/Effects/model-combined</inherits-from>
+
+	<parameters>
+	<!-- Reflection -->
+	                <reflection-enabled type="int">1</reflection-enabled>
+	                <reflect-map-enabled type="int">0</reflect-map-enabled>
+	                <reflection-dynamic type="int">1</reflection-dynamic>
+	                <rain-enabled>1</rain-enabled>
+	                <reflection-fresnel type="float">0.01</reflection-fresnel>
+	                <reflection-rainbow type="float">0.05</reflection-rainbow>
+	                <reflection-noise type="float">0.01</reflection-noise>
+	                <reflection-correction type="float">-0.175</reflection-correction>
+	                <ambient-correction type="float">0.01</ambient-correction>
+	
+	                <transparent>true</transparent>
+	                <render-bin>
+	                        <bin-number>10</bin-number>
+	                        <bin-name>DepthSortedBin</bin-name>
+	                </render-bin>
+			
+		<texture n="5">
+			<type>cubemap</type>
+			<!-- use this form for a cube cross 
+			<image>Aircraft/Generic/Effects/CubeCrosses/blue_sky.png</image>-->
+
+			<!-- use this form for a 6 image cube map -->
+			<images>
+				<positive-x>Aircraft/Generic/Effects/CubeMaps/real.blue-sky/fair-sky_px.png</positive-x>
+				<negative-x>Aircraft/Generic/Effects/CubeMaps/real.blue-sky/fair-sky_nx.png</negative-x>
+				<positive-y>Aircraft/Generic/Effects/CubeMaps/real.blue-sky/fair-sky_py.png</positive-y>
+				<negative-y>Aircraft/Generic/Effects/CubeMaps/real.blue-sky/fair-sky_ny.png</negative-y>
+				<positive-z>Aircraft/Generic/Effects/CubeMaps/real.blue-sky/fair-sky_pz.png</positive-z>
+				<negative-z>Aircraft/Generic/Effects/CubeMaps/real.blue-sky/fair-sky_nz.png</negative-z>
+			</images>
+
+		</texture>
+		
+	</parameters>
+
+</PropertyList>

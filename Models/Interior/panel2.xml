@@ -633,6 +633,38 @@
             </binding>
         </action>
     </animation>
+	
+				         <animation>
+        <type>rotate</type>
+        <object-name>switch_fuel_pump</object-name>
+        <property>controls/fuel/tank/boost-pump</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> -3 </dep></entry>
+      <entry><ind> 1 </ind><dep> 85</dep></entry>
+    </interpolation>
+        <center>
+            <x-m>-3.16133</x-m>
+            <y-m>-0.350571</y-m>
+            <z-m>0.19666</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+	
+	    <animation>
+        <type>pick</type>
+        <object-name>switch_fuel_pump</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>controls/fuel/tank/boost-pump</property>
+            </binding>
+        </action>
+    </animation>
   
 </PropertyList>
 

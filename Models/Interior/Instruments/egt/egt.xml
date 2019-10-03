@@ -13,14 +13,14 @@
 		<interpolation>
 			<entry>
 				<ind>32</ind>
-				<dep>-45</dep>
+				<dep>-25</dep>
 			</entry>
 			<entry>
-				<ind>752</ind>
+				<ind>800</ind>
 				<dep>0</dep>
 			</entry>
 			<entry>
-				<ind>1472</ind>
+				<ind>1950</ind>
 				<dep>45</dep>
 			</entry>
 		</interpolation>

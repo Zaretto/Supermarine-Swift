@@ -14,7 +14,7 @@
 		<flight-model>yasim</flight-model>
 		<aero>SwiftFR5-yasim</aero>
 		<fuel-fraction>1.0</fuel-fraction>
-
+        <license>See licence.txt</license>
 		<startup>
    			<splash-texture>Aircraft/Supermarine-Swift/splash.png</splash-texture>
   		</startup>
@@ -24,11 +24,21 @@
 			<path>Aircraft/Supermarine-Swift/Models/Swift-FR5.xml</path>
 			
 		</model>
+		
+		<rendering>
+    
+ <refl_correction type="string">-0.43</refl_correction>
+    <!-- edit this to alter the strength of the reflection -->
+</rendering>
 
 		<systems>
 			<autopilot>
 				<path>Aircraft/Supermarine-Swift/Systems/autopilot.xml</path>
 			</autopilot>
+			<autopilot n="102">
+        <path>Systems/glass-rain.xml</path>
+      </autopilot>
+			
 		<electrical>
         <path>Aircraft/Generic/generic-electrical.xml</path>
       </electrical>
@@ -36,7 +46,7 @@
 
 			
 		<sound>
-			<path>Aircraft/Supermarine-Swift/Sounds/sound.xml</path>
+			<path>Aircraft/Supermarine-Swift/Sounds/swift-sound.xml</path>
 		</sound>
 		
 

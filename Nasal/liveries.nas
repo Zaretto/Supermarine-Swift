@@ -1,3 +1,3 @@
-aircraft.livery.init("Aircraft/Hunter/Models/Liveries");
+aircraft.livery.init("Aircraft/Supermarine-Swift/Models/Liveries");
 
 
