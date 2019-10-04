@@ -6,7 +6,7 @@
 
     <fileheader>
         <author>Richard Harrison</author>
-        <filecreationdate>2019-10-03</filecreationdate>
+        <filecreationdate>2019-10-04</filecreationdate>
         <version>1.0</version>
         <copyright>Copyright (C) 2016 Richard Harrison, All rights reserved</copyright>
         <description></description>
@@ -468,6 +468,17 @@
             </function>
             <output>aero/sin-alpha</output>
         </fcs_function>
+        <fcs_function name="position/h-agl-m">
+            <description>Height above ground (meters)</description>
+            <function>
+                    <product>
+                        <property>position/h-agl-ft</property>
+                        <v>0.3048</v>
+                    </product>
+            </function>
+            <output>position/h-agl-m</output>
+        </fcs_function>
+
        </channel>
 </flight_control>
 <system file="swift-flight-controls"/>
@@ -832,6 +843,27 @@
           </table>
        </product>
     </function>
+    <function name="aero/c/CFZDGE">
+    <description>LIFT INCREMENT DUE TO GROUND EFFECT</description>
+          <table>
+            <independentVar lookup="row">position/h-agl-m</independentVar>
+            <tableData>
+                      0		   0.07338	
+                      1		   0.02159	
+                      2		   0.00674	
+                      3		   0.00349	
+                      4		   0.00213	
+                      5		   0.00142	
+                      6		   0.00100	
+                      7		   0.00073	
+                      8		   0.00056	
+                     10		   0.00035	
+                     20		   0.00008	
+                     30		   0.00004	
+                     31		   0.00000	
+            </tableData>
+          </table>
+    </function>
     <function name="aero/c/CFZDRD">
     <description>LIFT INCREMENT DUE TO RUDDER DEFLECTION</description>
     <product>
@@ -1126,6 +1158,27 @@
             </tableData>
           </table>
        </product>
+    </function>
+    <function name="aero/c/CMMDGE">
+    <description>PITCHING MOMENT INCREMENT DUE TO GROUND EFFECT</description>
+          <table>
+            <independentVar lookup="row">position/h-agl-m</independentVar>
+            <tableData>
+                      0		  -0.04173	
+                      1		  -0.00858	
+                      2		  -0.00236	
+                      3		  -0.00123	
+                      4		  -0.00078	
+                      5		  -0.00053	
+                      6		  -0.00038	
+                      7		  -0.00028	
+                      8		  -0.00021	
+                     10		  -0.00013	
+                     20		  -0.00003	
+                     30		  -0.00001	
+                     31		   0.00000	
+            </tableData>
+          </table>
     </function>
     <function name="aero/c/CMMDRD">
     <description>PITCH MOMENT DUE TO RUDDER DEFLECTION</description>
@@ -1724,6 +1777,27 @@
             </tableData>
           </table>
        </product>
+    </function>
+    <function name="aero/c/CFXDGE">
+    <description>DRAG INCREMENT DUE TO GROUND EFFECT</description>
+          <table>
+            <independentVar lookup="row">position/h-agl-m</independentVar>
+            <tableData>
+                      0		  -0.00005	
+                      1		   0.00000	
+                      2		   0.00000	
+                      3		   0.00000	
+                      4		   0.00000	
+                      5		   0.00000	
+                      6		   0.00000	
+                      7		   0.00000	
+                      8		   0.00000	
+                     10		   0.00000	
+                     20		   0.00000	
+                     30		   0.00000	
+                     31		   0.00000	
+            </tableData>
+          </table>
     </function>
     <function name="aero/c/CFYB">
     <description>BASE SIDEFORCE</description>
@@ -2635,6 +2709,7 @@
           <property>aero/c/CFYGEAR</property>
           <property>aero/c/CFYFLAPS</property>
           <property>aero/c/CFYB</property>
+          <property>aero/c/CFXDGE</property>
           <property>aero/c/CFYMN</property>
           <property>aero/c/CYDADMN</property>
           <property>aero/c/CYDRDMN</property>
@@ -2658,6 +2733,7 @@
           <property>aero/c/CFZGEAR</property>
           <property>aero/c/CFZFLAPS</property>
           <property>aero/c/CFZB</property>
+          <property>aero/c/CFZDGE</property>
           <property>aero/c/CFZMN</property>
           <property>aero/c/CFZDADMN</property>
           <property>aero/c/CFZDRDMN</property>
@@ -2679,6 +2755,7 @@
           <property>aero/c/CMMGEAR</property>
           <property>aero/c/CMMFLAPS</property>
           <property>aero/c/CMM1</property>
+          <property>aero/c/CMMDGE</property>
           <property>aero/c/CMMMN</property>
           <property>aero/c/CMMDADMN</property>
           <property>aero/c/CMMDRDMN</property>
@@ -2730,6 +2807,7 @@
         <property caption="CFXB">aero/c/CFXB</property>
         <property caption="CFXDAD">aero/c/CFXDAD</property>
         <property caption="CFXDADMN">aero/c/CFXDADMN</property>
+        <property caption="CFXDGE">aero/c/CFXDGE</property>
         <property caption="CFXDRD">aero/c/CFXDRD</property>
         <property caption="CFXDRDMN">aero/c/CFXDRDMN</property>
         <property caption="CFXFLAPS">aero/c/CFXFLAPS</property>
@@ -2744,6 +2822,7 @@
         <property caption="CFZB">aero/c/CFZB</property>
         <property caption="CFZDAD">aero/c/CFZDAD</property>
         <property caption="CFZDADMN">aero/c/CFZDADMN</property>
+        <property caption="CFZDGE">aero/c/CFZDGE</property>
         <property caption="CFZDRD">aero/c/CFZDRD</property>
         <property caption="CFZDRDMN">aero/c/CFZDRDMN</property>
         <property caption="CFZFLAPS">aero/c/CFZFLAPS</property>
@@ -2764,6 +2843,7 @@
         <property caption="CMMALPHADOT">aero/c/CMMALPHADOT</property>
         <property caption="CMMDAD">aero/c/CMMDAD</property>
         <property caption="CMMDADMN">aero/c/CMMDADMN</property>
+        <property caption="CMMDGE">aero/c/CMMDGE</property>
         <property caption="CMMDRD">aero/c/CMMDRD</property>
         <property caption="CMMDRDMN">aero/c/CMMDRDMN</property>
         <property caption="CMMFLAPS">aero/c/CMMFLAPS</property>
@@ -2809,6 +2889,7 @@
         <property caption="l-total-lbsft">moments/l-total-lbsft</property>
         <property caption="m-total-lbsft">moments/m-total-lbsft</property>
         <property caption="n-total-lbsft">moments/n-total-lbsft</property>
+        <property caption="h-agl-m">position/h-agl-m</property>
         <property caption="mach">velocities/mach</property>
         <property caption="p-aero-rad_sec">velocities/p-aero-rad_sec</property>
         <property caption="q-aero-rad_sec">velocities/q-aero-rad_sec</property>
