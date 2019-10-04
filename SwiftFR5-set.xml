@@ -1,11 +1,7 @@
 <?xml version="1.0"?>
 
 <PropertyList>
-
-	
-
-	
-<fdm>
+    <fdm>
         <jsbsim>
             <fcs>
                 <yaw-damper-enable type="bool">0</yaw-damper-enable>
@@ -36,72 +32,82 @@
             </mass>
         </jsbsim>
     </fdm>
-	<sim>
-		<description type="string" >Supermarine Swift FR5 (YASim)</description>
-		       <author type="string">Alphasim, StuartC, Richard Harrison</author>
+
+    <sim>
+        <description type="string" >Supermarine Swift FR5 (YASim)</description>
+        <author type="string">Alphasim, StuartC, Richard Harrison</author>
         <status type="string">V0.2a</status>
         <virtual-cockpit archive="y">false</virtual-cockpit>
         <flight-model>jsb</flight-model>
         <aero>swift-vsp</aero>
- 
-		<fuel-fraction>1.0</fuel-fraction>
+
+        <fuel-fraction>1.0</fuel-fraction>
         <license>See licence.txt</license>
-		<startup>
-   			<splash-texture>Aircraft/Supermarine-Swift/splash.png</splash-texture>
-  		</startup>
+        <startup>
+            <splash-texture>Aircraft/Supermarine-Swift/splash.png</splash-texture>
+        </startup>
 
-		
-		<model>
-			<path>Aircraft/Supermarine-Swift/Models/Swift-FR5.xml</path>
-			
-		</model>
-		
-		<rendering>
-    
- <refl_correction type="string">-0.43</refl_correction>
-    <!-- edit this to alter the strength of the reflection -->
-</rendering>
+        <flaps>
+            <setting>0.0</setting>
+            <setting>0.4</setting>
+            <setting>0.7</setting>
+            <setting>1.0</setting>
+        </flaps>
 
-		<systems>
-			<autopilot>
-				<path>Aircraft/Supermarine-Swift/Systems/autopilot.xml</path>
-			</autopilot>
-			<autopilot n="102">
-        <path>Systems/glass-rain.xml</path>
-      </autopilot>
-			
-		<electrical>
-        <path>Aircraft/Generic/generic-electrical.xml</path>
-      </electrical>
-		</systems>
+        <model>
+            <path>Aircraft/Supermarine-Swift/Models/Swift-FR5.xml</path>
+        </model>
 
-			
-		<sound>
-			<path>Aircraft/Supermarine-Swift/Sounds/swift-sound.xml</path>
-		</sound>
-		
+        <rendering>
+            <refl_correction type="string">-0.43</refl_correction>
+            <!-- edit this to alter the strength of the reflection -->
+        </rendering>
 
+        <systems>
+            <autopilot>
+                <path>Aircraft/Supermarine-Swift/Systems/autopilot.xml</path>
+            </autopilot>
+            <autopilot n="102">
+                <path>Systems/glass-rain.xml</path>
+            </autopilot>
 
-		<view n="0">
-			<internal archive="y">true</internal>
-			<config>
-				<x-offset-m archive="y">0</x-offset-m>
-				<y-offset-m archive="y">0.68</y-offset-m>
-				<z-offset-m archive="y">-2.8</z-offset-m>
-				<pitch-offset-deg>-15</pitch-offset-deg>
-				<default-field-of-view-deg>80</default-field-of-view-deg>
-			</config>
-		</view>
-		        <menubar>
+            <electrical>
+                <path>Aircraft/Generic/generic-electrical.xml</path>
+            </electrical>
+        </systems>
+
+        <sound>
+            <path>Aircraft/Supermarine-Swift/Sounds/swift-sound.xml</path>
+        </sound>
+
+        <view n="0">
+            <internal archive="y">true</internal>
+            <config>
+                <x-offset-m archive="y">0</x-offset-m>
+                <y-offset-m archive="y">0.68</y-offset-m>
+                <z-offset-m archive="y">-2.8</z-offset-m>
+                <pitch-offset-deg>-15</pitch-offset-deg>
+                <default-field-of-view-deg>80</default-field-of-view-deg>
+            </config>
+        </view>
+
+        <menubar>
             <default>
                 <menu n="50">
-                    <label>Supamarine Swift</label>
+                    <label>Supermarine Swift</label>
+                    <item>
+                        <label>Select Livery</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>aircraft.livery.dialog.toggle();</script>
+                        </binding>
+                    </item>
                     <item n="6">
                         <label>Quickstart</label>
                         <binding>
                             <command>nasal</command>
                             <script>
-                            <![CDATA[ 
+                                <![CDATA[ 
                                 setprop("controls/engines/engine[0]/cutoff",0);
                                 setprop("engines/engine[0]/out-of-fuel",0);
                                 setprop("engines/engine[0]/cutoff",0);
@@ -175,89 +181,66 @@
                 </menu>
             </default>
         </menubar>
-		<multiplay>
-		 <generic>
-		 
-		  <float n="2" alias="/engines/engine[0]/reheat" />
-		 
-		 </generic>
-		</multiplay>
-	
-    <menubar>
-      <default>
-        <menu n="100">
-          <label>Supermarine Swift</label>
-          <enabled type="bool">true</enabled>
-          <item>
-             <label>Select Livery</label>
-             <binding>
-               <command>nasal</command>
-               <script>aircraft.livery.dialog.toggle();</script>
-             </binding>
-          </item>
-        </menu>
-      </default>
-    </menubar>
-		
-	</sim>
-
-	
-	<engines>
-		<engine n="0">
-			<running>false</running>
-		</engine>
-		
-	</engines>	
-	
-
-<controls>
-		<flight>
-			<flaps-lever type="double">0</flaps-lever>
-		</flight>
-		<gear>
-			<brake-parking>1</brake-parking>
-		</gear>
-	</controls>
+        
+        <multiplay>
+            <generic>
+                <float n="2" alias="/engines/engine[0]/reheat" />
+            </generic>
+        </multiplay>
+       
+    </sim>
 
 
-	
-	<consumables>
-  <fuel>
-   <tank n="0">
-    <level-gal_us archive="y">126.76</level-gal_us>
-   </tank>
-   <tank n="1">
-    <level-gal_us archive="y">111</level-gal_us>
-   </tank>
-   <tank n="2">
-    <level-gal_us archive="y">117.79</level-gal_us>
-</tank>  
-  <tank n="3">
-    <level-gal_us archive="y">168.67</level-gal_us>
-</tank>  
-  <tank n="4">
-    <level-gal_us archive="y">168.67</level-gal_us>
-</tank>  
+    <engines>
+        <engine n="0">
+            <running>false</running>
+        </engine>
+    </engines>
 
-  </fuel>
- </consumables>
- 
- <input>
-    <keyboard include="Nasal/keyboard.xml"/>
-</input>	
- 
- <environment>
-    <turbulence>
-      <use-cloud-turbulence>true</use-cloud-turbulence>
-    </turbulence>
-  </environment>
-	
-	
 
-  <nasal>
-    <Supermarine-Swift>
-       <file>Aircraft/Supermarine-Swift/Nasal/liveries.nas</file>
-    </Supermarine-Swift>
-</nasal>
+    <controls>
+        <flight>
+            <flaps-lever type="double">0</flaps-lever>
+        </flight>
+        <gear>
+            <brake-parking>1</brake-parking>
+        </gear>
+    </controls>
+
+    <consumables>
+        <fuel>
+            <tank n="0">
+                <level-gal_us archive="y">126.76</level-gal_us>
+            </tank>
+            <tank n="1">
+                <level-gal_us archive="y">111</level-gal_us>
+            </tank>
+            <tank n="2">
+                <level-gal_us archive="y">117.79</level-gal_us>
+            </tank>
+            <tank n="3">
+                <level-gal_us archive="y">168.67</level-gal_us>
+            </tank>
+            <tank n="4">
+                <level-gal_us archive="y">168.67</level-gal_us>
+            </tank>
+        </fuel>
+    </consumables>
+
+    <input>
+        <keyboard include="Nasal/keyboard.xml"/>
+    </input>
+
+    <environment>
+        <turbulence>
+            <use-cloud-turbulence>true</use-cloud-turbulence>
+        </turbulence>
+    </environment>
+
+    <nasal>
+        <Supermarine-Swift>
+            <file>Aircraft/Supermarine-Swift/Nasal/liveries.nas</file>
+        </Supermarine-Swift>
+    </nasal>
 
 </PropertyList>

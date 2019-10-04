@@ -458,7 +458,7 @@
                     <time>      0 </time>
                 </setting>
                 <setting>
-                    <position> 45 </position>
+                    <position> 50 </position>
                     <time>    1.9 </time>
                 </setting>
             </traverse>
@@ -478,64 +478,6 @@
             <output>fcs/flap-pos-norm</output>
         </aerosurface_scale>
 
-        <fcs_function name="fcs/slat-total-dmd">
-            <function>
-                <ifthen>
-                    <le>
-                        <p>systems/hydraulics/number1-system-pressure</p>
-                        <v>0</v>
-                    </le>
-                    <p>fcs/slat-total-dmd</p>
-                    <ifthen>
-                        <le>
-                            <p>fcs/flap-cmd-norm</p>
-                            <v>0.33</v>
-                        </le>
-                        <v>0</v>
-                        <ifthen>
-                            <ge>
-                                <p>fcs/flap-cmd-norm</p>
-                                <v>0.34</v>
-                            </ge>
-                            <v>1.0</v>
-                            <v>0.5</v>
-                        </ifthen>
-                    </ifthen>
-                </ifthen>
-            </function>
-        </fcs_function>
-
-        <kinematic name="Slats Control">
-            <input>fcs/slat-total-dmd</input>
-            <traverse>
-                <setting>
-                    <position>  0 </position>
-                    <time>      0 </time>
-                </setting>
-                <setting>
-                    <position> 15 </position>
-                    <time>    1.9 </time>
-                </setting>
-                <setting>
-                    <position> 30 </position>
-                    <time>    1.9 </time>
-                </setting>
-            </traverse>
-            <output>fcs/slat-pos-deg</output>
-        </kinematic>
-
-        <aerosurface_scale name="slat normalization">
-            <input>fcs/slat-pos-deg</input>
-            <domain>
-                <min>  0 </min>
-                <max> 30 </max>
-            </domain>
-            <range>
-                <min> 0 </min>
-                <max> 1 </max>
-            </range>
-            <output>fcs/slat-pos-norm</output>
-        </aerosurface_scale>
     </channel>
 
 </system>
