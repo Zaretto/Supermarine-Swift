@@ -336,7 +336,7 @@
      <z1-m>-0.56</z1-m>
      <x2-m>1.25</x2-m>
      <y2-m>2.4</y2-m>
-     <z2-m>-0.54</z2-m>
+     <z2-m>-0.12</z2-m>
   </axis>
  </animation>
  
@@ -362,7 +362,7 @@
   
     <animation>
     <name>NoseGear</name>
-    <object-name>POLY.032</object-name>
+    
     <object-name>POLY.039</object-name>
 	<object-name>POLY.040</object-name>
 	<object-name>POLY.041</object-name>
@@ -396,7 +396,7 @@
   <animation>
     <name>RightGear</name>
     <object-name>POLY.084</object-name>
-    <object-name>POLY.086</object-name>
+    
 	<object-name>POLY.087</object-name>
 	<object-name>POLY.088</object-name>
 	<object-name>POLY.089</object-name>
@@ -424,16 +424,80 @@
     </axis>
   </animation>
   
+  <animation>
+    <type>rotate</type>
+    <object-name>POLY.086</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 1 </ind><dep> 0 </dep></entry>
+      <entry><ind> 0 </ind><dep> 90 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.74362 </x-m>
+      <y-m> 2.36497</y-m>
+      <z-m> -0.52056</z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>POLY.090</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 1 </ind><dep> 0 </dep></entry>
+      <entry><ind> 0 </ind><dep> 80 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.64167 </x-m>
+      <y-m> -1.97391</y-m>
+      <z-m> -0.49277</z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>POLY.062_0</object-name>
+    <object-name>POLY.062_1</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0 </dep></entry>
+      <entry><ind> 0.1 </ind><dep> 90 </dep></entry>
+	  <entry><ind> 1 </ind><dep> 90 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.23459</x-m>
+      <y-m>  1.00676</y-m>
+      <z-m> -0.62114</z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  
+  
     <animation>
     <name>LeftGear</name>
     <object-name>POLY.075</object-name>
-    <object-name>POLY.077</object-name>
+    
 	<object-name>POLY.078</object-name>
 	<object-name>POLY.079</object-name>
 	<object-name>POLY.080</object-name>
 	<object-name>POLY.082</object-name>
 	<object-name>POLY.083</object-name>
-  </animation>
+    </animation>
   
       <animation>
     <type>rotate</type>
@@ -441,7 +505,7 @@
     <property>gear/gear[2]/position-norm</property>
     <interpolation>
       <entry><ind> 1 </ind><dep> 0 </dep></entry>
-      <entry><ind> 0 </ind><dep> 88 </dep></entry>
+      <entry><ind> 0 </ind><dep> 89 </dep></entry>
     </interpolation>
     <center>
       <x-m>  0.74362 </x-m>
@@ -454,6 +518,71 @@
       <z> 0 </z>
     </axis>
   </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>POLY.077</object-name>
+   
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 1 </ind><dep> 0 </dep></entry>
+      <entry><ind> 0 </ind><dep> 92 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.74362 </x-m>
+      <y-m> -2.29687</y-m>
+      <z-m> -0.47219</z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation> 
+  
+  <animation>
+    <type>rotate</type>
+   
+    <object-name>POLY.081</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 1 </ind><dep> 0 </dep></entry>
+      <entry><ind> 0 </ind><dep> 80 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.74362 </x-m>
+      <y-m> -2.29687</y-m>
+      <z-m> -0.47219</z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation> 
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>POLY.066_0</object-name>
+    <object-name>POLY.066_1</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0 </dep></entry>
+	  <entry><ind> 0.1 </ind><dep> 90 </dep></entry>
+      <entry><ind> 1 </ind><dep> 90 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.23126</x-m>
+      <y-m> -0.97904</y-m>
+      <z-m> -0.62114</z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
   
     <animation>
     <name>LeftGearDoor</name>
@@ -606,6 +735,20 @@
       <z>  0 </z>
     </axis>
   </animation>
+
+   <animation>
+   <type>translate</type>
+   <object-name>canopy-frame</object-name>
+   <object-name>canopy-glass</object-name>
+    <object-name>canopy-glassin</object-name>
+   <property>canopy/position-norm</property>
+   <factor>0.6</factor>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
   
  
 
