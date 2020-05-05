@@ -1807,7 +1807,6 @@ OBJECT poly
 name "POLY.041-axis"
 loc -3.96106 0 -0.00998729
 crease 45.000000
-hidden
 numvert 2
 0.0107541 -1.24767 -0.121118
 0.0107541 -1.24767 0.121118
@@ -1822,7 +1821,6 @@ OBJECT poly
 name "canopy-frame_0"
 texture "Swift_1.jpg"
 crease 45.000000
-hidden
 numvert 67
 -3.07315 0.4977 0.341346
 -3.06851 0.479403 0.342633
@@ -2358,7 +2356,6 @@ kids 0
 OBJECT poly
 name "canopy-frame_1"
 crease 45.000000
-hidden
 numvert 230
 -1.93186 0.553676 -0.323933
 -1.81755 0.570153 -0.298159
@@ -4299,7 +4296,6 @@ kids 0
 OBJECT poly
 name "canopy-glass"
 crease 45.000000
-hidden
 numvert 196
 -1.98885 0.877738 0.11436
 -1.98347 0.899178 0.052015
@@ -6530,7 +6526,6 @@ kids 0
 OBJECT poly
 name "canopy-glassin"
 crease 45.000000
-hidden
 numvert 196
 -1.98885 0.874494 0.11436
 -1.98347 0.895934 0.052015
@@ -8761,7 +8756,6 @@ kids 0
 OBJECT poly
 name "front-glass"
 crease 45.000000
-hidden
 numvert 273
 -3.63647 0.538195 -0.116455
 -3.63678 0.538315 -0.079415
@@ -11633,7 +11627,6 @@ kids 0
 OBJECT poly
 name "front-glassin"
 crease 45.000000
-hidden
 numvert 273
 -3.63435 0.538195 -0.116455
 -3.63466 0.538315 -0.079415
@@ -14506,7 +14499,6 @@ OBJECT poly
 name "l-aleron_0"
 texture "Swift_5.jpg"
 crease 45.000000
-hidden
 numvert 24
 2.69902 -0.474693 4.62481
 1.82534 -0.526264 2.85899
@@ -14646,7 +14638,6 @@ OBJECT poly
 name "l-aleron_1"
 texture "Swift_4.jpg"
 crease 45.000000
-hidden
 numvert 53
 2.24962 -0.417257 2.85928
 2.41677 -0.442574 2.85799
@@ -15103,7 +15094,6 @@ OBJECT poly
 name "l-elevator_0"
 texture "Swift_5.jpg"
 crease 45.000000
-hidden
 numvert 56
 6.14306 0.437271 1.70347
 5.8654 0.338096 1.15327
@@ -15707,7 +15697,6 @@ OBJECT poly
 name "l-elevator_1"
 texture "Swift_4.jpg"
 crease 45.000000
-hidden
 numvert 46
 5.65513 0.390675 1.1149
 5.66095 0.397862 1.11497
@@ -16182,7 +16171,6 @@ name "l-mains-door2_0"
 loc 0 0.0050697 0
 texture "Swift_5.jpg"
 crease 45.000000
-hidden
 numvert 16
 0.797566 -0.580631 2.23207
 0.814725 -0.576909 2.4552
@@ -16291,7 +16279,6 @@ name "l-mains-door2_1"
 loc 0 0.0050697 0
 texture "Interior_2.jpg"
 crease 45.000000
-hidden
 numvert 60
 0.0809951 -0.585967 1.63869
 0.3088 -0.582924 1.55896
@@ -16971,7 +16958,6 @@ OBJECT poly
 name "left-flap_0"
 texture "Swift_5.jpg"
 crease 45.000000
-hidden
 numvert 8
 1.66369 -0.529918 2.2201
 1.06848 -0.558867 0.837592
@@ -17029,7 +17015,6 @@ OBJECT poly
 name "left-flap_1"
 texture "Interior_3.jpg"
 crease 45.000000
-hidden
 numvert 181
 1.46731 -0.488961 1.57763
 1.4653 -0.481825 1.57765
@@ -19192,7 +19177,6 @@ OBJECT poly
 name "mirrors"
 texture "CPit_1.jpg"
 crease 45.000000
-hidden
 numvert 96
 -3.12782 0.671867 -0.287436
 -3.12894 0.676335 -0.293314
@@ -20136,7 +20120,6 @@ OBJECT poly
 name "POLY.001"
 texture "CPit_gen.jpg"
 crease 45.000000
-hidden
 numvert 367
 -2.87841 -0.246015 0.23305
 -2.45406 -0.411124 0.237729
@@ -23307,7 +23290,6 @@ OBJECT poly
 name "POLY.011"
 texture "LtGrey.jpg"
 crease 45.000000
-hidden
 numvert 37
 6.1893 0.357601 0.011869
 6.18938 0.350739 0.005052
@@ -23712,7 +23694,6 @@ OBJECT poly
 name "POLY.013"
 texture "Swift_4.jpg"
 crease 45.000000
-hidden
 numvert 680
 -0.455769 -0.464449 -3.55285
 -0.45567 -0.473006 -3.55511
@@ -30976,7 +30957,6 @@ OBJECT poly
 name "POLY.014"
 texture "Swift_5.jpg"
 crease 45.000000
-hidden
 numvert 671
 -2.42003 -0.503844 -0.711525
 -2.42967 -0.476303 -0.723448
@@ -37835,7 +37815,6 @@ OBJECT poly
 name "POLY.015"
 texture "MdGrey.jpg"
 crease 45.000000
-hidden
 numvert 108
 -3.63739 0.53868 0.031714
 -3.6377 0.538552 -0.005325
@@ -38743,7 +38722,6 @@ OBJECT poly
 name "POLY.016"
 texture "Swift_1.jpg"
 crease 45.000000
-hidden
 numvert 1531
 -3.54008 -0.378301 0.439008
 -3.45132 -0.396463 0.440512
@@ -56794,7 +56772,6 @@ OBJECT poly
 name "POLY.017"
 texture "Swift_2.jpg"
 crease 45.000000
-hidden
 numvert 1568
 -3.08053 0.434386 -0.357557
 -3.09398 0.434387 -0.355708
@@ -75254,7 +75231,6 @@ OBJECT poly
 name "POLY.018"
 texture "Swift_3.jpg"
 crease 45.000000
-hidden
 numvert 590
 3.13054 -0.797233 -0.257757
 3.13221 -0.796867 -0.258998
@@ -81600,7 +81576,6 @@ OBJECT poly
 name "POLY.019"
 texture "Interior_2.jpg"
 crease 45.000000
-hidden
 numvert 194
 3.64593 -0.917186 0.130106
 3.67724 -0.915182 0.139881
@@ -82966,7 +82941,6 @@ OBJECT poly
 name "POLY.020"
 texture "Rivets.jpg"
 crease 45.000000
-hidden
 numvert 72
 -3.0957 0.436564 0.327849
 -3.11006 0.491433 0.325075
@@ -83454,7 +83428,6 @@ OBJECT poly
 name "POLY.021"
 texture "LtGrey.jpg"
 crease 45.000000
-hidden
 numvert 100
 -3.17069 0.434973 -0.331573
 -3.14851 0.467603 -0.334061
@@ -84138,7 +84111,6 @@ OBJECT poly
 name "POLY.022"
 texture "NavLts.jpg"
 crease 45.000000
-hidden
 numvert 56
 1.86839 -0.476726 -4.74187
 1.85515 -0.473459 -4.74188
@@ -84610,7 +84582,6 @@ OBJECT poly
 name "POLY.023"
 texture "Exh.jpg"
 crease 45.000000
-hidden
 numvert 52
 6.30707 -0.293838 -0.317429
 3.90941 -0.239129 -0.361015
@@ -84982,7 +84953,6 @@ OBJECT poly
 name "POLY.024"
 texture "Intakes.jpg"
 crease 45.000000
-hidden
 numvert 310
 -1.18372 0.060026 0.343972
 -2.48739 0.209568 0.528143
@@ -88624,7 +88594,6 @@ OBJECT poly
 name "POLY.025"
 texture "Interior_1.jpg"
 crease 45.000000
-hidden
 numvert 150
 0.418954 -0.595676 -0.851369
 0.444778 -0.594959 -0.923501
@@ -90054,7 +90023,6 @@ OBJECT poly
 name "POLY.026"
 texture "Nozzle_t.jpg"
 crease 45.000000
-hidden
 numvert 52
 6.30902 -0.462593 -0.094643
 6.30915 -0.473591 -0.001526
@@ -90426,7 +90394,6 @@ OBJECT poly
 name "POLY.027"
 texture "Turbine_t.jpg"
 crease 45.000000
-hidden
 numvert 26
 3.91227 -0.487052 -0.001573
 3.91215 -0.476463 -0.091289
@@ -90605,7 +90572,6 @@ name "POLY.031_0"
 loc 0 0 0.0027885
 texture "Interior_2.jpg"
 crease 45.000000
-hidden
 numvert 245
 -4.9801 -0.382908 -0.158833
 -4.98085 -0.386637 -0.150952
@@ -93486,7 +93452,6 @@ OBJECT poly
 name "POLY.031_1"
 texture "Swift_3.jpg"
 crease 45.000000
-hidden
 numvert 205
 -4.39181 -0.566071 -0.16397
 -4.39219 -0.567075 -0.157967
@@ -95776,7 +95741,6 @@ name "POLY.032"
 loc -1.8287 0 0
 texture "Lens_T.jpg"
 crease 45.000000
-hidden
 numvert 16
 -4.06027 -0.0884188 -0.0651392
 -4.06055 -0.066683 -0.0480233
@@ -95884,7 +95848,6 @@ OBJECT poly
 name "POLY.039"
 texture "UC_gen.jpg"
 crease 45.000000
-hidden
 numvert 184
 -3.94276 -0.522154 -0.026502
 -3.95514 -0.509858 -0.026544
@@ -98079,7 +98042,6 @@ kids 0
 OBJECT poly
 name "POLY.040"
 crease 45.000000
-hidden
 numvert 8
 -4.06526 -0.918328 0.01562
 -4.10251 -0.918635 0.01529
@@ -98167,7 +98129,6 @@ OBJECT poly
 name "POLY.041"
 texture "UC_gen.jpg"
 crease 45.000000
-hidden
 numvert 230
 -3.90082 -1.33858 -0.058275
 -3.86359 -1.31228 -0.066761
@@ -101141,7 +101102,6 @@ OBJECT poly
 name "POLY.042"
 texture "NoseWhl.jpg"
 crease 45.000000
-hidden
 numvert 132
 -3.6689 -1.38601 0.063287
 -3.68317 -1.37466 0.063189
@@ -102457,7 +102417,6 @@ OBJECT poly
 name "POLY.043"
 texture "Tyre.jpg"
 crease 45.000000
-hidden
 numvert 380
 -3.60587 -1.46715 -0.063159
 -3.60903 -1.45892 -0.054084
@@ -107165,7 +107124,6 @@ OBJECT poly
 name "POLY.044"
 texture "Oleo.jpg"
 crease 45.000000
-hidden
 numvert 28
 -4.05902 -1.24272 0.007358
 -4.05644 -1.24271 -0.00453
@@ -107369,7 +107327,6 @@ OBJECT poly
 name "POLY.045"
 texture "UC_gen.jpg"
 crease 45.000000
-hidden
 numvert 153
 -4.03243 -0.965902 -0.004937
 -4.02958 -1.01993 0.029813
@@ -109138,7 +109095,6 @@ OBJECT poly
 name "POLY.046"
 texture "UC_gen.jpg"
 crease 45.000000
-hidden
 numvert 72
 -4.3614 -0.468793 -0.022818
 -4.36818 -0.462918 -0.018897
@@ -109938,7 +109894,6 @@ OBJECT poly
 name "POLY.048"
 texture "LtGrey.jpg"
 crease 45.000000
-hidden
 numvert 138
 -3.17317 0.736815 -0.273469
 -3.15302 0.659981 -0.322404
@@ -110900,7 +110855,6 @@ OBJECT poly
 name "POLY.049"
 texture "Rivets.jpg"
 crease 45.000000
-hidden
 numvert 64
 -3.10521 0.477325 -0.351705
 -3.06821 0.480877 -0.351364
@@ -111344,7 +111298,6 @@ OBJECT poly
 name "POLY.051"
 texture "Swift_2.jpg"
 crease 45.000000
-hidden
 numvert 77
 -1.39166 0.732728 -0.00751
 -1.39417 0.728384 0.017333
@@ -111963,7 +111916,6 @@ OBJECT poly
 name "POLY.055"
 texture "Exh.jpg"
 crease 45.000000
-hidden
 numvert 115
 6.17823 -0.457548 -0.017537
 6.48761 -0.431907 -0.011398
@@ -113226,7 +113178,6 @@ OBJECT poly
 name "POLY.056"
 texture "Nozzle_t.jpg"
 crease 45.000000
-hidden
 numvert 126
 6.20445 0.137216 -0.334591
 6.19874 0.195323 -0.287193
@@ -114644,7 +114595,6 @@ OBJECT poly
 name "POLY.057"
 texture "Exh.jpg"
 crease 45.000000
-hidden
 numvert 115
 6.48835 -0.446533 0.006534
 6.17823 -0.442483 0.007625
@@ -115907,7 +115857,6 @@ OBJECT poly
 name "POLY.058"
 texture "Nozzle_t.jpg"
 crease 45.000000
-hidden
 numvert 126
 6.17823 -0.457464 0.007708
 6.19262 -0.449698 0.08084
@@ -117326,7 +117275,6 @@ name "POLY.062_0"
 loc -0.0238919 0.0312453 -0.0153629
 texture "Swift_5.jpg"
 crease 45.000000
-hidden
 numvert 20
 -0.0161842 -0.651722 -0.988726
 0.0152528 -0.650963 -1.07626
@@ -117463,7 +117411,6 @@ name "POLY.062_1"
 loc -0.0238919 0.0312453 -0.0153629
 texture "Interior_2.jpg"
 crease 45.000000
-hidden
 numvert 86
 0.498016 -0.607312 -0.88194
 0.479668 -0.60796 -0.833869
@@ -118458,7 +118405,6 @@ name "POLY.066_0"
 loc 0.0045799 0.0061934 -0.0308991
 texture "Swift_5.jpg"
 crease 45.000000
-hidden
 numvert 20
 -0.0134329 -0.618329 1.11985
 -0.044891 -0.619578 1.03233
@@ -118595,7 +118541,6 @@ name "POLY.066_1"
 loc 0.0045799 0.0061934 -0.0308991
 texture "Interior_2.jpg"
 crease 45.000000
-hidden
 numvert 86
 0.451133 -0.577218 0.876996
 0.469491 -0.576302 0.925058
@@ -119589,7 +119534,6 @@ OBJECT poly
 name "POLY.068_1"
 texture "Oleo.jpg"
 crease 45.000000
-hidden
 numvert 64
 1.12988 -0.51125 1.56082
 1.12959 -0.505882 1.56176
@@ -120213,7 +120157,6 @@ OBJECT poly
 name "POLY.071_1"
 texture "Oleo.jpg"
 crease 45.000000
-hidden
 numvert 64
 1.47329 -0.499445 -1.55711
 1.47386 -0.50477 -1.55607
@@ -120837,7 +120780,6 @@ OBJECT poly
 name "POLY.073"
 texture "LtGrey.jpg"
 crease 45.000000
-hidden
 numvert 14
 -2.60167 -0.596187 -0.85605
 -2.63072 -0.596082 -0.857987
@@ -120991,7 +120933,6 @@ OBJECT poly
 name "POLY.074"
 texture "Swift_1.jpg"
 crease 45.000000
-hidden
 numvert 4
 -2.34683 0.001562 -0.779731
 -2.48776 0.037033 -0.767809
@@ -125443,7 +125384,6 @@ name "POLY.078"
 loc 0 0 -0.0129124
 texture "MainWhl.jpg"
 crease 45.000000
-hidden
 numvert 158
 0.492568 -1.36959 2.18084
 0.47093 -1.41293 2.18103
@@ -127014,7 +126954,6 @@ name "POLY.079"
 loc 0 0 -0.0129124
 texture "Tread.jpg"
 crease 45.000000
-hidden
 numvert 100
 0.512924 -1.14287 2.31754
 0.615911 -1.12564 2.31744
@@ -131770,7 +131709,6 @@ OBJECT poly
 name "POLY.081"
 texture "UC_gen.jpg"
 crease 45.000000
-hidden
 numvert 244
 0.632664 -0.630131 2.18771
 0.634324 -0.623041 2.19513
@@ -140788,7 +140726,6 @@ OBJECT poly
 name "POLY.087"
 texture "MainWhl.jpg"
 crease 45.000000
-hidden
 numvert 158
 0.675127 -1.28626 -2.3536
 0.663584 -1.32395 -2.35324
@@ -147112,7 +147049,6 @@ OBJECT poly
 name "POLY.090"
 texture "UC_gen.jpg"
 crease 45.000000
-hidden
 numvert 244
 0.632664 -0.630131 -2.22245
 0.634324 -0.623041 -2.22987
@@ -149932,7 +149868,6 @@ OBJECT poly
 name "r-aleron_0"
 texture "Swift_5.jpg"
 crease 45.000000
-hidden
 numvert 24
 2.69911 -0.493588 -4.61092
 2.87384 -0.48143 -4.60747
@@ -150072,7 +150007,6 @@ OBJECT poly
 name "r-aleron_1"
 texture "Swift_4.jpg"
 crease 45.000000
-hidden
 numvert 52
 2.24134 -0.447164 -2.86439
 2.41516 -0.47376 -2.86055
@@ -150528,7 +150462,6 @@ OBJECT poly
 name "r-elevator_0"
 texture "Swift_5.jpg"
 crease 45.000000
-hidden
 numvert 58
 6.15701 0.43687 -1.6924
 6.20392 0.453912 -1.70401
@@ -151128,7 +151061,6 @@ OBJECT poly
 name "r-elevator_1"
 texture "Swift_4.jpg"
 crease 45.000000
-hidden
 numvert 49
 5.62467 0.363449 -1.07446
 5.15797 0.260348 -0.299838
@@ -151611,7 +151543,6 @@ OBJECT poly
 name "r-mais-door2_0"
 texture "Swift_5.jpg"
 crease 45.000000
-hidden
 numvert 16
 0.814754 -0.58773 -2.45815
 0.797526 -0.589918 -2.2354
@@ -151719,7 +151650,6 @@ OBJECT poly
 name "r-mais-door2_1"
 texture "Interior_2.jpg"
 crease 45.000000
-hidden
 numvert 60
 0.287666 -0.588076 -1.57164
 0.0819065 -0.591589 -1.63875
@@ -152400,7 +152330,6 @@ name "right-flap_0"
 loc 0 0.0160896 0
 texture "Swift_5.jpg"
 crease 45.000000
-hidden
 numvert 8
 1.23581 -0.583471 -2.4097
 1.73703 -0.555755 -2.4128
@@ -152459,7 +152388,6 @@ name "right-flap_1"
 loc 0 -0.0191313 0
 texture "Interior_3.jpg"
 crease 45.000000
-hidden
 numvert 181
 1.79732 -0.479547 -0.885082
 2.09139 -0.466119 -2.04665
@@ -154622,7 +154550,6 @@ OBJECT poly
 name "rudder_0"
 texture "Swift_2.jpg"
 crease 45.000000
-hidden
 numvert 107
 5.09665 0.829234 -0.057557
 5.38313 1.35592 -0.050238
@@ -155661,7 +155588,6 @@ OBJECT poly
 name "rudder_1"
 texture "Swift_1.jpg"
 crease 45.000000
-hidden
 numvert 96
 5.57379 1.23785 0.012818
 5.63121 1.36056 0.012437
