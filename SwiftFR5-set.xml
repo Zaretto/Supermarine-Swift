@@ -33,7 +33,11 @@
         </jsbsim>
     </fdm>
 
-	<sim>
+    <canopy>
+        <position-norm alias="/fdm/jsbsim/systems/ecs/canopy-position" />
+    </canopy>
+
+    <sim>
 		<description type="string" >Supermarine Swift FR.5</description>
 		<author type="string">Alphasim, StuartC, Avionyx, Richard Harrison</author>
 		<status type="string">V0.2a</status>
