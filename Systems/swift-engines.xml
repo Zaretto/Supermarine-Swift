@@ -16,6 +16,27 @@
    -->
 
 <system name="ENGINES">
+
+    <channel name="engine-control">
+        <scheduled_gain name="Throttle">
+            <input>fcs/throttle-pos-norm[0]</input>
+            <table>
+                <independentVar>fcs/throttle-pos-norm[0]</independentVar>
+                <tableData>
+                    <!-- 5 stage non linear augmentation-->
+                    0.00    0.0
+                    0.8999  0.999
+                    0.91    1.0
+                    0.93    1.25
+                    0.95    1.50
+                    0.97    1.75
+                    1.00    2.0
+                </tableData>
+            </table>
+            <output>fcs/throttle-pos-norm[0]</output>
+        </scheduled_gain>
+    </channel>
+
     <channel name="Avon114extra">
         <fcs_function name="propulsion/engine[0]/c-egt-lead">
             <description>EGT LEAD N1 %</description>
@@ -330,15 +351,21 @@
                     <v>160</v>
                 </product>
             </function>
+            <output>/engines/engine[0]/rpm</output>
         </fcs_function>
 
         <fcs_function name="/engines/engine[0]/reheat">
             <function>
-                <product>
+                <ifthen>
+                    <gt>
                     <property>propulsion/engine[0]/augmentation-alight</property>
-                    <v>1</v>
-                </product>
+                    <value>4</value>
+                    </gt>
+                    <value>1</value>
+                    <value>0</value>
+                </ifthen>
             </function>
+            <output>/engines/engine[0]/reheat</output>
         </fcs_function>
     </channel>
 </system>
