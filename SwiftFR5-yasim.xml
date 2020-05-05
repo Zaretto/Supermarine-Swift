@@ -116,7 +116,7 @@ width="1" taper="0.05" midpoint="1.00"/>
 
 <!-- gear -->
 <!-- nose -->
-<gear x="3.7" y="0" z="-1.6" 
+<gear x="3.7" y="0" z="-1.58" 
 retract-time="1"
 compression="0.7"
         spring="1.1"
@@ -139,7 +139,7 @@ compression="0.7"
 -->
 
 <!-- left main -->
-<gear x="-0.6" y="2.3" z="-1.85"
+<gear x="-0.6" y="2.3" z="-1.95"
 retract-time="1"
 compression="0.8"
         spring="0.85"
@@ -162,7 +162,7 @@ compression="0.8"
 </gear>
 -->
 <!-- right main -->
-<gear x="-0.6" y="-2.3" z="-1.85" 
+<gear x="-0.6" y="-2.3" z="-1.95" 
 retract-time="1" 
 compression="0.8"
         spring="0.85"
