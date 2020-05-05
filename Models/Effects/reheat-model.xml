@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<PropertyList>
+
+    <model>
+        <name>EngineReheat</name>
+        <path>Aircraft/Supermarine-Swift/Models/Effects/reheat/reheat.xml</path>
+        <offsets>
+            <x-m> 6.4   </x-m>
+            <y-m> 0.0  </y-m>
+            <z-m> -0.025 </z-m>
+        </offsets>
+    </model>
+
+    <animation>
+        <type>select</type>
+        <name>EngineReheat</name>
+        <condition>
+            <greater-than>
+                <property>sim/multiplay/generic/float[2]</property>
+                <value>0</value>
+            </greater-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>scale</type>
+        <object-name>EngineReheat</object-name>
+        <property>sim/multiplay/generic/float[2]</property>
+        <x-factor>1.0</x-factor>
+        <x-min>0.2</x-min>
+        <y-min>1.0</y-min>
+        <z-min>1.0</z-min>
+        <center>
+            <x-m> 6.64314   </x-m>
+            <y-m> 0  </y-m>
+            <z-m> -0.49394 </z-m>
+        </center>
+    </animation>
+</PropertyList>
