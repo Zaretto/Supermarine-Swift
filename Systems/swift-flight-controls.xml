@@ -12,7 +12,6 @@
     <property value="1">fcs/pitch-effectivity</property>
     <property value="1">fcs/rudder-effectivity</property>
     <property value="1">fcs/aileron-effectivity</property>
-    <property value="0">fcs/yaw-damper-enable</property>
 
     <channel name="Auxiliary">
         <pure_gain name="Pilot G">

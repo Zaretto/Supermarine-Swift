@@ -356,14 +356,10 @@
 
         <fcs_function name="/engines/engine[0]/reheat">
             <function>
-                <ifthen>
-                    <gt>
+                <product>
                     <property>propulsion/engine[0]/augmentation-alight</property>
-                    <value>4</value>
-                    </gt>
-                    <value>1</value>
-                    <value>0</value>
-                </ifthen>
+                    <value>0.2</value>
+                </product>
             </function>
             <output>/engines/engine[0]/reheat</output>
         </fcs_function>
