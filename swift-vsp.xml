@@ -37,7 +37,7 @@
   <location unit="M" name="VRP">
     <x>-6.116</x>
     <y>0</y>
-    <z>0.2254</z>
+    <z>0.57</z>
   </location>
   <location unit="M" name="AERORP">
     <x>6</x>
@@ -65,13 +65,13 @@
     <location unit="M">
       <x>2.26</x>
       <y>0</y>
-      <z>-1.7424</z>
+      <z>-1.444244</z>
     </location>
     <static_friction>1.0</static_friction>
     <dynamic_friction>0.5</dynamic_friction>
     <rolling_friction>0.02</rolling_friction>
-    <spring_coeff unit="LBS/FT">9300</spring_coeff>
-    <damping_coeff unit="LBS/FT/SEC">1240</damping_coeff>
+    <spring_coeff unit="LBS/FT">29300</spring_coeff>
+    <damping_coeff unit="LBS/FT/SEC">4240</damping_coeff>
     <max_steer>12.5</max_steer>
     <brake_group>NOSE</brake_group>
     <retractable>1</retractable>
@@ -86,8 +86,8 @@
     <static_friction>1.0</static_friction>
     <dynamic_friction>0.5</dynamic_friction>
     <rolling_friction>0.02</rolling_friction>
-    <spring_coeff unit="LBS/FT">9300</spring_coeff>
-    <damping_coeff unit="LBS/FT/SEC">1240</damping_coeff>
+    <spring_coeff unit="LBS/FT">29300</spring_coeff>
+    <damping_coeff unit="LBS/FT/SEC">4240</damping_coeff>
     <brake_group>LEFT</brake_group>
     <retractable>1</retractable>
   </contact>
@@ -101,8 +101,8 @@
     <static_friction>1.0</static_friction>
     <dynamic_friction>0.5</dynamic_friction>
     <rolling_friction>0.02</rolling_friction>
-    <spring_coeff unit="LBS/FT">9300</spring_coeff>
-    <damping_coeff unit="LBS/FT/SEC">1240</damping_coeff>
+    <spring_coeff unit="LBS/FT">29300</spring_coeff>
+    <damping_coeff unit="LBS/FT/SEC">4240</damping_coeff>
     <brake_group>RIGHT</brake_group>
     <retractable>1</retractable>
   </contact>
