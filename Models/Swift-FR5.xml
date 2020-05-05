@@ -199,21 +199,10 @@
   </offsets>
  </model>  
  
- <!-- reheat 
- 
- 
- 
-  <model>
-  <name>Engine1</name>
-  <path>Aircraft/Supermarine-Swift/Models/Effects/reheat/f15flame.eff</path>
-  <offsets>
-   <x-m>8.1</x-m>
-   <y-m>0</y-m>
-   <z-m>-0.1</z-m>
-  </offsets>
-  </model>
- -->
- 
+ <model>
+   <path>Aircraft/Supermarine-Swift/Models/Effects/reheat-model.xml</path>
+ </model>
+
  <!-- Animations -->
  
    <!-- Aileron animation -->
@@ -373,89 +362,6 @@
 	<object-name>POLY.046</object-name>
   </animation>
 
-
-  <!-- gear compression animations -->
-  <animation>
-    <type>rotate</type>
-    <object-name>POLY.041</object-name>
-    <object-name>POLY.042</object-name>
-    <object-name>POLY.043</object-name>
-    <property>gear/gear[0]/compression-ft</property>
-    <factor>163</factor>
-    <axis>
-      <object-name>POLY.041-axis</object-name>
-    </axis>
-  </animation>
-
-  <!-- Left and right gear, compression.
-  Linkage angles and strut/wheel move up -->
-  <animation>
-    <type>translate</type>
-    <property>gear/gear[1]/compression-ft</property>
-    <factor>-0.2</factor>
-    <object-name>POLY.078</object-name>
-    <object-name>POLY.079</object-name>
-    <object-name>POLY.080</object-name>
-    <object-name>POLY.077</object-name>
-    <object-name>gear-left-linkage-lower</object-name>
-    <axis>
-      <object-name>gear-left-compression-axis</object-name>
-    </axis>
-  </animation>
-  <animation>
-    <type>rotate</type>
-    <object-name>gear-left-linkage-upper</object-name>
-    <property>gear/gear[1]/compression-ft</property>
-    <factor>-39.0625</factor>
-    <axis>
-      <object-name>gear-left-linkage-upper-axis</object-name>
-    </axis>
-  </animation>
-  <animation>
-    <type>rotate</type>
-    <object-name>gear-left-linkage-lower</object-name>
-    <property>gear/gear[1]/compression-ft</property>
-    <factor>78.125</factor>
-    <axis>
-      <object-name>gear-left-linkage-upper-axis</object-name>
-    </axis>
-  </animation>
-
-
-  <!-- Right compression effects -->
-  <animation>
-    <type>translate</type>
-    <property>gear/gear[2]/compression-ft</property>
-    <factor>-0.2</factor>
-    <object-name>gear-right-linkage-lower</object-name>
-    <object-name>POLY.089</object-name>
-    <object-name>POLY.088</object-name>
-    <object-name>POLY.087</object-name>
-    <object-name>POLY.086</object-name>
-    <axis>
-      <object-name>gear-right-compression-axis</object-name>
-    </axis>
-  </animation>
-  <animation>
-    <type>rotate</type>
-    <object-name>gear-right-linkage-upper</object-name>
-    <property>gear/gear[2]/compression-ft</property>
-    <factor>-39.0625</factor>
-    <axis>
-      <object-name>gear-right-linkage-upper-axis</object-name>
-    </axis>
-  </animation>
-  <animation>
-    <type>rotate</type>
-    <object-name>gear-right-linkage-lower</object-name>
-    <property>gear/gear[2]/compression-ft</property>
-    <factor>78.125</factor>
-    <axis>
-      <object-name>gear-right-linkage-upper-axis</object-name>
-    </axis>
-  </animation>
-
-  <!-- gear extend/retract animations -->
   <animation>
     <type>rotate</type>
     <object-name>NoseGear</object-name>
@@ -483,8 +389,8 @@
 	<object-name>POLY.087</object-name>
 	<object-name>POLY.088</object-name>
 	<object-name>POLY.089</object-name>
-	<object-name>gear-right-linkage-lower</object-name>
-	<object-name>gear-right-linkage-upper</object-name>
+	<object-name>POLY.091</object-name>
+	<object-name>POLY.092</object-name>
   </animation>
   
     <animation>
@@ -578,8 +484,8 @@
 	<object-name>POLY.078</object-name>
 	<object-name>POLY.079</object-name>
 	<object-name>POLY.080</object-name>
-	<object-name>gear-left-linkage-upper</object-name>
-	<object-name>gear-left-linkage-lower</object-name>
+	<object-name>POLY.082</object-name>
+	<object-name>POLY.083</object-name>
     </animation>
   
       <animation>
