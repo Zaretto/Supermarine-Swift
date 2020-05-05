@@ -817,7 +817,6 @@
     <object-name>POLY.048</object-name>
     <object-name>POLY.051</object-name>
     <object-name>mirrors</object-name>
-    <object-name>mirrors-glass</object-name>
     <property>canopy/position-norm</property>
     <factor>0.6</factor>
     <axis>
