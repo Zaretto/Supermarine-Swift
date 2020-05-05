@@ -737,18 +737,18 @@
   </animation>
 
    <animation>
-   <type>translate</type>
-   <object-name>canopy-frame</object-name>
-   <object-name>canopy-glass</object-name>
+    <type>translate</type>
+    <object-name>canopy-frame</object-name>
+    <object-name>canopy-glass</object-name>
     <object-name>canopy-glassin</object-name>
-   <property>canopy/position-norm</property>
-   <factor>0.6</factor>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <property>canopy/position-norm</property>
+    <factor>0.6</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
   
  
 
