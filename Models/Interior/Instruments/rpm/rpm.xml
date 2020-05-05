@@ -55,12 +55,12 @@
     <object-name>needle2</object-name>
     <property>/engines/engine[0]/rpm</property>
     <interpolation>
-      <entry><ind>     0 </ind><dep>   0.0 </dep></entry>
-      <entry><ind>  20 </ind><dep>  20.0 </dep></entry>
-      <entry><ind>  60 </ind><dep> 49.0 </dep></entry>
-      <entry><ind> 75 </ind><dep> 152.0 </dep></entry>
-      <entry><ind> 90 </ind><dep> 255.0 </dep></entry>
-      <entry><ind> 100 </ind><dep> 300 </dep></entry>
+      <entry><ind>   0 </ind><dep>   0.0 </dep></entry>
+      <entry><ind>  3000 </ind><dep>  75.0 </dep></entry>
+      <entry><ind>  6000 </ind><dep> 150.0 </dep></entry>
+      <entry><ind>  8000 </ind><dep> 205.0 </dep></entry>
+      <entry><ind>  9000 </ind><dep> 225.0 </dep></entry>
+      <entry><ind> 16000 </ind><dep> 400 </dep></entry>
     </interpolation>
     <axis>
       <x> -1 </x>

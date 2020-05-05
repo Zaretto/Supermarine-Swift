@@ -147,75 +147,64 @@
             </generic>
         </multiplay>
        
-	</sim>
-
-	
-	<engines>
-		<engine n="0">
-			<running>false</running>
-		</engine>
-		
-	</engines>	
-	
-
-<controls>
-		<flight>
-			<flaps-lever type="double">0</flaps-lever>
-		</flight>
-		<gear>
-			<brake-parking>1</brake-parking>
-		</gear>
-	</controls>
+    </sim>
 
 
-	
-	<consumables>
-  <fuel>
-   <tank n="0">
-    <level-gal_us archive="y">126.76</level-gal_us>
+    <engines>
+        <engine n="0">
+            <running>false</running>
+        </engine>
+    </engines>
+
+
+    <controls>
+        <flight>
+            <flaps-lever type="double">0</flaps-lever>
+        </flight>
+        <gear>
+            <brake-parking>1</brake-parking>
+        </gear>
+    </controls>
+
+    <consumables>
+        <fuel>
+            <tank n="0">
+                <level-gal_us archive="y">126.76</level-gal_us>
                 <name>Right Wing</name>
-   </tank>
-   <tank n="1">
-    <level-gal_us archive="y">111</level-gal_us>
+            </tank>
+            <tank n="1">
+                <level-gal_us archive="y">111</level-gal_us>
                 <name>Left Wing</name>
-   </tank>
-   <tank n="2">
-    <level-gal_us archive="y">117.79</level-gal_us>
+            </tank>
+            <tank n="2">
+                <level-gal_us archive="y">117.79</level-gal_us>
                 <name>Rear</name>
-</tank>  
-  <tank n="3">
-    <level-gal_us archive="y">168.67</level-gal_us>
+            </tank>
+            <tank n="3">
+                <level-gal_us archive="y">168.67</level-gal_us>
                 <name>Center</name>
-</tank>  
-  <tank n="4">
+            </tank>
+            <tank n="4">
                 <name>Front</name>
-    <level-gal_us archive="y">168.67</level-gal_us>
-</tank>  
+                <level-gal_us archive="y">168.67</level-gal_us>
+            </tank>
+        </fuel>
+    </consumables>
 
-  </fuel>
- </consumables>
- 
- <input>
-    <keyboard include="Nasal/keyboard.xml"/>
-</input>	
- 
- <environment>
-    <turbulence>
-      <use-cloud-turbulence>true</use-cloud-turbulence>
-    </turbulence>
-  </environment>
-	
-  <nasal>
-    <Supermarine-Swift>
-       <file>Aircraft/Supermarine-Swift/Nasal/liveries.nas</file>
-    </Supermarine-Swift>
+    <input>
+        <keyboard include="Nasal/keyboard.xml"/>
+    </input>
 
+    <environment>
+        <turbulence>
+            <use-cloud-turbulence>true</use-cloud-turbulence>
+        </turbulence>
+    </environment>
 
-	</nasal>
-	
-
-	
-
-
+    <nasal>
+        <Supermarine-Swift>
+            <file>Aircraft/Supermarine-Swift/Nasal/liveries.nas</file>
+        </Supermarine-Swift>
+    </nasal>
 
 </PropertyList>
