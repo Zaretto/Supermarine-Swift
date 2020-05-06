@@ -151,7 +151,7 @@
             <z>0</z>
         </axis>
     </animation>
-    <animation>
+    <!-- <animation>
         <type>rotate</type>
         <object-name>Knob1</object-name>
         <property>instrumentation/heading-indicator/heading-bug-deg/</property>
@@ -212,7 +212,7 @@
             <y>0</y>
             <z>0</z>
         </axis>
-    </animation>
+    </animation> -->
 
     <animation>
         <type>material</type>
