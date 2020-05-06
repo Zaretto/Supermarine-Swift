@@ -2,15 +2,7 @@
 
 <PropertyList>
 <path>cockpit2.ac</path>
-  <animation>
-    <type>select</type>
-    <condition>
-      <equals>
-        <property>sim/current-view/name</property>
-        <value>Cockpit View</value>
-      </equals>
-    </condition>
-  </animation>
+<usage>interior</usage>
 
         <animation>
                 <type>shader</type>
@@ -324,7 +316,10 @@
         <type>select</type>
         <object-name>ab</object-name>
         <condition>
+    <greater-than>
           <property>engines/engine[0]/reheat</property>
+          <value>0</value>
+          </greater-than>
         </condition>
  </animation>
 	
@@ -665,6 +660,55 @@
             </binding>
         </action>
     </animation>
-  
+
+    <animation>
+      <type>rotate</type>
+      <object-name>throttle</object-name>
+      <property>controls/engines/engine[0]/throttle</property>
+      <factor>-80</factor>
+      <offset-deg>-24</offset-deg>
+      <axis>
+        <object-name>throttle-axis</object-name>
+      </axis>
+    </animation>
+
+    <animation>
+      <type>knob</type>
+      <object-name>gear_lever</object-name>
+      <property>controls/gear/gear-down</property>
+      <factor>30</factor>
+      <axis>
+        <object-name>gear_lever-axis</object-name>
+      </axis>
+      <action>
+        <binding>
+            <command>property-toggle</command>
+            <property>controls/gear/gear-down</property>
+        </binding>
+    </action>
+
+    </animation>
+    
+    <animation>
+      <type>knob</type>
+      <object-name>flaps_lever</object-name>
+      <property>controls/flight/flaps</property>
+      <factor>40</factor>
+      <axis>
+        <object-name>flaps_lever-axis</object-name>
+      </axis>
+      <action>
+        <binding>
+            <command>property-adjust</command>
+            <property>controls/flight/flaps</property>
+            <factor>0.1</factor>
+            <min>0</min>
+            <max>1</max>                
+            <wrap>false</wrap>
+        </binding>
+    </action>
+
+    </animation>
+    
 </PropertyList>
 
