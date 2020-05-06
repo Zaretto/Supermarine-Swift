@@ -37,7 +37,7 @@
   <location unit="M" name="VRP">
     <x>-6.116</x>
     <y>0</y>
-    <z>0.57</z>
+    <z>-0.0</z>
   </location>
   <location unit="M" name="AERORP">
     <x>6</x>
@@ -63,15 +63,15 @@
   <contact type="BOGEY" name="NoseGear">
     <!--0: NoseGear-->
     <location unit="M">
-      <x>2.26</x>
+      <x>2.46</x>
       <y>0</y>
-      <z>-1.444244</z>
+      <z>-1.651</z>
     </location>
-    <static_friction>1.0</static_friction>
-    <dynamic_friction>0.5</dynamic_friction>
+    <static_friction>0.6</static_friction>
+    <dynamic_friction>0.38</dynamic_friction>
     <rolling_friction>0.02</rolling_friction>
     <spring_coeff unit="LBS/FT">29300</spring_coeff>
-    <damping_coeff unit="LBS/FT/SEC">4240</damping_coeff>
+    <damping_coeff unit="LBS/FT/SEC">3250</damping_coeff>
     <max_steer>12.5</max_steer>
     <brake_group>NOSE</brake_group>
     <retractable>1</retractable>
@@ -79,30 +79,30 @@
   <contact type="BOGEY" name="LeftMainGear">
     <!--1: LeftMainGear-->
     <location unit="M">
-      <x>6.23</x>
+      <x>6.53</x>
       <y>-2.47</y>
       <z>-1.662</z>
     </location>
-    <static_friction>1.0</static_friction>
-    <dynamic_friction>0.5</dynamic_friction>
+    <static_friction>0.6</static_friction>
+    <dynamic_friction>0.38</dynamic_friction>
     <rolling_friction>0.02</rolling_friction>
     <spring_coeff unit="LBS/FT">29300</spring_coeff>
-    <damping_coeff unit="LBS/FT/SEC">4240</damping_coeff>
+    <damping_coeff unit="LBS/FT/SEC">3250</damping_coeff>
     <brake_group>LEFT</brake_group>
     <retractable>1</retractable>
   </contact>
   <contact type="BOGEY" name="RightMainGear">
     <!--2: RightMainGear-->
     <location unit="M">
-      <x>6.23</x>
+      <x>6.53</x>
       <y>2.47</y>
       <z>-1.662</z>
     </location>
-    <static_friction>1.0</static_friction>
-    <dynamic_friction>0.5</dynamic_friction>
+    <static_friction>0.6</static_friction>
+    <dynamic_friction>0.38</dynamic_friction>
     <rolling_friction>0.02</rolling_friction>
     <spring_coeff unit="LBS/FT">29300</spring_coeff>
-    <damping_coeff unit="LBS/FT/SEC">4240</damping_coeff>
+    <damping_coeff unit="LBS/FT/SEC">3250</damping_coeff>
     <brake_group>RIGHT</brake_group>
     <retractable>1</retractable>
   </contact>
