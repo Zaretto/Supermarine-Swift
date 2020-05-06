@@ -182,15 +182,6 @@
    <!-- Interior -->
 
  <model>
-  <path>Aircraft/Supermarine-Swift/Models/Interior/panel.xml</path>
-  <offsets>
-   <x-m>0</x-m>
-   <y-m>0</y-m>
-   <z-m>0</z-m>
-  </offsets>
- </model>  
- 
- <model>
   <path>Aircraft/Supermarine-Swift/Models/Interior/panel2.xml</path>
   <offsets>
    <x-m>0</x-m>
@@ -682,49 +673,7 @@
     </axis>
   </animation>
   
-    <animation>
-    <type>rotate</type>
-    <object-name>POLY.066</object-name>
-    <property>gear/gear[2]/position-norm</property>
-    <interpolation>
-      <entry><ind> 0 </ind><dep> 0 </dep></entry>
-	  <entry><ind> 0.1 </ind><dep> 95 </dep></entry>
-      <entry><ind> 1 </ind><dep> 95 </dep></entry>
-    </interpolation>
-    <center>
-      <x-m>  0.23126</x-m>
-      <y-m> -0.97904</y-m>
-      <z-m> -0.62114</z-m>
-    </center>
-    <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-  
-      <animation>
-    <type>rotate</type>
-    <object-name>POLY.062</object-name>
-    <property>gear/gear[2]/position-norm</property>
-    <interpolation>
-      <entry><ind> 0 </ind><dep> 0 </dep></entry>
-      <entry><ind> 0.1 </ind><dep> 95 </dep></entry>
-	  <entry><ind> 1 </ind><dep> 95 </dep></entry>
-    </interpolation>
-    <center>
-      <x-m>  0.23459</x-m>
-      <y-m>  1.00676</y-m>
-      <z-m> -0.62114</z-m>
-    </center>
-    <axis>
-      <x> -1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-
-  
+ 
     <animation>
     <name>RightGearDoor</name>
     <object-name>r-mais-door2_0</object-name>
