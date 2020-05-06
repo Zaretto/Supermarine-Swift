@@ -73,13 +73,18 @@
 			<autopilot>
 				<path>Aircraft/Supermarine-Swift/Systems/autopilot.xml</path>
 			</autopilot>
+
 			<autopilot n="102">
-        <path>Systems/glass-rain.xml</path>
-      </autopilot>
-			
-		<electrical>
-        <path>Aircraft/Generic/generic-electrical.xml</path>
-      </electrical>
+                <path>Systems/glass-rain.xml</path>
+            </autopilot>
+
+            <autopilot n="103">
+				<path>Aircraft/Supermarine-Swift/Systems/swift-sound-system.xml</path>
+			</autopilot>
+
+		    <electrical>
+                <path>Aircraft/Generic/generic-electrical.xml</path>
+            </electrical>
 		</systems>
 
 			

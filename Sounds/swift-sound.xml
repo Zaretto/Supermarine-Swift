@@ -19,6 +19,330 @@
 
         <!-- Engines -->
 
+		<engine>
+			<name>engine0-front-left</name>
+			<path>Aircraft/Supermarine-Swift/Sounds/Swift_In_Idle-left.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+                    <property>sim/freeze/engine-sound-freeze</property>
+                </not>
+				<property>fdm/jsbsim/systems/ecs/internal-and-canopy-closed</property>
+			</condition>
+			<volume>
+				<property>/sim/sound/vol-a</property>
+				<offset>0</offset>
+				<factor>1</factor>
+			</volume>
+			<pitch>
+				<property>/engines/engine[0]/n2</property>
+				<offset>-0.14606741573</offset>
+				<factor>0.0191011236</factor>
+			</pitch>
+			<position>
+				<x>-3.3</x>
+				<y>.5</y>
+				<z>0.68</z>
+			</position>
+		</engine>
+
+		<engine>
+			<name>engine0-front-right</name>
+			<path>Aircraft/Supermarine-Swift/Sounds/Swift_In_Idle-right.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+                    <property>sim/freeze/engine-sound-freeze</property>
+                </not>
+				<property>fdm/jsbsim/systems/ecs/internal-and-canopy-closed</property>
+			</condition>
+			<volume>
+				<property>/sim/sound/vol-a</property>
+				<offset>0</offset>
+				<factor>1</factor>
+			</volume>
+			<pitch>
+				<property>/engines/engine[0]/n2</property>
+				<offset>-0.14606741573</offset>
+				<factor>0.0191011236</factor>
+			</pitch>
+			<position>
+				<x>-3.3</x>
+				<y>-.5</y>
+				<z>0.68</z>
+			</position>
+		</engine>
+
+		<engine>
+			<name>engine0-rear-left</name>
+			<path>Aircraft/Supermarine-Swift/Sounds/Swift_In_Idle-left.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+                    <property>sim/freeze/engine-sound-freeze</property>
+                </not>
+				<property>fdm/jsbsim/systems/ecs/internal-and-canopy-closed</property>
+			</condition>
+			<volume>
+				<property>/sim/sound/vol-a</property>
+				<offset>0</offset>
+				<factor>1</factor>
+			</volume>
+			<pitch>
+				<property>/engines/engine[0]/n2</property>
+				<offset>-0.14606741573</offset>
+				<factor>0.0191011236</factor>
+			</pitch>
+			<position>
+				<x>-2.3</x>
+				<y>.5</y>
+				<z>0.68</z>
+			</position>
+		</engine>
+
+		<engine>
+			<name>engine0-rear-right</name>
+			<path>Aircraft/Supermarine-Swift/Sounds/Swift_In_Idle-right.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+                    <property>sim/freeze/engine-sound-freeze</property>
+                </not>
+				<property>fdm/jsbsim/systems/ecs/internal-and-canopy-closed</property>
+			</condition>
+			<volume>
+				<property>/sim/sound/vol-a</property>
+				<offset>0</offset>
+				<factor>1</factor>
+			</volume>
+			<pitch>
+				<property>/engines/engine[0]/n2</property>
+				<offset>-0.14606741573</offset>
+				<factor>0.0191011236</factor>
+			</pitch>
+			<position>
+				<x>-2.3</x>
+				<y>-.5</y>
+				<z>0.68</z>
+			</position>
+		</engine>
+
+		<engine>
+			<name>engine0n80-front-left</name>
+			<path>Aircraft/Supermarine-Swift/Sounds/Swift_In_Half-left.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+                    <property>sim/freeze/engine-sound-freeze</property>
+                </not>
+				<property>fdm/jsbsim/systems/ecs/internal-and-canopy-closed</property>
+			</condition>
+			<volume>
+				<property>/sim/sound/vol-b</property>
+				<offset>0</offset>
+				<factor>1</factor>
+			</volume>
+			<pitch>
+				<property>/engines/engine[0]/n2</property>
+				<offset>-0.15003695492</offset>
+				<factor>0.01437546194</factor>
+			</pitch>
+			<position>
+				<x>-3.3</x>
+				<y>.5</y>
+				<z>0.68</z>
+			</position>
+		</engine>
+
+		<engine>
+			<name>engine0n80-front-right</name>
+			<path>Aircraft/Supermarine-Swift/Sounds/Swift_In_Half-right.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+                    <property>sim/freeze/engine-sound-freeze</property>
+                </not>
+				<property>fdm/jsbsim/systems/ecs/internal-and-canopy-closed</property>
+			</condition>
+			<volume>
+				<property>/sim/sound/vol-b</property>
+				<offset>0</offset>
+				<factor>1</factor>
+			</volume>
+			<pitch>
+				<property>/engines/engine[0]/n2</property>
+				<offset>-0.15003695492</offset>
+				<factor>0.01437546194</factor>
+			</pitch>
+			<position>
+				<x>-3.3</x>
+				<y>-.5</y>
+				<z>0.68</z>
+			</position>
+		</engine>
+
+		<engine>
+			<name>engine0n80-rear-left</name>
+			<path>Aircraft/Supermarine-Swift/Sounds/Swift_In_Half-left.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+                    <property>sim/freeze/engine-sound-freeze</property>
+                </not>
+				<property>fdm/jsbsim/systems/ecs/internal-and-canopy-closed</property>
+			</condition>
+			<volume>
+				<property>/sim/sound/vol-b</property>
+				<offset>0</offset>
+				<factor>1</factor>
+			</volume>
+			<pitch>
+				<property>/engines/engine[0]/n2</property>
+				<offset>-0.15003695492</offset>
+				<factor>0.01437546194</factor>
+			</pitch>
+			<position>
+				<x>-2.3</x>
+				<y>.5</y>
+				<z>0.68</z>
+			</position>
+		</engine>
+
+		<engine>
+			<name>engine0n80-rear-right</name>
+			<path>Aircraft/Supermarine-Swift/Sounds/Swift_In_Half-right.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+                    <property>sim/freeze/engine-sound-freeze</property>
+                </not>
+				<property>fdm/jsbsim/systems/ecs/internal-and-canopy-closed</property>
+			</condition>
+			<volume>
+				<property>/sim/sound/vol-b</property>
+				<offset>0</offset>
+				<factor>1</factor>
+			</volume>
+			<pitch>
+				<property>/engines/engine[0]/n2</property>
+				<offset>-0.15003695492</offset>
+				<factor>0.01437546194</factor>
+			</pitch>
+			<position>
+				<x>-2.3</x>
+				<y>-.5</y>
+				<z>0.68</z>
+			</position>
+		</engine>
+
+		<engine>
+			<name>engine0n100-front-left</name>
+			<path>Aircraft/Supermarine-Swift/Sounds/Swift_In_Full-left.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+                    <property>sim/freeze/engine-sound-freeze</property>
+                </not>
+				<property>fdm/jsbsim/systems/ecs/internal-and-canopy-closed</property>
+			</condition>
+			<volume>
+				<property>/sim/sound/vol-c</property>
+				<offset>0</offset>
+				<factor>1</factor>
+			</volume>
+			<pitch>
+				<property>/engines/engine[0]/n2</property>
+				<offset>-0.11653272101</offset>
+				<factor>0.01116532721</factor>
+			</pitch>
+			<position>
+				<x>-3.3</x>
+				<y>.5</y>
+				<z>0.68</z>
+			</position>
+		</engine>
+
+		<engine>
+			<name>engine0n100-front-right</name>
+			<path>Aircraft/Supermarine-Swift/Sounds/Swift_In_Full-right.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+                    <property>sim/freeze/engine-sound-freeze</property>
+                </not>
+				<property>fdm/jsbsim/systems/ecs/internal-and-canopy-closed</property>
+			</condition>
+			<volume>
+				<property>/sim/sound/vol-c</property>
+				<offset>0</offset>
+				<factor>1</factor>
+			</volume>
+			<pitch>
+				<property>/engines/engine[0]/n2</property>
+				<offset>-0.11653272101</offset>
+				<factor>0.01116532721</factor>
+			</pitch>
+			<position>
+				<x>-3.3</x>
+				<y>-.5</y>
+				<z>0.68</z>
+			</position>
+		</engine>
+
+		<engine>
+			<name>engine0n100-rear-left</name>
+			<path>Aircraft/Supermarine-Swift/Sounds/Swift_In_Full-left.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+                    <property>sim/freeze/engine-sound-freeze</property>
+                </not>
+				<property>fdm/jsbsim/systems/ecs/internal-and-canopy-closed</property>
+			</condition>
+			<volume>
+				<property>/sim/sound/vol-c</property>
+				<offset>0</offset>
+				<factor>1</factor>
+			</volume>
+			<pitch>
+				<property>/engines/engine[0]/n2</property>
+				<offset>-0.11653272101</offset>
+				<factor>0.01116532721</factor>
+			</pitch>
+			<position>
+				<x>-2.3</x>
+				<y>.5</y>
+				<z>0.68</z>
+			</position>
+		</engine>
+
+		<engine>
+			<name>engine0n100-rear-right</name>
+			<path>Aircraft/Supermarine-Swift/Sounds/Swift_In_Full-right.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+                    <property>sim/freeze/engine-sound-freeze</property>
+                </not>
+				<property>fdm/jsbsim/systems/ecs/internal-and-canopy-closed</property>
+			</condition>
+			<volume>
+				<property>/sim/sound/vol-c</property>
+				<offset>0</offset>
+				<factor>1</factor>
+			</volume>
+			<pitch>
+				<property>/engines/engine[0]/n2</property>
+				<offset>-0.11653272101</offset>
+				<factor>0.01116532721</factor>
+			</pitch>
+			<position>
+				<x>-2.3</x>
+				<y>-.5</y>
+				<z>0.68</z>
+			</position>
+		</engine>
+
         <engine-compressor-stall>
             <name>engine-compressor-stall</name>
             <mode>once</mode>
@@ -134,6 +458,7 @@
             <condition>
                 <not>
                     <property>sim/freeze/engine-sound-freeze</property>
+                    <property>fdm/jsbsim/systems/ecs/internal-and-canopy-closed</property>
                 </not>
             </condition>
             <mode>looped</mode>
@@ -171,6 +496,7 @@
             <condition>
                 <not>
                     <property>sim/freeze/engine-sound-freeze</property>
+                    <property>fdm/jsbsim/systems/ecs/internal-and-canopy-closed</property>
                 </not>
             </condition>
             <pitch>
@@ -201,7 +527,7 @@
         </engine-jet-whine-n21>
 
 
-        <engine-jet-exhaust-inside>
+        <!--engine-jet-exhaust-inside>
             <name>engine-jet-exhaust-inside</name>
             <path>Aircraft/Supermarine-Swift/Sounds/engine-jet-exhaust.wav</path>
             <mode>looped</mode>
@@ -231,7 +557,7 @@
             </orientation>
             <reference-dist>800</reference-dist>
             <max-dist>6000</max-dist>
-        </engine-jet-exhaust-inside>
+        </engine-jet-exhaust-inside-->
 
         <engine-jet-efflux-velocity-blast>
             <name>engine-jet-efflux-velocity-blast</name>
