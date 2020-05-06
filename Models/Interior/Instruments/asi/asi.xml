@@ -10,22 +10,8 @@
     <object-name>fond</object-name>
     <object-name>face</object-name>
     <object-name>needle</object-name>
-
-    <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
-    <object-name>vitre</object-name>
-  </animation>
-
-  <!--<animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
--->
   <animation>
     <type>material</type>
     <object-name>face</object-name>
