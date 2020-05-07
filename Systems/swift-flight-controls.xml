@@ -11,7 +11,6 @@
     <property value="0">malfunctions/fcs/rudder-actuator-inop</property>
     <property value="1">fcs/pitch-effectivity</property>
     <property value="1">fcs/rudder-effectivity</property>
-    <property value="1">fcs/aileron-effectivity</property>
 
     <channel name="Auxiliary">
         <pure_gain name="Pilot G">
@@ -134,6 +133,19 @@
                 <max>  1 </max>
             </clipto>
         </summer>
+        <fcs_function name="fcs/aileron-effectivity">
+            <function>
+                <table>
+                    <independentVar>velocities/vc-kts</independentVar>
+                    <tableData>
+                          0 1.0
+                        250 1.0
+                        450 0.5
+                        600 0.25
+                    </tableData>
+                </table>
+            </function>
+        </fcs_function>
 
         <fcs_function>
             <function>
