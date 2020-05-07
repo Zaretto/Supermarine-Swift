@@ -83,7 +83,7 @@
 
   <animation>
         <type>material</type>
-        <object-name>POLY.031_1</object-name>
+        <object-name>nosegear-door-outside</object-name>
         <object-name>POLY.018</object-name>
         <property-base>sim/model/livery</property-base>
         <texture-prop>bottom-fuselage</texture-prop>
@@ -319,11 +319,11 @@
      <z2-m>-0.12</z2-m>
   </axis>
  </animation>
- 
+
    <animation>
     <type>rotate</type>
-    <object-name>POLY.031_1</object-name>
-    <object-name>POLY.031_0</object-name>
+    <object-name>nosegear-door-inside</object-name>
+    <object-name>nosegear-door-outside</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>    0 </dep></entry>
@@ -340,7 +340,7 @@
     </axis>
   </animation>
   
-    <animation>
+  <animation>
     <name>NoseGear</name>
     
     <object-name>POLY.039</object-name>
@@ -350,7 +350,7 @@
 	<object-name>POLY.043</object-name>
 	<object-name>POLY.044</object-name>
 	<object-name>POLY.045</object-name>
-	<object-name>POLY.046</object-name>
+	<object-name>nosegear-actuator</object-name>
   </animation>
 
 
@@ -361,7 +361,15 @@
     <object-name>POLY.042</object-name>
     <object-name>POLY.043</object-name>
     <property>gear/gear[0]/compression-ft</property>
-    <factor>163</factor>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>  14 </dep></entry>
+      <entry><ind> 0.05 </ind><dep>  8 </dep></entry>
+      <entry><ind> 0.11 </ind><dep>  -14 </dep></entry>
+      <entry><ind> 0.185 </ind><dep> -24 </dep></entry>
+      <entry><ind> 0.635 </ind><dep> -25 </dep></entry>
+      <entry><ind> 0.655 </ind><dep> -27 </dep></entry>
+      <entry><ind> 0.935 </ind><dep> -45 </dep></entry>
+    </interpolation>
     <axis>
       <object-name>POLY.041-axis</object-name>
     </axis>
@@ -441,21 +449,28 @@
     <object-name>NoseGear</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
-      <entry><ind> 0 </ind><dep> 103 </dep></entry>
+      <entry><ind> 0 </ind><dep> 110 </dep></entry>
       <entry><ind> 1 </ind><dep>    0 </dep></entry>
     </interpolation>
-    <center>
-      <x-m> -4.08898 </x-m>
-      <y-m>  0.48960 </y-m>
-      <z-m>  0.00532 </z-m>
-    </center>
     <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
+      <object-name>nosegear-axis</object-name>
     </axis>
   </animation>
   
+ <animation>
+  <type>rotate</type>
+  <object-name>nosegear-actuator</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <interpolation>
+    <entry><ind> 0.0 </ind><dep>  -60 </dep></entry>
+    <entry><ind> 1.0 </ind><dep> 20 </dep></entry>
+  </interpolation>
+  <axis>
+    <object-name>nosegear-actuator-axis</object-name>
+  </axis>
+</animation>
+
+
   <animation>
     <name>RightGear</name>
     <object-name>POLY.084</object-name>
