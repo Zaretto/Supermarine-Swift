@@ -348,7 +348,7 @@
 	<object-name>POLY.041</object-name>
 	<object-name>POLY.042</object-name>
 	<object-name>POLY.043</object-name>
-	<object-name>POLY.044</object-name>
+	<object-name>nose-shock-strut</object-name>
 	<object-name>POLY.045</object-name>
 	<object-name>nosegear-actuator</object-name>
   </animation>
@@ -372,6 +372,22 @@
     </interpolation>
     <axis>
       <object-name>POLY.041-axis</object-name>
+    </axis>
+  </animation>
+  <animation>
+    <type>translate</type>
+    <property>gear/gear[0]/compression-ft</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>  -0.07 </dep></entry>
+      <entry><ind> 0.06 </ind><dep>  -0.02 </dep></entry>
+      <entry><ind> 0.15 </ind><dep>  0.04 </dep></entry>
+      <entry><ind> 0.2 </ind><dep>  0.07 </dep></entry>
+    </interpolation>
+    <object-name>nose-shock-strut</object-name>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
 
