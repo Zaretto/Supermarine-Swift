@@ -465,20 +465,20 @@
     <object-name>NoseGear</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
-      <entry><ind> 0 </ind><dep> 110 </dep></entry>
+      <entry><ind> 0 </ind><dep> 58 </dep></entry>
       <entry><ind> 1 </ind><dep>    0 </dep></entry>
     </interpolation>
     <axis>
       <object-name>nosegear-axis</object-name>
     </axis>
   </animation>
-  
- <animation>
+
+  <animation>
   <type>rotate</type>
   <object-name>nosegear-actuator</object-name>
   <property>gear/gear[0]/position-norm</property>
   <interpolation>
-    <entry><ind> 0.0 </ind><dep>  -60 </dep></entry>
+    <entry><ind> 0.0 </ind><dep>  -110 </dep></entry>
     <entry><ind> 1.0 </ind><dep> 20 </dep></entry>
   </interpolation>
   <axis>
