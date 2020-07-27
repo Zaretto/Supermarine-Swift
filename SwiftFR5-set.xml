@@ -1,4 +1,9 @@
 <?xml version="1.0"?>
+<!-- 
+    https://youtu.be/47yOpTJA4YA
+    https://www.jetartaviation.co.uk/post/wk275-that-supermarine-swift
+    http://www.airpowerworld.info/jet-fighter-planes/supermarine-swift-cockpit.jpg
+ -->
 
 <PropertyList>
     <fdm>
@@ -38,8 +43,9 @@
     </canopy>
 
     <sim>
+        <!-- 3d model Copyright (C) 2020 Virtavia, released under the GPL -->
 		<description type="string" >Supermarine Swift FR.5</description>
-		<author type="string">Alphasim, StuartC, Avionyx, Richard Harrison</author>
+		<author type="string">Virtavia, StuartC, Avionyx, Richard Harrison</author>
 		<status type="string">V0.2a</status>
 		<virtual-cockpit archive="y">false</virtual-cockpit>
         <flight-model>jsb</flight-model>

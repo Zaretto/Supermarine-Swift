@@ -6,6 +6,11 @@
 	<!-- MP sound call -->
   <sound><path>Aircraft/Supermarine-Swift/Sounds/mp-sound.xml</path></sound>
 
+  <!-- 3d model Copyright (C) 2020 Virtavia, released under the GPL -->
+  <animation>
+    <type>select</type>
+    <object-name>CopyrightNotice</object-name>
+  </animation>
 	
 
   <nasal>
@@ -143,6 +148,11 @@
         </animation>
 
 <!-- Suppress Sparts in Cockpit View -->
+  <animation>
+    <type>select</type>
+    <object-name>CopyrightNotice</object-name>
+  </animation>
+
  <animation>
   <type>select</type>
   <object-name>canopy-glass</object-name>
