@@ -755,11 +755,11 @@
 
   <animation>
     <type>spin</type>
-    <object-name>POLY.087</object-name>
-	<object-name>POLY.088</object-name>
-	<object-name>POLY.089</object-name>
-    <property>gear/gear[1]/rollspeed-ms</property>
-    <factor> 30 </factor>
+    <object-name>POLY.080</object-name>
+	<object-name>POLY.079</object-name>
+	<object-name>POLY.078</object-name>
+    <property>gear/gear[2]/rollspeed-ms</property>
+    <factor> -30 </factor>
     <axis>
       <object-name>leftwheel-axis</object-name>
     </axis>
@@ -767,15 +767,16 @@
 
   <animation>
     <type>spin</type>
-    <object-name>POLY.080</object-name>
-	<object-name>POLY.079</object-name>
-	<object-name>POLY.078</object-name>
-    <property>gear/gear[2]/rollspeed-ms</property>
-    <factor> 30 </factor>
+    <object-name>POLY.087</object-name>
+	<object-name>POLY.088</object-name>
+	<object-name>POLY.089</object-name>
+    <property>gear/gear[1]/rollspeed-ms</property>
+    <factor> -30 </factor>
     <axis>
       <object-name>rightwheel-axis</object-name>
     </axis>
   </animation>
+
 
    <animation>
     <type>translate</type>
