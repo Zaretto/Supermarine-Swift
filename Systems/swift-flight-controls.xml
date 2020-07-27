@@ -395,6 +395,7 @@
             </clipto>
             <output>gear/gear-dmd-norm</output>
         </switch>
+        <!-- timing taken from https://youtu.be/lFu88Ob8qH8 -->
         <kinematic name="Gear Control">
             <input>gear/gear-dmd-norm</input>
             <traverse>
@@ -404,7 +405,7 @@
                 </setting>
                 <setting>
                     <position> 1 </position>
-                    <time>     1.8 </time>
+                    <time>     3.4 </time>
                 </setting>
             </traverse>
             <output>gear/gear-pos-norm</output>
