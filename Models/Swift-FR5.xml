@@ -352,15 +352,14 @@
   
   <animation>
     <name>NoseGear</name>
-    
     <object-name>POLY.039</object-name>
-	<object-name>POLY.040</object-name>
-	<object-name>POLY.041</object-name>
-	<object-name>POLY.042</object-name>
-	<object-name>POLY.043</object-name>
-	<object-name>nose-shock-strut</object-name>
-	<object-name>POLY.045</object-name>
-	<object-name>nosegear-actuator</object-name>
+    <object-name>POLY.040</object-name>
+    <object-name>POLY.041</object-name>
+    <object-name>POLY.042</object-name>
+    <object-name>POLY.043</object-name>
+    <object-name>nose-shock-strut</object-name>
+    <object-name>POLY.045</object-name>
+    <object-name>nosegear-actuator</object-name>
   </animation>
 
 
@@ -488,8 +487,8 @@
   <object-name>nosegear-actuator</object-name>
   <property>gear/gear[0]/position-norm</property>
   <interpolation>
-    <entry><ind> 0.0 </ind><dep>  -110 </dep></entry>
-    <entry><ind> 1.0 </ind><dep> 20 </dep></entry>
+    <entry><ind> 0.0 </ind><dep>  -105 </dep></entry>
+    <entry><ind> 1.0 </ind><dep> -5 </dep></entry>
   </interpolation>
   <axis>
     <object-name>nosegear-actuator-axis</object-name>
