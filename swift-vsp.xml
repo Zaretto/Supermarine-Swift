@@ -22,6 +22,14 @@
             date="09 Sep 2019"
             URL="http://www.zaretto.com/sites/zaretto.com/files/swift-data/rjh-zaretto-swift-aerodynamic-data-vspaero.pdf"
         />
+        <reference 
+            refID="Reports and Memorandum 3078 (17,946), A.R.C Technical report"
+            author="D. A. Kirby and A. Spence"
+            title="Low-Speed-Tunnel Model Tests on the Flow Structure behind a Delta-Wing Aircraft and a 40 deg Swept-Wing-Aircraft at High-Incidences"
+            date="1956"
+            URL="http://naca.central.cranfield.ac.uk/reports/arc/rm/3078.pdf"
+        />
+        
     </fileheader>
 <metrics>
   <wingarea unit="M2">21.404</wingarea>
@@ -65,7 +73,7 @@
     <location unit="M">
       <x>2.512</x>
       <y>0</y>
-      <z>-1.8849</z>
+      <z>-1.8923</z>
     </location>
     <static_friction>0.6</static_friction>
     <dynamic_friction>0.4</dynamic_friction>
