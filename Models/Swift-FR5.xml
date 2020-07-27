@@ -782,12 +782,17 @@
     <object-name>canopy-frame</object-name>
     <object-name>canopy-glass</object-name>
     <object-name>canopy-glassin</object-name>
+    <object-name>POLY.049</object-name>
+    <object-name>POLY.048</object-name>
+    <object-name>POLY.051</object-name>
+    <object-name>mirrors</object-name>
+    <object-name>mirrors-glass</object-name>
     <property>canopy/position-norm</property>
     <factor>0.6</factor>
     <axis>
       <x>1</x>
       <y>0</y>
-      <z>0</z>
+      <z>0.2</z>
     </axis>
   </animation>
   
