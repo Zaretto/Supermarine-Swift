@@ -301,6 +301,7 @@
   <type>rotate</type>
   <object-name>left-flap_0</object-name>
   <object-name>left-flap_1</object-name>
+  <object-name>left-flap_actuator</object-name>
   <property>surface-positions/flap-pos-norm</property>
   <factor>-45</factor>
   <axis>
@@ -318,6 +319,7 @@
   <type>rotate</type>
   <object-name>right-flap_0</object-name>
   <object-name>right-flap_1</object-name>
+  <object-name>right-flap_actuator</object-name>
   <property>surface-positions/flap-pos-norm</property>
   <factor>45</factor>
   <axis>
@@ -326,7 +328,7 @@
      <z1-m>-0.56</z1-m>
      <x2-m>1.25</x2-m>
      <y2-m>2.4</y2-m>
-     <z2-m>-0.12</z2-m>
+     <z2-m>-0.54</z2-m>
   </axis>
  </animation>
 

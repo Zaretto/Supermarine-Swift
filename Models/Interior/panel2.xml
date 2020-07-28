@@ -281,7 +281,7 @@
   <condition>
     <not>
       <greater-than>
-        <property>engines/engine[0]/augmentation</property>
+        <property>fdm/jsbsim/propulsion/engine[0]/augmentation-alight</property>
         <value>0</value>
       </greater-than>
     </not>
@@ -292,7 +292,7 @@
     <object-name>wl_ab_on</object-name>
     <condition>
       <greater-than>
-        <property>engines/engine[0]/augmentation</property>
+        <property>fdm/jsbsim/propulsion/engine[0]/augmentation-alight</property>
         <value>0</value>
       </greater-than>
     </condition>
@@ -326,10 +326,16 @@
     <type>select</type>
     <object-name>wl_stall_on</object-name>
     <condition>
-      <greater-than>
-        <property>fdm/jsbsim/aero/alpha-deg</property>
-        <value>13</value>
-      </greater-than>
+      <and>
+        <less-than>
+          <property>fdm/jsbsim/gear/wow</property>
+          <value>1</value>
+        </less-than>
+        <greater-than>
+          <property>fdm/jsbsim/aero/alpha-deg</property>
+          <value>13</value>
+        </greater-than>
+      </and>
     </condition>
   </animation>
   
@@ -338,11 +344,17 @@
     <object-name>wl_stall_off</object-name>
     <condition>
       <not>
-        <greater-than>
-          <property>fdm/jsbsim/aero/alpha-deg</property>
-          <value>13</value>
-        </greater-than>
-      </not>
+        <and>
+          <less-than>
+            <property>fdm/jsbsim/gear/wow</property>
+            <value>1</value>
+          </less-than>
+            <greater-than>
+            <property>fdm/jsbsim/aero/alpha-deg</property>
+            <value>13</value>
+          </greater-than>
+        </and>
+        </not>
     </condition>
   </animation>
  
