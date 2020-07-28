@@ -267,259 +267,194 @@
    </overlay>
  </model>
  
- <!-- Panel Lights -->
- 
-<!-- Red Lights -->
-  
- <animation>
-  <type>material</type>
-   <object-name>ab</object-name>
-   <object-name>overspeed</object-name>
-   <object-name>stall</object-name>
-   <object-name>fuel</object-name>
-  <ambient>
-    <red>0.0</red>
-    <green>0.0</green>
-    <blue>0.0</blue>
-  </ambient>
-  <diffuse>
-    <red>0.1</red>
-    <green>0.0</green>
-    <blue>0.0</blue>
-  </diffuse>
-  <emission>
-    <red>0.8</red>
-    <green>0.0</green>
-    <blue>0.0</blue>
-  </emission> 
- </animation>	
 	
- <text>
-  <name>ab</name>
-  <font>courier_medium.txf</font>
-  <character-size type="double">0.047</character-size>
-  <offsets>
- 
-   <x-m>-3.341</x-m>
-   <y-m>-0.155</y-m>
-   <z-m>0.519</z-m>
-  </offsets>
-  <axis-alignment>yz-plane</axis-alignment>
-  <type type="string">literal</type>
-  <text type="string">.</text>
-  <draw-text type="bool">true</draw-text>
-  <alignment>left-top</alignment>
- </text>
- 
- 
- <animation>
-        <type>select</type>
-        <object-name>ab</object-name>
-        <condition>
-    <greater-than>
-          <property>engines/engine[0]/reheat</property>
-          <value>0</value>
-          </greater-than>
-        </condition>
- </animation>
-	
-	
- <text>
-  <name>overspeed</name>
-  <font>courier_medium.txf</font>
-  <character-size type="double">0.047</character-size>
-  <offsets>
- 
-   <x-m>-3.341</x-m>
-   <y-m>-0.155</y-m>
-   <z-m>0.484</z-m>
-  </offsets>
-  <axis-alignment>yz-plane</axis-alignment>
-  <type type="string">literal</type>
-  <text type="string">.</text>
-  <draw-text type="bool">true</draw-text>
-  <alignment>left-top</alignment>
- </text>
-	
-<animation>
-        <type>select</type>
-        <object-name>overspeed</object-name>
-        
-        <condition>
-		<greater-than>
-       <property>velocities/groundspeed-kt</property>
-	   <!--value>619.58</value-->
-	   <value>600</value>
-	   </greater-than>
-        </condition>
-    </animation>	
-	
-	
-<text>
-  <name>stall</name>
-  <font>courier_medium.txf</font>
-  <character-size type="double">0.047</character-size>
-  <offsets>
- 
-   <x-m>-3.341</x-m>
-   <y-m>-0.155</y-m>
-   <z-m>0.458</z-m>
-  </offsets>
-  <axis-alignment>yz-plane</axis-alignment>
-  <type type="string">literal</type>
-  <text type="string">.</text>
-  <draw-text type="bool">true</draw-text>
-  <alignment>left-top</alignment>
- </text>
-
- <animation>
-        <type>select</type>
-        <object-name>stall</object-name>
-        
-          <condition>
-            <less-than>
-                <property>velocities/airspeed-kt</property>
-                <value>120</value>
-            </less-than>
-          
-        </condition>
-  </animation> 
-	
- <text>
-  <name>fuel</name>
-  <font>courier_medium.txf</font>
-  <character-size type="double">0.047</character-size>
-  <offsets>
- 
-   <x-m>-3.354</x-m>
-   <y-m>0.153</y-m>
-   <z-m>0.532</z-m>
-   <heading-deg>-39</heading-deg>
-  </offsets>
-  <axis-alignment>yz-plane</axis-alignment>
-  <type type="string">literal</type>
-  <text type="string">.</text>
-  <draw-text type="bool">true</draw-text>
-  <alignment>left-top</alignment>
- </text>
- 
  <animation>
   <type>select</type>
-  <object-name>fuel</object-name>
-   <condition>
-    <less-than>
-     <property>/consumables/fuel/total-fuel-gals</property>
-    <value>100.00</value>
-    </less-than>
-   </condition>
- </animation> 
-	
-	<!-- yellow -->
-	
- <animation>
-  <type>material</type>
-   <object-name>uc1</object-name>
-   <object-name>uc2</object-name>
-   <object-name>uc3</object-name>
-   
-  <ambient>
-    <red>0.0</red>
-    <green>0.0</green>
-    <blue>0.0</blue>
-  </ambient>
-  <diffuse>
-    <red>0.1</red>
-    <green>0.1</green>
-    <blue>0.0</blue>
-  </diffuse>
-  <emission>
-    <red>0.8</red>
-    <green>0.8</green>
-    <blue>0.0</blue>
-  </emission> 
- </animation>
- 
- 
- <text>
-  <name>uc1</name>
-  <font>courier_medium.txf</font>
-  <character-size type="double">0.05</character-size>
-  <offsets>
-   <x-m>-3.265</x-m>
-   <y-m>0.246</y-m>
-   <z-m>0.504</z-m>
-   <heading-deg>-39</heading-deg>
-  </offsets>
-  <axis-alignment>yz-plane</axis-alignment>
-  <type type="string">literal</type>
-  <text type="string">.</text>
-  <draw-text type="bool">true</draw-text>
-  <alignment>left-top</alignment>
- </text>
- 
- <text>
-  <name>uc2</name>
-  <font>courier_medium.txf</font>
-  <character-size type="double">0.05</character-size>
-  <offsets>
-   <x-m>-3.287</x-m>
-   <y-m>0.240</y-m>
-   <z-m>0.484</z-m>
-   <heading-deg>-39</heading-deg>
-  </offsets>
-  <axis-alignment>yz-plane</axis-alignment>
-  <type type="string">literal</type>
-  <text type="string">.</text>
-  <draw-text type="bool">true</draw-text>
-  <alignment>left-top</alignment>
- </text>
- 
- <text>
-  <name>uc3</name>
-  <font>courier_medium.txf</font>
-  <character-size type="double">0.05</character-size>
-  <offsets>
-   <x-m>-3.268</x-m>
-   <y-m>0.264</y-m>
-   <z-m>0.484</z-m>
-   <heading-deg>-39</heading-deg>
-  </offsets>
-  <axis-alignment>yz-plane</axis-alignment>
-  <type type="string">literal</type>
-  <text type="string">.</text>
-  <draw-text type="bool">true</draw-text>
-  <alignment>left-top</alignment>
- </text>
+  <object-name>wl_cmr_on_on</object-name>
+  <object-name>wl_fire_jet_pipe_on</object-name>
+  <object-name>wl_fire_engine_on</object-name>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>wl_ab_off</object-name>
+  <condition>
+    <not>
+      <greater-than>
+        <property>engines/engine[0]/augmentation</property>
+        <value>0</value>
+      </greater-than>
+    </not>
+  </condition>
+</animation>
+<animation>
+    <type>select</type>
+    <object-name>wl_ab_on</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[0]/augmentation</property>
+        <value>0</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>wl_ospd_on</object-name>
+    <condition>
+      <greater-than>
+        <property>velocities/airspeed-kt</property>
+        <value>620</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>wl_ospd_off</object-name>
+    <condition>
+      <not>
+        <greater-than>
+          <property>velocities/airspeed-kt</property>
+          <value>620</value>
+        </greater-than>
+      </not>
+    </condition>
+  </animation>
+    
+  <animation>
+    <type>select</type>
+    <object-name>wl_stall_on</object-name>
+    <condition>
+      <greater-than>
+        <property>fdm/jsbsim/aero/alpha-deg</property>
+        <value>13</value>
+      </greater-than>
+    </condition>
+  </animation>
   
-   <animation>
-        <type>select</type>
-        <object-name>uc1</object-name>
-        <object-name>uc2</object-name>
-	<object-name>uc3</object-name>
-        <condition>
-         <property>/controls/gear/brake-parking</property>
-	</condition>
-   </animation> 
-   
-         <animation>
-        <type>rotate</type>
-        <object-name>switch_battery</object-name>
-        <property>controls/electric/battery-switch</property>
+  <animation>
+    <type>select</type>
+    <object-name>wl_stall_off</object-name>
+    <condition>
+      <not>
+        <greater-than>
+          <property>fdm/jsbsim/aero/alpha-deg</property>
+          <value>13</value>
+        </greater-than>
+      </not>
+    </condition>
+  </animation>
+ 
+  <animation>
+    <type>select</type>
+    <object-name>wl_low_fuel_on</object-name>
+    <condition>
+      <less-than>
+        <property>/consumables/fuel/total-fuel-lbs</property>
+        <value>1000.00</value>
+      </less-than>
+    </condition>
+  </animation>
+  <animation>
+    <type>select</type>
+    <object-name>wl_low_fuel_off</object-name>
+    <condition>
+      <not>
+        <less-than>
+          <property>/consumables/fuel/total-fuel-lbs</property>
+          <value>1000.00</value>
+        </less-than>
+        </not>
+    </condition>
+  </animation>
+
+  <!-- wl_hyd_warn warning light -->
+  <animation>
+    <type>select</type>
+    <object-name>wl_hyd_warn_off</object-name>
+    <condition>
+      <not>
+        <or>
+          <less-than>
+            <property>fdm/jsbsim/systems/hydraulics/system-pressure</property>
+            <value>1</value>
+          </less-than>
+          <less-than>
+            <property>fdm/jsbsim/systems/hydraulics/system-pressure1</property>
+            <value>1</value>
+          </less-than>
+        </or>
+      </not>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>wl_hyd_warn_on</object-name>
+    <condition>
+      <or>
+        <less-than>
+          <property>fdm/jsbsim/systems/hydraulics/system-pressure</property>
+          <value>1</value>
+        </less-than>
+        <less-than>
+          <property>fdm/jsbsim/systems/hydraulics/system-pressure1</property>
+          <value>1</value>
+        </less-than>
+      </or>
+    </condition>
+  </animation>
+
+  <!-- wl_canopy warning light -->
+  <animation>
+    <type>select</type>
+    <object-name>wl_canopy_off</object-name>
+    <condition>
+      <not>
+        <greater-than>
+          <property>canopy/position-norm</property>
+          <value>0</value>
+        </greater-than>
+      </not>
+    </condition>
+  </animation>
+  <animation>
+    <type>select</type>
+    <object-name>wl_canopy_on</object-name>
+    <condition>
+      <greater-than>
+        <property>canopy/position-norm</property>
+        <value>0</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>switch_battery</object-name>
+    <property>controls/electric/battery-switch</property>
     <interpolation>
-      <entry><ind> 0 </ind><dep> -3 </dep></entry>
-      <entry><ind> 1 </ind><dep> 85</dep></entry>
+      <entry>
+        <ind> 0 </ind>
+        <dep> -3 </dep>
+      </entry>
+      <entry>
+        <ind> 1 </ind>
+        <dep> 85</dep>
+      </entry>
     </interpolation>
-        <center>
-            <x-m>-3.11033</x-m>
-            <y-m>-0.35005</y-m>
-            <z-m>0.24839</z-m>
-        </center>
-        <axis>
-            <x>0.0</x>
-            <y>1</y>
-            <z>0</z>
-        </axis>
-    </animation>
+    <center>
+      <x-m>-3.11033</x-m>
+      <y-m>-0.35005</y-m>
+      <z-m>0.24839</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
 	
 	    <animation>
         <type>pick</type>
@@ -711,4 +646,3 @@
     </animation>
     
 </PropertyList>
-

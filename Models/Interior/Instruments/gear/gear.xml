@@ -7,52 +7,58 @@
  <path>gear.ac</path>
 
 <!-- **************** lamps **************** -->
-<!-- Port locked down -->
- <animation>
+
+<animation>
   <type>select</type>
   <object-name>disk-P-R</object-name>
   <condition>
-   <equals>
-    <property>gear/gear[1]/position-norm</property>
-	<value>0</value>
-   </equals>
-  </condition>
+    <and>
+      <property>fdm/jsbsim/gear/unit[1]/pos-norm</property>
+      <equals>
+        <property>fdm/jsbsim/gear/unit[1]/locked</property>
+        <value>0</value>
+      </equals>
+    </and>
+</condition>
  </animation>
  
-<!-- Stbd locked down -->
  <animation>
   <type>select</type>
   <object-name>disk-S-R</object-name>
   <condition>
-   <equals>
-    <property>gear/gear[2]/position-norm</property>
-	<value>0</value>
-   </equals>
-  </condition>
- </animation>
+    <and>
+      <property>fdm/jsbsim/gear/unit[2]/pos-norm</property>
+      <equals>
+        <property>fdm/jsbsim/gear/unit[2]/locked</property>
+        <value>0</value>
+      </equals>
+    </and>
+</condition>
+  </animation>
 
-<!-- Nose locked down -->
  <animation>
   <type>select</type>
   <object-name>disk-F-R</object-name>
   <condition>
-   <equals>
-    <property>gear/gear[0]/position-norm</property>
-	<value>0</value>
-   </equals>
-  </condition>
- </animation>
+    <and>
+      <property>fdm/jsbsim/gear/unit[0]/pos-norm</property>
+      <equals>
+        <property>fdm/jsbsim/gear/unit[0]/locked</property>
+        <value>0</value>
+      </equals>
+    </and>
+    </condition>
+  </animation>
 
-<!-- Port locked up -->
  <animation>
   <type>select</type>
   <object-name>disk-P-G</object-name>
   <condition>
-   <equals>
-    <property>gear/gear[1]/position-norm</property>
-	<value>1</value>
-   </equals>
-  </condition>
+    <equals>
+     <property>fdm/jsbsim/gear/unit[1]/locked</property>
+     <value>-1</value>
+    </equals>
+   </condition>
  </animation>
  
 <!-- Stbd locked up -->
@@ -60,11 +66,11 @@
   <type>select</type>
   <object-name>disk-S-G</object-name>
   <condition>
-   <equals>
-    <property>gear/gear[2]/position-norm</property>
-	<value>1</value>
-   </equals>
-  </condition>
+    <equals>
+     <property>fdm/jsbsim/gear/unit[2]/locked</property>
+     <value>-1</value>
+    </equals>
+   </condition>
  </animation>
 
 <!-- Nose locked up -->
@@ -72,11 +78,11 @@
   <type>select</type>
   <object-name>disk-F-G</object-name>
   <condition>
-   <equals>
-    <property>gear/gear[0]/position-norm</property>
-	<value>1</value>
-   </equals>
-  </condition>
+    <equals>
+     <property>fdm/jsbsim/gear/unit[0]/locked</property>
+     <value>-1</value>
+    </equals>
+   </condition>
  </animation>
  
 <!-- Port unlocked -->
@@ -84,17 +90,12 @@
   <type>select</type>
   <object-name>disk-P-UL</object-name>
   <condition>
-   <and>
-   <less-than>
-    <property>gear/gear[1]/position-norm</property>
-	<value>1</value>
-   </less-than>
-   <greater-than>
-    <property>gear/gear[1]/position-norm</property>
-	<value>0</value>
-	</greater-than>
-   </and>
-  </condition>
+    <equals>
+     <property>fdm/jsbsim/gear/unit[1]/locked</property>
+     <value>0</value>
+    </equals>
+   </condition>
+
  </animation>
  
 <!-- Stbd unlocked -->
@@ -102,17 +103,11 @@
   <type>select</type>
   <object-name>disk-S-UL</object-name>
   <condition>
-   <and>
-   <less-than>
-    <property>gear/gear[2]/position-norm</property>
-	<value>1</value>
-   </less-than>
-   <greater-than>
-    <property>gear/gear[2]/position-norm</property>
-	<value>0</value>
-	</greater-than>
-   </and>
-  </condition>
+    <equals>
+     <property>fdm/jsbsim/gear/unit[2]/locked</property>
+     <value>0</value>
+    </equals>
+   </condition>
  </animation>
 
 <!-- Nose unlocked -->
@@ -120,17 +115,11 @@
   <type>select</type>
   <object-name>disk-F-UL</object-name>
   <condition>
-   <and>
-   <less-than>
-    <property>gear/gear[0]/position-norm</property>
-	<value>1</value>
-   </less-than>
-   <greater-than>
-    <property>gear/gear[0]/position-norm</property>
-	<value>0</value>
-	</greater-than>
-   </and>
-  </condition>
+    <equals>
+     <property>fdm/jsbsim/gear/unit[0]/locked</property>
+     <value>0</value>
+    </equals>
+   </condition>
  </animation>
  
  <!-- Brakes On -->
@@ -170,6 +159,3 @@
   </animation>
 
  </PropertyList>
-
-
-
