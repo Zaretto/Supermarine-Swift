@@ -610,6 +610,48 @@
 
     <animation>
       <type>rotate</type>
+      <object-name>stick</object-name>
+      <property>controls/flight/elevator</property>
+      <factor>20</factor>
+      <axis>
+        <object-name>stick-pitch-axis</object-name>
+      </axis>
+    </animation>
+
+    <animation>
+      <type>rotate</type>
+      <object-name>stick-grip</object-name>
+      <property>controls/flight/aileron</property>
+      <factor>20</factor>
+      <axis>
+        <object-name>stick-grip-axis</object-name>
+      </axis>
+    </animation>
+
+    <animation>
+      <type>translate</type>
+      <property>controls/flight/aileron</property>
+      <factor>-0.015</factor>
+      <object-name>stick-roll-linkage</object-name>
+      <axis>
+        <x> 0 </x>
+        <y> 0 </y>
+        <z> 1 </z>
+      </axis>
+    </animation>
+
+    <animation>
+      <type>rotate</type>
+      <object-name>rudder-pedals</object-name>
+      <property>controls/flight/rudder</property>
+      <factor>20</factor>
+      <axis>
+        <object-name>rudder-pedals-axis</object-name>
+      </axis>
+    </animation>
+
+    <animation>
+      <type>rotate</type>
       <object-name>throttle</object-name>
       <property>controls/engines/engine[0]/throttle</property>
       <factor>-80</factor>
