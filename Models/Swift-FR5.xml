@@ -9,7 +9,7 @@
   <!-- 3d model Copyright (C) 2020 Virtavia, released under the GPL -->
   <animation>
     <type>select</type>
-    <object-name>CopyrightNotice</object-name>
+    <object-name>Copyright 2020 Virtavia Licenced under GPL V2</object-name>
   </animation>
 	
 
@@ -148,10 +148,6 @@
         </animation>
 
 <!-- Suppress Sparts in Cockpit View -->
-  <animation>
-    <type>select</type>
-    <object-name>CopyrightNotice</object-name>
-  </animation>
 
  <animation>
   <type>select</type>
