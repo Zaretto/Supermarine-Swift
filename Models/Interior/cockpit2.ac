@@ -13,7 +13,6 @@ name "joystick_base"
 loc -0.0062499 0.0421854 -0.005
 texture "CPit_2.jpg"
 crease 45.000000
-hidden
 numvert 24
 -3.23917 -0.419595 0.00799929
 -3.23917 -0.419595 -0.00700071
@@ -308,14 +307,12 @@ kids 0
 OBJECT group
 name "rudder-pedals"
 loc -0.0062499 0.0421854 -0.005
-hidden
 kids 3
 OBJECT poly
 name "rudder_pedal.R"
 loc -4.65661e-10 0 0
 texture "CPit_2.jpg"
 crease 45.000000
-hidden
 numvert 133
 -3.53941 -0.45484 -0.145001
 -3.54665 -0.440965 -0.126001
@@ -1789,7 +1786,6 @@ name "rudder_bar"
 loc -4.65661e-10 0 0
 texture "CPit_gen.jpg"
 crease 45.000000
-hidden
 numvert 24
 -3.57421 -0.425443 -0.138001
 -3.57311 -0.425424 0.134029
@@ -1978,7 +1974,6 @@ name "rudder_pedal.L"
 loc -4.65661e-10 0 0
 texture "CPit_2.jpg"
 crease 45.000000
-hidden
 numvert 133
 -3.55801 -0.349149 0.0939993
 -3.55801 -0.349149 0.0979993
@@ -12633,7 +12628,6 @@ OBJECT poly
 name "stick-grip-axis"
 loc -3.21148 -0.0228067 -0.00517618
 crease 45.000000
-hidden
 numvert 2
 0.0606122 0 0
 -0.060612 0 0
@@ -12648,7 +12642,6 @@ OBJECT poly
 name "rudder-pedals-axis"
 loc -3.60072 -0.393315 0
 crease 45.000000
-hidden
 numvert 2
 0 -0.0591852 0
 0 0.0591852 0
@@ -12664,7 +12657,6 @@ name "wl_UNUSED"
 loc -3.32066 0.266127 -0.247769
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 -0.00335336 0.00605589 -0.0121179
 -0.00195122 -2.08616e-07 -0.0138188
@@ -13861,7 +13853,6 @@ name "wl_UNUSED_off"
 loc -3.32066 0.266127 -0.247769
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 0 0
 0.00427461 0 -0.00518534
@@ -14123,7 +14114,6 @@ name "wl_UNUSED"
 loc -3.31367 0.289252 -0.259679
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 0.00420952 -0.00116703 -0.00510657
 0.00401664 -0.00229847 -0.00487259
@@ -15320,7 +15310,6 @@ name "wl_UNUSED_off"
 loc -3.31367 0.289252 -0.259679
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0.00420952 -0.00116703 -0.00510657
 0.00401664 -0.00229847 -0.00487259
@@ -15582,7 +15571,6 @@ name "wl_UNUSED"
 loc -3.30576 0.266344 -0.269456
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 0.00420952 -0.00116703 -0.00510657
 0.00401664 -0.00229847 -0.00487259
@@ -16779,7 +16767,6 @@ name "wl_UNUSED_off"
 loc -3.30576 0.266344 -0.269456
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0.00420952 -0.00116703 -0.00510657
 0.00401664 -0.00229847 -0.00487259
@@ -17041,7 +17028,6 @@ name "wl_UNUSED"
 loc -3.30576 0.31234 -0.269456
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 -0.00335336 0.00605589 -0.0121179
 -0.00195122 -2.08616e-07 -0.0138188
@@ -18238,7 +18224,6 @@ name "wl_UNUSED_off"
 loc -3.30576 0.31234 -0.269456
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 0 0
 0.00427461 0 -0.00518534
@@ -18500,7 +18485,6 @@ name "wl_UNUSED"
 loc -3.32293 0.31234 -0.250792
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 0.00420952 -0.00116703 -0.00510657
 0.00401664 -0.00229847 -0.00487259
@@ -19697,7 +19681,6 @@ name "wl_UNUSED_off"
 loc -3.32293 0.31234 -0.250792
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0.00420952 -0.00116703 -0.00510657
 0.00401664 -0.00229847 -0.00487259
@@ -19959,7 +19942,6 @@ name "wl_fuel_2"
 loc -3.24272 0.137211 -0.34509
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 -0.00338316 0.00610998 -0.0122261
 -0.00196862 -2.08616e-07 -0.0139422
@@ -21156,7 +21138,6 @@ name "wl_fuel_2_off"
 loc -3.24272 0.137211 -0.34509
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 0 0
 0.00431299 0 -0.00523165
@@ -21418,7 +21399,6 @@ name "wl_fuel_1"
 loc -3.24272 0.161524 -0.34509
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 0.00424719 -0.00117745 -0.00515217
 0.00405264 -0.00231901 -0.0049161
@@ -22615,7 +22595,6 @@ name "wl_fuel_1_off"
 loc -3.24272 0.161524 -0.34509
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0.00424719 -0.00117745 -0.00515217
 0.00405264 -0.00231901 -0.0049161
@@ -22877,7 +22856,6 @@ name "wl_cmr_4_off"
 loc -3.2597 0.455904 -0.274635
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 0 0
 0.00245142 0 -0.00297374
@@ -23139,7 +23117,6 @@ name "wl_cmr_r4"
 loc -3.2597 0.455904 -0.274635
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 -0.00192332 0.00347298 -0.00694948
 -0.00111914 -1.19209e-07 -0.00792488
@@ -24336,7 +24313,6 @@ name "wl_cmr_r3"
 loc -3.27122 0.455519 -0.263637
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 0.00241399 -0.000669271 -0.00292856
 0.00230336 -0.00131816 -0.00279438
@@ -25533,7 +25509,6 @@ name "wl_cmr_2_off"
 loc -3.27122 0.455519 -0.263637
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0.00241399 -0.000669271 -0.00292856
 0.00230336 -0.00131816 -0.00279438
@@ -25795,7 +25770,6 @@ name "wl_cmr_2_off"
 loc -3.28196 0.455519 -0.251334
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 0 0
 0.00245142 0 -0.00297374
@@ -26057,7 +26031,6 @@ name "wl_cmr_r2"
 loc -3.28196 0.455519 -0.251334
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 -0.00192332 0.00347298 -0.00694948
 -0.00111914 -1.19209e-07 -0.00792491
@@ -27254,7 +27227,6 @@ name "wl_cmr_r1"
 loc -3.29149 0.455519 -0.240484
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 0.00241399 -0.000669271 -0.00292857
 0.00230336 -0.00131816 -0.0027944
@@ -28451,7 +28423,6 @@ name "wl_cmr_1_off"
 loc -3.29149 0.455519 -0.240484
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0.00241399 -0.000669271 -0.00292857
 0.00230336 -0.00131816 -0.0027944
@@ -28713,7 +28684,6 @@ name "wl_cmr_g2"
 loc -3.26621 0.478163 -0.270167
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 0.00346184 -0.000921279 -0.00391304
 0.00330329 -0.00181454 -0.00373378
@@ -29910,7 +29880,6 @@ name "wl_cmr_g2_off"
 loc -3.26621 0.478163 -0.270167
 texture "Lamps.jpg"
 crease 45.000000
-hidden
 numvert 37
 0.00346184 -0.000921279 -0.00391304
 0.00330329 -0.00181454 -0.00373378
@@ -30172,7 +30141,6 @@ name "wl_cmr_g1_off"
 loc -3.28595 0.477948 -0.247881
 texture "Lamps.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 0 0
 0.00343752 0 -0.00388551
@@ -30434,7 +30402,6 @@ name "wl_cmr_g1"
 loc -3.28595 0.477948 -0.247881
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 -0.00226092 0.00467527 -0.00943971
 -0.00113344 -1.19209e-07 -0.0107142
@@ -31631,7 +31598,6 @@ name "wl_cmr_g3"
 loc -3.27568 0.491738 -0.257361
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 0.0034914 -0.000929147 -0.00394648
 0.00333142 -0.00183004 -0.0037657
@@ -32828,7 +32794,6 @@ name "wl_cmr_g3_off"
 loc -3.27568 0.491738 -0.257361
 texture "Lamps.jpg"
 crease 45.000000
-hidden
 numvert 37
 0.0034914 -0.000929147 -0.00394648
 0.00333142 -0.00183004 -0.0037657
@@ -33090,7 +33055,6 @@ name "wl_film_out_on"
 loc -3.32626 0.445376 -0.19694
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 0 0
 0.00325966 0 -0.00388505
@@ -33352,7 +33316,6 @@ name "wl_film_out"
 loc -3.32626 0.445376 -0.19694
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 -0.0024507 0.00457036 -0.00916694
 -0.0013814 -1.19209e-07 -0.0104412
@@ -34549,7 +34512,6 @@ name "wl_film_out_off"
 loc -3.32626 0.445376 -0.19694
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 0 0
 0.00325966 0 -0.00388505
@@ -34811,7 +34773,6 @@ name "wl_hyd_warn_on"
 loc -3.35879 0.44825 -0.161396
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 0 0
 0.00359726 0 -0.00366069
@@ -35073,7 +35034,6 @@ name "wl_hyd_warn"
 loc -3.35879 0.44825 -0.161396
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 -0.00174451 0.0046252 -0.00944287
 -0.000564814 -1.19209e-07 -0.0106436
@@ -36270,7 +36230,6 @@ name "wl_hyd_warn_off"
 loc -3.35879 0.44825 -0.161396
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 0 0
 0.00359726 0 -0.00366069
@@ -36532,7 +36491,6 @@ name "wl_low_fuel_on"
 loc -3.35806 0.525498 -0.160755
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 0 0
 0.00345874 0 -0.00351974
@@ -36794,7 +36752,6 @@ name "wl_low_fuel"
 loc -3.35806 0.5258 -0.160754
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 -0.00167751 0.0044471 -0.00907926
 -0.000542879 -1.19209e-07 -0.0102338
@@ -37991,7 +37948,6 @@ name "wl_low_fuel_off"
 loc -3.35806 0.525498 -0.160755
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 0 0
 0.00345874 0 -0.00351974
@@ -38253,7 +38209,6 @@ name "wl_stall_off"
 loc -3.34724 0.451824 0.149947
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 -0.000856936 -0.00485983
 0 -0.00168782 -0.0046372
@@ -38515,7 +38470,6 @@ name "wl_stall"
 loc -3.34724 0.451824 0.149947
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 0 -0.000856936 -0.00485983
 0 -0.00168782 -0.0046372
@@ -39712,7 +39666,6 @@ name "wl_stall_on"
 loc -3.34724 0.451824 0.149947
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 -0.000856936 -0.00485983
 0 -0.00168782 -0.0046372
@@ -39974,7 +39927,6 @@ name "wl_fire_jet_pipe_off"
 loc -3.29578 0.511254 0.220581
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 -0.00337601 -0.000856936 -0.00349587
 -0.00322127 -0.00168782 -0.00333571
@@ -40236,7 +40188,6 @@ name "wl_fire_jet_pipe"
 loc -3.29578 0.511254 0.220581
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 -0.00337601 -0.000856936 -0.00349581
 -0.00322127 -0.00168782 -0.0033357
@@ -41433,7 +41384,6 @@ name "wl_fire_jet_pipe_on"
 loc -3.29578 0.506319 0.217031
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 -0.00337601 0.00407785 5.39273e-05
 -0.00322127 0.00324696 0.000214085
@@ -41695,7 +41645,6 @@ name "wl_fire_engine_on"
 loc -3.31226 0.511381 0.20083
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 0 0
 -0.00326991 0 -0.00369595
@@ -41957,7 +41906,6 @@ name "wl_fire_engine"
 loc -3.31226 0.511381 0.20083
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 -0.00917411 0.0044471 0.0010401
 -0.0102468 -1.19209e-07 -0.000172183
@@ -43154,7 +43102,6 @@ name "wl_fire_engine_off"
 loc -3.31226 0.511381 0.20083
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 0 0
 -0.00326991 0 -0.00369595
@@ -43416,7 +43363,6 @@ name "wl_ospd_off"
 loc -3.34724 0.477874 0.149998
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 -0.000856936 -0.00485983
 0 -0.00168782 -0.0046372
@@ -43678,7 +43624,6 @@ name "wl_ospd"
 loc -3.34724 0.477874 0.149998
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 0 -0.000856936 -0.00485983
 0 -0.00168782 -0.0046372
@@ -44875,7 +44820,6 @@ name "wl_ospd_on"
 loc -3.34724 0.477874 0.149998
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 -0.000856936 -0.00485983
 0 -0.00168782 -0.0046372
@@ -45137,7 +45081,6 @@ name "wl_ab_on"
 loc -3.34724 0.512881 0.150068
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 0 0
 0 0 -0.0049348
@@ -45399,7 +45342,6 @@ name "warning_light"
 loc -3.34724 0.512881 0.150068
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 -0.00756025 0.0044471 -0.00530002
 -0.00756025 -1.19209e-07 -0.00691864
@@ -46596,7 +46538,6 @@ name "wl_ab_off"
 loc -3.34724 0.512881 0.150068
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 0 0
 0 0 -0.0049348
@@ -46858,7 +46799,6 @@ name "panels.2"
 loc -0.0062499 0.0421854 -0.005
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 49
 -3.28982 0.419649 0.237999
 -3.29074 0.414632 0.235999
@@ -47347,7 +47287,6 @@ OBJECT poly
 name "gear_lever-axis"
 loc -3.07111 -0.0253269 0.261464
 crease 45.000000
-hidden
 numvert 2
 0 0 0.0174388
 0 0 -0.0174387
@@ -47362,7 +47301,6 @@ OBJECT poly
 name "flaps_lever-axis"
 loc -3.07971 -0.0232306 0.261464
 crease 45.000000
-hidden
 numvert 2
 0 0 -0.0174387
 0 0 0.0174388
@@ -47378,7 +47316,6 @@ name "panels.3"
 loc -0.0062499 0.0421854 -0.005
 texture "CPit_1.jpg"
 crease 45.000000
-hidden
 numvert 164
 -3.33959 0.00471711 -0.231001
 -3.06868 0.0124461 -0.230001
@@ -48961,7 +48898,6 @@ name "seat"
 loc -0.0062499 0.0421854 -0.005
 texture "Seat.jpg"
 crease 45.000000
-hidden
 numvert 114
 -2.49024 0.278582 -0.171001
 -2.49028 0.280581 0.171999
@@ -50164,7 +50100,6 @@ name "switch_bases"
 loc -0.0062499 0.0421854 -0.005
 texture "Switches.jpg"
 crease 45.000000
-hidden
 numvert 622
 -3.38949 0.0558539 0.0429993
 -3.38944 0.0528543 0.0429993
@@ -56525,7 +56460,6 @@ name "gunsight_controls"
 loc -0.0062499 0.0421854 -0.005
 texture "Scale.jpg"
 crease 45.000000
-hidden
 numvert 42
 -3.34735 0.506658 0.0589993
 -3.35549 0.514517 0.0589993
@@ -56887,7 +56821,6 @@ OBJECT poly
 name "gunsight-lens"
 loc -0.0062499 0.0421854 -0.005
 crease 45.000000
-hidden
 numvert 12
 -3.41788 0.536431 0.0129993
 -3.39588 0.536815 -0.0260007
@@ -56968,7 +56901,6 @@ name "red_handles"
 loc -0.0062499 0.0421854 -0.005
 texture "Red.jpg"
 crease 45.000000
-hidden
 numvert 50
 -2.58793 0.832962 -0.0960006
 -2.58983 0.826928 -0.0970006
@@ -57459,7 +57391,6 @@ name "switches"
 loc -0.0062499 0.0421854 -0.005
 texture "Oleo.jpg"
 crease 45.000000
-hidden
 numvert 247
 -3.25551 0.115201 -0.299001
 -3.25652 0.116183 -0.301001
@@ -60055,7 +59986,6 @@ name "black_bits"
 loc -0.0062499 0.0421854 -0.005
 texture "CPit_2.jpg"
 crease 45.000000
-hidden
 numvert 48
 -2.98621 -0.0711273 0.314999
 -2.98435 -0.0630938 0.314999
@@ -60382,7 +60312,6 @@ name "panels.1"
 loc -0.0062499 0.0421854 -0.005
 texture "CPit_2.jpg"
 crease 45.000000
-hidden
 numvert 55
 -3.17574 0.129595 -0.387001
 -3.04176 0.131934 -0.387001
@@ -60794,7 +60723,6 @@ name "cockpit_walls"
 loc -0.0062499 0.0421854 -0.005
 texture "CPit_gen.jpg"
 crease 45.000000
-hidden
 numvert 610
 -3.42292 0.538344 -0.0150007
 -3.42692 0.538274 -6.92904e-07
@@ -66291,7 +66219,6 @@ name "vents_inside"
 loc -0.0062499 0.0421854 -0.005
 texture "Intakes.jpg"
 crease 45.000000
-hidden
 numvert 72
 -3.10462 0.466888 -0.316001
 -3.10467 0.469888 -0.314001
@@ -66996,7 +66923,6 @@ name "cockpit_floor"
 loc -0.0062499 0.0421854 -0.005
 texture "Interior_3.jpg"
 crease 45.000000
-hidden
 numvert 93
 -1.88529 0.745211 0.0749996
 -1.67897 0.728809 0.0649996
@@ -67836,7 +67762,6 @@ name "grey_bits"
 loc -0.0062499 0.0421854 -0.005
 texture "MdGrey.jpg"
 crease 45.000000
-hidden
 numvert 290
 -2.96516 -0.0737602 0.311999
 -2.97009 -0.0778471 0.311999
@@ -70744,7 +70669,6 @@ OBJECT poly
 name "gunsight-glass"
 loc -0.0062499 0.0421854 -0.005
 crease 45.000000
-hidden
 numvert 12
 -3.3569 0.652514 0.0369993
 -3.36299 0.657408 -0.0360007
@@ -70849,7 +70773,6 @@ name "fuel_switch"
 loc -0.0062499 0.0421854 -0.005
 texture "CPit_1.jpg"
 crease 45.000000
-hidden
 numvert 88
 -2.9873 0.334915 -0.314001
 -2.98547 0.229932 -0.314001
@@ -71774,7 +71697,6 @@ name "fuel_jettison"
 loc -0.0062499 0.0421854 -0.005
 texture "CPit_2.jpg"
 crease 45.000000
-hidden
 numvert 44
 -2.75985 -0.319214 0.275999
 -2.76385 -0.319284 0.271999
@@ -72163,7 +72085,6 @@ name "canopy_jettison"
 loc -0.0062499 0.0421854 -0.005
 texture "CPit_2.jpg"
 crease 45.000000
-hidden
 numvert 144
 -3.21168 0.412011 0.287999
 -3.2117 0.413011 0.289999
@@ -73828,7 +73749,6 @@ name "seat.2"
 loc -0.0062499 0.0421854 -0.005
 texture "CPit_2.jpg"
 crease 45.000000
-hidden
 numvert 30
 -2.45087 0.716336 0.137999
 -2.43318 0.676638 -0.190001
@@ -74131,7 +74051,6 @@ name "seat.3"
 loc -0.0062499 0.0421854 -0.005
 texture "CPit_1.jpg"
 crease 45.000000
-hidden
 numvert 206
 -2.66806 0.839564 -0.0730006
 -2.63101 0.83721 -0.0750006
@@ -76182,7 +76101,6 @@ name "gunsight_switch1.2"
 loc -0.0062499 0.0421854 -0.005
 texture "Oleo.jpg"
 crease 45.000000
-hidden
 numvert 15
 -3.3756 0.578176 0.0919993
 -3.37474 0.586192 0.0909993
@@ -76326,7 +76244,6 @@ name "gunsight_switch1.1"
 loc -0.0062499 0.0421854 -0.005
 texture "Switches.jpg"
 crease 45.000000
-hidden
 numvert 21
 -3.37555 0.575176 0.0919993
 -3.37462 0.579193 0.0899993
@@ -76536,7 +76453,6 @@ name "gunsight_switch2.1"
 loc -0.0062499 0.0421854 -0.005
 texture "Switches.jpg"
 crease 45.000000
-hidden
 numvert 21
 -3.37664 0.580158 0.0809993
 -3.37657 0.576158 0.0829993
@@ -76746,7 +76662,6 @@ name "gunsight_switch2.2"
 loc -0.0062499 0.0421854 -0.005
 texture "Oleo.jpg"
 crease 45.000000
-hidden
 numvert 15
 -3.37676 0.587157 0.0809993
 -3.37576 0.587174 0.0799993
@@ -76888,13 +76803,11 @@ kids 0
 OBJECT group
 name "hp_cock"
 loc -0.0062499 0.0421854 -0.005
-hidden
 kids 2
 OBJECT poly
 name "hp_cock.1"
 texture "Oleo.jpg"
 crease 45.000000
-hidden
 numvert 54
 -2.91938 -0.0204732 0.258999
 -2.92438 -0.0205605 0.257999
@@ -77478,7 +77391,6 @@ OBJECT poly
 name "hp_cock.2"
 texture "LtGrey.jpg"
 crease 45.000000
-hidden
 numvert 44
 -2.91457 -0.181414 0.275999
 -2.91457 -0.181414 0.271999
@@ -77885,7 +77797,6 @@ name "controlsR"
 loc -0.0062499 0.0421854 -0.005
 texture "RHEO.jpg"
 crease 45.000000
-hidden
 numvert 162
 -2.93529 0.105788 -0.346001
 -2.94127 0.104684 -0.346001
@@ -79782,13 +79693,11 @@ kids 0
 OBJECT group
 name "throttle"
 loc -0.0062499 0.0421854 -0.005
-hidden
 kids 4
 OBJECT poly
 name "throttle_switches"
 texture "MdGrey.jpg"
 crease 45.000000
-hidden
 numvert 23
 -2.96313 0.0539346 0.259999
 -2.96258 0.0570446 0.260999
@@ -79999,7 +79908,6 @@ OBJECT poly
 name "throttle_end"
 texture "CPit_2.jpg"
 crease 45.000000
-hidden
 numvert 54
 -2.98179 0.0431574 0.261999
 -2.98349 0.0479683 0.261999
@@ -80589,7 +80497,6 @@ OBJECT poly
 name "throttle_handle"
 texture "LtGrey.jpg"
 crease 45.000000
-hidden
 numvert 96
 -2.99464 0.0271605 0.328999
 -2.99548 0.0260357 0.330999
@@ -81557,7 +81464,6 @@ OBJECT poly
 name "throttle_grip"
 texture "CPit_1.jpg"
 crease 45.000000
-hidden
 numvert 36
 -2.98277 0.0359489 0.283999
 -2.9921 0.0305553 0.332999
@@ -81818,7 +81724,6 @@ name "gunsight_control.2"
 loc -0.0062499 0.0421854 -0.005
 texture "CPit_1.jpg"
 crease 45.000000
-hidden
 numvert 34
 -3.33764 0.465821 -0.0550007
 -3.33783 0.476819 -0.0560007
@@ -82141,13 +82046,11 @@ kids 0
 OBJECT group
 name "gear_lever"
 loc -0.0062499 0.0421854 -0.005
-hidden
 kids 2
 OBJECT poly
 name "gear_lever.2"
 texture "Oleo.jpg"
 crease 45.000000
-hidden
 numvert 25
 -3.1847 0.0694302 0.239999
 -3.18368 0.0684475 0.236999
@@ -82396,7 +82299,6 @@ OBJECT poly
 name "gear_lever.1"
 texture "LtGrey.jpg"
 crease 45.000000
-hidden
 numvert 37
 -3.13812 -0.0777792 0.257999
 -3.17402 0.0306105 0.257999
@@ -82752,13 +82654,11 @@ kids 0
 OBJECT group
 name "flaps_lever"
 loc -0.0062499 0.0421854 -0.005
-hidden
 kids 2
 OBJECT poly
 name "flaps_lever.2"
 texture "Oleo.jpg"
 crease 45.000000
-hidden
 numvert 25
 -3.18028 0.0455034 0.271999
 -3.19803 0.0882001 0.276999
@@ -83007,7 +82907,6 @@ OBJECT poly
 name "flaps_lever.1"
 texture "LtGrey.jpg"
 crease 45.000000
-hidden
 numvert 41
 -3.13512 -0.0777269 0.265999
 -3.17205 0.0326449 0.265999
@@ -83417,7 +83316,6 @@ name "switch_lights_panel"
 loc -0.0062499 0.0421854 -0.005
 texture "Oleo.jpg"
 crease 45.000000
-hidden
 numvert 19
 -3.15995 0.198882 -0.334001
 -3.15993 0.197882 -0.334001
@@ -83625,7 +83523,6 @@ name "switch_lights_nav"
 loc -0.0062499 0.0421854 -0.005
 texture "Oleo.jpg"
 crease 45.000000
-hidden
 numvert 19
 -3.14195 0.199196 -0.334001
 -3.14194 0.198196 -0.334001
@@ -83833,7 +83730,6 @@ name "switch_lights_landing"
 loc -0.0062499 0.0421854 -0.005
 texture "Oleo.jpg"
 crease 45.000000
-hidden
 numvert 19
 -3.12608 0.206474 -0.346001
 -3.12606 0.205474 -0.346001
@@ -84041,7 +83937,6 @@ name "switch_battery"
 loc -0.0062499 0.0421854 -0.005
 texture "Oleo.jpg"
 crease 45.000000
-hidden
 numvert 19
 -3.10508 0.20684 -0.346001
 -3.10506 0.205841 -0.346001
@@ -84249,7 +84144,6 @@ name "switch_avionics"
 loc -0.0062499 0.0421854 -0.005
 texture "Oleo.jpg"
 crease 45.000000
-hidden
 numvert 18
 -3.08509 0.207189 -0.346001
 -3.08507 0.20619 -0.346001
@@ -84444,7 +84338,6 @@ name "switch_nav"
 loc -0.0062499 0.0421854 -0.005
 texture "Oleo.jpg"
 crease 45.000000
-hidden
 numvert 19
 -3.06309 0.207573 -0.346001
 -3.06307 0.206574 -0.346001
@@ -84652,7 +84545,6 @@ name "switch_fuel_pump"
 loc -0.0062499 0.0421854 -0.005
 texture "Oleo.jpg"
 crease 45.000000
-hidden
 numvert 19
 -3.15618 0.15494 -0.346001
 -3.15617 0.153941 -0.346001
@@ -84860,7 +84752,6 @@ name "switch_generator"
 loc -0.0062499 0.0421854 -0.005
 texture "Oleo.jpg"
 crease 45.000000
-hidden
 numvert 19
 -3.13119 0.155377 -0.346001
 -3.13117 0.154377 -0.346001
@@ -85068,7 +84959,6 @@ name "switch_starter"
 loc -0.0062499 0.0421854 -0.005
 texture "Oleo.jpg"
 crease 45.000000
-hidden
 numvert 19
 -3.10819 0.155778 -0.346001
 -3.10817 0.154778 -0.346001
@@ -85276,7 +85166,6 @@ name "switch_deice"
 loc -0.0062499 0.0421854 -0.005
 texture "Oleo.jpg"
 crease 45.000000
-hidden
 numvert 19
 -3.08319 0.156215 -0.346001
 -3.08318 0.155215 -0.346001
@@ -85484,7 +85373,6 @@ name "switch_pitot"
 loc -0.0062499 0.0421854 -0.005
 texture "Oleo.jpg"
 crease 45.000000
-hidden
 numvert 19
 -3.0622 0.156581 -0.346001
 -3.06218 0.155581 -0.346001
@@ -85691,7 +85579,6 @@ OBJECT poly
 name "throttle-axis"
 loc -3.15369 -0.00703642 0.30407
 crease 45.000000
-hidden
 numvert 2
 0 0 -0.0174387
 0 0 0.0174388
@@ -85706,7 +85593,6 @@ OBJECT poly
 name "throttle-axis"
 loc -3.15369 -0.00703642 0.261055
 crease 45.000000
-hidden
 numvert 2
 0 0 0.0174388
 0 0 -0.0174387
@@ -85722,7 +85608,6 @@ name "panels.2"
 loc -0.0062499 0.0421854 -0.005
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 116
 -3.19061 0.00731733 -0.299001
 -3.19084 0.0203154 -0.299001
@@ -86735,7 +86620,6 @@ name "wl_canopy_off"
 loc -3.27684 0.476037 0.247486
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 0 0
 -0.00313902 0 -0.00380783
@@ -86997,7 +86881,6 @@ name "wl_canopy"
 loc -3.27684 0.476037 0.247486
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 -0.00920486 0.0044471 0.000719279
 -0.0102346 -1.19209e-07 -0.000529692
@@ -88194,7 +88077,6 @@ name "wl_canopy_on"
 loc -3.27684 0.476037 0.247486
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0 0 0
 -0.00313902 0 -0.00380783
@@ -88456,7 +88338,6 @@ name "wl_cmr_on_on"
 loc -3.33782 0.459544 -0.182934
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0.00328326 -0.000856936 -0.00358304
 0.00313282 -0.00168782 -0.00341889
@@ -88718,7 +88599,6 @@ name "wl_cmr_on"
 loc -3.33782 0.459544 -0.182934
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 180
 0.00328326 -0.000856936 -0.00358304
 0.00313282 -0.00168782 -0.00341889
@@ -89915,7 +89795,6 @@ name "wl_cmr_on_off"
 loc -3.33782 0.459544 -0.182934
 texture "Panel.jpg"
 crease 45.000000
-hidden
 numvert 37
 0.00328326 -0.000856936 -0.00358304
 0.00313282 -0.00168782 -0.00341889

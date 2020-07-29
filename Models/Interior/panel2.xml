@@ -267,27 +267,27 @@
    </overlay>
  </model>
  
-	
- <animation>
-  <type>select</type>
-  <object-name>wl_cmr_on_on</object-name>
-  <object-name>wl_fire_jet_pipe_on</object-name>
-  <object-name>wl_fire_engine_on</object-name>
-</animation>
-
-<animation>
-  <type>select</type>
-  <object-name>wl_ab_off</object-name>
-  <condition>
-    <not>
-      <greater-than>
-        <property>fdm/jsbsim/propulsion/engine[0]/augmentation-alight</property>
-        <value>0</value>
-      </greater-than>
-    </not>
-  </condition>
-</animation>
-<animation>
+  <animation>
+    <type>select</type>
+    <object-name>wl_cmr_on_on</object-name>
+    <object-name>wl_fire_jet_pipe_on</object-name>
+    <object-name>wl_fire_engine_on</object-name>
+    <object-name>wl_film_out_on</object-name>
+    <object-name>wl_cmr_on_on</object-name>
+  </animation>
+  <animation>
+    <type>select</type>
+    <object-name>wl_ab_off</object-name>
+    <condition>
+      <not>
+        <greater-than>
+          <property>fdm/jsbsim/propulsion/engine[0]/augmentation-alight</property>
+          <value>0</value>
+        </greater-than>
+      </not>
+    </condition>
+  </animation>
+  <animation>
     <type>select</type>
     <object-name>wl_ab_on</object-name>
     <condition>
@@ -321,7 +321,7 @@
       </not>
     </condition>
   </animation>
-    
+
   <animation>
     <type>select</type>
     <object-name>wl_stall_on</object-name>
@@ -338,7 +338,7 @@
       </and>
     </condition>
   </animation>
-  
+
   <animation>
     <type>select</type>
     <object-name>wl_stall_off</object-name>
@@ -349,15 +349,15 @@
             <property>fdm/jsbsim/gear/wow</property>
             <value>1</value>
           </less-than>
-            <greater-than>
+          <greater-than>
             <property>fdm/jsbsim/aero/alpha-deg</property>
             <value>13</value>
           </greater-than>
         </and>
-        </not>
+      </not>
     </condition>
   </animation>
- 
+
   <animation>
     <type>select</type>
     <object-name>wl_low_fuel_on</object-name>
@@ -377,7 +377,7 @@
           <property>/consumables/fuel/total-fuel-lbs</property>
           <value>1000.00</value>
         </less-than>
-        </not>
+      </not>
     </condition>
   </animation>
 
