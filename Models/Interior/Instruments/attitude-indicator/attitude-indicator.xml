@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Reworked based on photo by Peter Clarke of Swift FR5 Simulator; Richard Harrison 2020-08-04 -->
+
+<PropertyList> 
+
+  <path>attitude-indicator.ac</path>
+
+  <animation> 
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>bezel</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>face</object-name>
+    <property>instrumentation/attitude-indicator/indicated-roll-deg</property>
+      <axis>
+          <object-name>face-axis</object-name>
+      </axis>
+  </animation>
+
+</PropertyList>

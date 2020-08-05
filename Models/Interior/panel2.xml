@@ -20,7 +20,7 @@
 
 <!-- Front main panel --> 
  <model>
-  <path>Aircraft/Supermarine-Swift/Models/Interior/Instruments/ai/ai.xml</path>
+  <path>Aircraft/Supermarine-Swift/Models/Interior/Instruments/attitude-indicator/attitude-indicator.xml</path>
   <offsets>
    <x-m>-3.4</x-m>
    <y-m>0.003</y-m>
