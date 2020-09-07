@@ -203,7 +203,7 @@
     </consumables>
 
     <input>
-        <keyboard include="Nasal/keyboard.xml"/>
+        <keyboard include="keyboard.xml"/>
     </input>
 
     <environment>
