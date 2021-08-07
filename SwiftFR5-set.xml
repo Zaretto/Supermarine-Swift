@@ -1,5 +1,12 @@
 <?xml version="1.0"?>
 <!-- 
+    Credits: 
+    Virtavia: 3d model
+    FGUK: Development
+    Richard Harrison: JSBSim aero (OpenVSP) and systems modelling.
+
+    References:
+    Peter Clarke provided reference photographs of the cockpit;
     https://youtu.be/47yOpTJA4YA
     https://www.jetartaviation.co.uk/post/wk275-that-supermarine-swift
     http://www.airpowerworld.info/jet-fighter-planes/supermarine-swift-cockpit.jpg
@@ -20,7 +27,7 @@
                     <emergency-handle type="double">0</emergency-handle>
                 </gear>
                 <ecs>
-                    <inside-ownship alias="/sim/current-view/internal"/>
+                    <inside-ownship alias="/sim/current-view/internal" />
                 </ecs>
                 <NWS>
                     <engaged type="double">0</engaged>
@@ -43,19 +50,43 @@
     </canopy>
 
     <sim>
+        <minimum-fg-version>2018.1</minimum-fg-version>
+
+        <description>Supermarine Swift FR.5</description>
+        <long-description>
+            Single-seat tactical-reconnaissance aircraft powered by a Rolls-Royce Avon 114 turbojet engine (7,175 lbf  dry,  afterburner 9,450 lbf). The lengthened nose accommodates three cameras.
+                        
+            Gross weight: 21,673 lb. VNE 620kn. Range: 547.5 nmi. Service ceiling: 45,800 ft. 
+        </long-description>
+
         <!-- 3d model Copyright (C) 2020 Virtavia, released under the GPL -->
-		<description type="string" >Supermarine Swift FR.5</description>
-		<author type="string">Virtavia, StuartC, Avionyx, Richard Harrison</author>
-		<status type="string">V0.2a</status>
-		<virtual-cockpit archive="y">false</virtual-cockpit>
+        <description type="string">Supermarine Swift FR.5</description>
+        <author type="string">Virtavia, StuartC, Avionyx, Richard Harrison</author>
+        <status type="string">V1.0</status>
         <flight-model>jsb</flight-model>
         <aero>swift-vsp</aero>
 
-		<fuel-fraction>1.0</fuel-fraction>
+        <tags>
+            <tag>fighter</tag>
+            <tag>jet</tag>
+            <tag>single-engine</tag>
+            <tag>retractable-gear</tag>
+        </tags>
+
+        <rating>
+            <FDM type="int">5</FDM>
+            <systems type="int">3</systems>
+            <cockpit type="int">5</cockpit>
+            <model type="int">5</model>
+        </rating>
+
+
+        <fuel-fraction>1.0</fuel-fraction>
         <license>See licence.txt</license>
-		<startup>
-   			<splash-texture>Aircraft/Supermarine-Swift/splash.png</splash-texture>
-  		</startup>
+        <startup>
+
+            <splash-texture>Aircraft/Supermarine-Swift/splash.png</splash-texture>
+        </startup>
 
         <flaps>
             <setting>0.0</setting>
@@ -63,75 +94,74 @@
             <setting>0.7</setting>
             <setting>1.0</setting>
         </flaps>
-		
-		<model>
-			<path>Aircraft/Supermarine-Swift/Models/Swift-FR5.xml</path>
-			
-		</model>
-		
-		<rendering>
-    
- <refl_correction type="string">-0.43</refl_correction>
-    <!-- edit this to alter the strength of the reflection -->
-</rendering>
 
-		<systems>
-			<autopilot>
-				<path>Aircraft/Supermarine-Swift/Systems/autopilot.xml</path>
-			</autopilot>
+        <model>
+            <path>Aircraft/Supermarine-Swift/Models/Swift-FR5.xml</path>
 
-			<autopilot n="102">
+        </model>
+
+        <rendering>
+
+            <refl_correction type="string">-0.43</refl_correction>
+            <!-- edit this to alter the strength of the reflection -->
+        </rendering>
+
+        <systems>
+            <autopilot>
+                <path>Aircraft/Supermarine-Swift/Systems/autopilot.xml</path>
+            </autopilot>
+
+            <autopilot n="102">
                 <path>Systems/glass-rain.xml</path>
             </autopilot>
 
             <autopilot n="103">
-				<path>Aircraft/Supermarine-Swift/Systems/swift-sound-system.xml</path>
-			</autopilot>
+                <path>Aircraft/Supermarine-Swift/Systems/swift-sound-system.xml</path>
+            </autopilot>
 
-		    <electrical>
+            <electrical>
                 <path>Aircraft/Generic/generic-electrical.xml</path>
             </electrical>
-		</systems>
-
-			
-		<sound>
-			<path>Aircraft/Supermarine-Swift/Sounds/swift-sound.xml</path>
-		</sound>
-		
+        </systems>
 
 
-		<view n="0">
-			<internal archive="y">true</internal>
-			<config>
-				<x-offset-m archive="y">0</x-offset-m>
-				<y-offset-m archive="y">0.68</y-offset-m>
-				<z-offset-m archive="y">-2.8</z-offset-m>
-				<pitch-offset-deg>-15</pitch-offset-deg>
-				<default-field-of-view-deg>80</default-field-of-view-deg>
-			</config>
-		</view>
-		
-		<multiplay>
-		 <generic>
-		 
-		  <float n="2" alias="/engines/engine[0]/reheat" />
-		 
-		 </generic>
-		</multiplay>
-	
-    <menubar>
-      <default>
-        <menu n="50">
-          <label>Supermarine Swift</label>
-          <enabled type="bool">true</enabled>
-          <item>
-             <label>Select Livery</label>
-             <binding>
-               <command>nasal</command>
-               <script>aircraft.livery.dialog.toggle();</script>
-             </binding>
-          </item>
-          <item>
+        <sound>
+            <path>Aircraft/Supermarine-Swift/Sounds/swift-sound.xml</path>
+        </sound>
+
+
+        <view n="0">
+            <internal archive="y">true</internal>
+            <config>
+                <x-offset-m archive="y">0</x-offset-m>
+                <y-offset-m archive="y">0.68</y-offset-m>
+                <z-offset-m archive="y">-2.8</z-offset-m>
+                <pitch-offset-deg>-15</pitch-offset-deg>
+                <default-field-of-view-deg>80</default-field-of-view-deg>
+            </config>
+        </view>
+
+        <multiplay>
+            <generic>
+
+                <float n="2" alias="/engines/engine[0]/reheat" />
+
+            </generic>
+        </multiplay>
+
+        <menubar>
+            <default>
+                <menu n="50">
+                    <label>Supermarine Swift</label>
+                    <enabled type="bool">true</enabled>
+                    <item>
+                        <label>Select Livery</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>aircraft.livery.dialog.toggle();</script>
+                        </binding>
+                    </item>
+                    <item>
                         <label>Quickstart</label>
                         <binding>
                             <command>nasal</command>
@@ -147,17 +177,17 @@
                             ]]>
                             </script>
                         </binding>
-          </item>
-        </menu>
-      </default>
-    </menubar>
-		
+                    </item>
+                </menu>
+            </default>
+        </menubar>
+
         <multiplay>
             <generic>
                 <float n="2" alias="/engines/engine[0]/reheat" />
             </generic>
         </multiplay>
-       
+
     </sim>
 
 
@@ -203,7 +233,7 @@
     </consumables>
 
     <input>
-        <keyboard include="keyboard.xml"/>
+        <keyboard include="keyboard.xml" />
     </input>
 
     <environment>
